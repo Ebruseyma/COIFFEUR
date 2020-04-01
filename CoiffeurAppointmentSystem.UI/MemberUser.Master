@@ -1,0 +1,150 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="User.master.cs" Inherits="Coiffeur_Appointment_System.User" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Main Page</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="MainCss.css">
+    <style type="text/css">
+        .newStyle1 {
+        }
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            text-align: right;
+            height: 30px;
+            width: 433px;
+        }
+        .auto-style3 {
+            height: 30px;
+            text-align: right;
+        }
+        .auto-style4 {
+            height: 30px;
+            width: 276px;
+        }
+        .auto-style5 {
+            width: 100%;
+            height: 499px;
+        }
+        .auto-style6 {
+            text-align: center;
+        }
+        .auto-style7 {
+            text-align: left;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+        <div style="width:100%; height:10%">
+            <div class="title">Coiffeur Appointment System</div>
+            <div class="nav"><asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                <table class="auto-style1">
+                    <tr class="auto-style7">
+                        <td class="auto-style2">
+                            <asp:Label ID="Label1" runat="server" CssClass="navLabel" Text="Search:" Font-Size="X-Large"></asp:Label>
+                        </td>
+                        <td class="auto-style4">
+                            <asp:TextBox ID="TextBox1" runat="server" Width="250px"></asp:TextBox>
+                        </td>
+                        <td class="auto-style3">
+                            <asp:Label ID="Label2" runat="server" Text="[User Name]" CssClass="navLabel" Font-Size="X-Large"></asp:Label>
+                            &nbsp;<asp:Label ID="Label11" runat="server" CssClass="navLabel" Font-Size="Larger" Text="|"></asp:Label>
+                            &nbsp;&nbsp;
+                            <div class="dropdown">
+                                <button class="dropbtn">
+                                    <asp:Label ID="Label12" runat="server" Text="Menu" Font-Size="X-Large"></asp:Label>
+                                </button>
+                                <div class="dropdown-content">
+                                    <a href="#" >Appointments</a>
+                                    <a href="#" >Settings</a>
+                                    <a href="#" >Sign out</a>
+                                </div>
+                            </div>
+                            &nbsp; </td>
+                    </tr>
+                </table>
+            </asp:ContentPlaceHolder></div>
+        </div>
+
+        <div style="width:1500px; height: 20px"></div>
+
+        <div style ="width:90%; height: 100%">
+            <div class="filter"><asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                <table class="auto-style5">
+                    <tr>
+                        <td class="auto-style6">
+                            <asp:Label ID="Label4" runat="server" Font-Size="XX-Large" Text="Filter"></asp:Label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Label ID="Label5" runat="server" Text="Country:"></asp:Label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style6">
+                            <asp:DropDownList ID="DropDownList1" runat="server" Height="16px" Width="127px">
+                            </asp:DropDownList>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Label ID="Label6" runat="server" Text="Town:"></asp:Label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style6">
+                            <asp:DropDownList ID="DropDownList2" runat="server" Height="16px" Width="127px">
+                            </asp:DropDownList>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Label ID="Label7" runat="server" Text="Services:"></asp:Label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style6">
+                            <asp:DropDownList ID="DropDownList3" runat="server" Height="16px" Width="127px">
+                            </asp:DropDownList>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Label ID="Label8" runat="server" Text="Budget:"></asp:Label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style6"><asp:TextBox ID="TextBox2" runat="server" Width="30px"></asp:TextBox>
+&nbsp;<asp:Label ID="Label9" runat="server" Text="- "></asp:Label>
+                            <asp:TextBox ID="TextBox3" runat="server" Width="30px"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:Button ID="Button1" runat="server" Text="List" Width="43px" />
+&nbsp;&nbsp;
+                            <asp:Label ID="Label10" runat="server" Text="Clear"></asp:Label>
+                        </td>
+                    </tr>
+                </table>
+            </asp:ContentPlaceHolder></div>
+            <div class="list"><asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p>
+                    &nbsp;</p>
+            </asp:ContentPlaceHolder></div>
+        </div>
+        
+    </form>
+</body>
+</html>
+
+<%--<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>--%>

@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="User.master.cs" Inherits="Coiffeur_Appointment_System.User" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Information Page</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="MainCss.css">
+    <style type="text/css">
+        .newStyle1 {
+        }
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            text-align: right;
+            height: 30px;
+            width: 433px;
+        }
+        .auto-style3 {
+            height: 30px;
+            text-align: right;
+        }
+        .auto-style4 {
+            height: 30px;
+            width: 276px;
+        }
+        .auto-style5 {
+            text-align: center;
+            height: 32px;
+            
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+        <div style="width:100%; height:10%">
+            <div class="title">Coiffeur Appointment System</div>
+            
+        </div>
+
+        <div style ="width:90%; height: 100%">
+            <div class="list2">   
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder></div>
+            
+        </div>
+        
+    </form>
+</body>
+</html>
+
+<%--<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>--%>

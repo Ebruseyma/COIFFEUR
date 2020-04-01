@@ -1,0 +1,11 @@
+C:\Users\user\source\repos\CoiffeurAppointmentSystem\CoiffeurAppointmentSystem.ORM\bin\Debug\CoiffeurAppointmentSystem.ORM.dll.config
+C:\Users\user\source\repos\CoiffeurAppointmentSystem\CoiffeurAppointmentSystem.ORM\bin\Debug\CoiffeurAppointmentSystem.ORM.dll
+C:\Users\user\source\repos\CoiffeurAppointmentSystem\CoiffeurAppointmentSystem.ORM\bin\Debug\CoiffeurAppointmentSystem.ORM.pdb
+C:\Users\user\source\repos\CoiffeurAppointmentSystem\CoiffeurAppointmentSystem.ORM\bin\Debug\EntityFramework.dll
+C:\Users\user\source\repos\CoiffeurAppointmentSystem\CoiffeurAppointmentSystem.ORM\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\source\repos\CoiffeurAppointmentSystem\CoiffeurAppointmentSystem.ORM\bin\Debug\EntityFramework.xml
+C:\Users\user\source\repos\CoiffeurAppointmentSystem\CoiffeurAppointmentSystem.ORM\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\source\repos\CoiffeurAppointmentSystem\CoiffeurAppointmentSystem.ORM\obj\Debug\CoiffeurAppointmentSystem.ORM.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\CoiffeurAppointmentSystem\CoiffeurAppointmentSystem.ORM\obj\Debug\CoiffeurAppointmentSystem.ORM.csproj.CopyComplete
+C:\Users\user\source\repos\CoiffeurAppointmentSystem\CoiffeurAppointmentSystem.ORM\obj\Debug\CoiffeurAppointmentSystem.ORM.dll
+C:\Users\user\source\repos\CoiffeurAppointmentSystem\CoiffeurAppointmentSystem.ORM\obj\Debug\CoiffeurAppointmentSystem.ORM.pdb
