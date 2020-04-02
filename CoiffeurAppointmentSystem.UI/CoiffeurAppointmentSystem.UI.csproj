@@ -146,12 +146,26 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin.Master.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.Master.designer.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
     <Compile Include="adminMainPage.aspx.cs">
       <DependentUpon>adminMainPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="adminMainPage.aspx.designer.cs">
       <DependentUpon>adminMainPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminNonFilter.Master.cs">
+      <DependentUpon>adminNonFilter.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminNonFilter.Master.designer.cs">
+      <DependentUpon>adminNonFilter.Master</DependentUpon>
     </Compile>
     <Compile Include="adminProcedurePage.aspx.cs">
       <DependentUpon>adminProcedurePage.aspx</DependentUpon>
@@ -299,6 +313,8 @@
     <Content Include="bin\roslyn\vbc.exe.config" />
     <Content Include="bin\roslyn\vbc.rsp" />
     <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="adminNonFilter.Master" />
+    <Content Include="admin.Master" />
     <None Include="packages.config" />
     <Content Include="User.Master" />
     <Content Include="UserNonFilter.Master" />
