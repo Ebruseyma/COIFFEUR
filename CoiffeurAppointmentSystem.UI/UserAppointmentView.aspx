@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User.Master" AutoEventWireup="true" CodeBehind="UserAppointmentView.aspx.cs" Inherits="CoiffeurAppointmentSystem.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MemberUser.Master" AutoEventWireup="true" CodeBehind="UserAppointmentView.aspx.cs" Inherits="CoiffeurAppointmentSystem.WebForm1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <link href="UserAppointmentView.css" rel="stylesheet" />
