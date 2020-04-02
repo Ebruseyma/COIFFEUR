@@ -37,13 +37,10 @@
 .list {
     max-width: 100%;
     width: 77%;
-<<<<<<< HEAD
     height: auto;
     background-color: forestgreen;
-=======
     height: 730px;
     background-color: lightgray;
->>>>>>> 81c82fd57469b506ed84369fedf6827cde9b1743
     margin-top: 53px;
     margin-left: 3.2%;
     float: left;

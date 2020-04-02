@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Appointments - C.A.S" Language="C#" MasterPageFile="~/MemberUser.Master" AutoEventWireup="true" CodeBehind="UserAppointmentPage.aspx.cs" Inherits="Coiffeur_Appointment_System.UserAppointmentPage" %>
+﻿<%@ Page Title="Appointments - C.A.S" Language="C#" MasterPageFile="~/MemberUser.Master" AutoEventWireup="true" CodeBehind="UserAppointmentPage.aspx.cs" Inherits="CoiffeurAppointmentSystem.UserAppointmentPage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

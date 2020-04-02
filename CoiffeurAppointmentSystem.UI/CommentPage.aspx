@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Comments - C.A.S" Language="C#" MasterPageFile="~/UserNonFilter.Master" AutoEventWireup="true" CodeBehind="CommentPage.aspx.cs" Inherits="Coiffeur_Appointment_System.CommentPage" %>
+﻿<%@ Page Title="Comments - C.A.S" Language="C#" MasterPageFile="~/UserNonFilter.Master" AutoEventWireup="true" CodeBehind="CommentPage.aspx.cs" Inherits="CoiffeurAppointmentSystem.CommentPage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
    
 </asp:Content>

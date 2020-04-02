@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Log In - C.A.S" Language="C#" MasterPageFile="~/NonNavbar.Master" AutoEventWireup="true" CodeBehind="UserLogIn.aspx.cs" Inherits="Coiffeur_Appointment_System.UserLogIn" %>
+﻿<%@ Page Title="Log In - C.A.S" Language="C#" MasterPageFile="~/NonNavbar.Master" AutoEventWireup="true" CodeBehind="UserLogIn.aspx.cs" Inherits="CoiffeurAppointmentSystem.UserLogIn" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style6 {

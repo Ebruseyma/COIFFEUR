@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Services - C.A.S" Language="C#" MasterPageFile="~/UserNonFilter.Master" AutoEventWireup="true" CodeBehind="ProcedurePage.aspx.cs" Inherits="Coiffeur_Appointment_System.ProcedurePage" %>
+﻿<%@ Page Title="Services - C.A.S" Language="C#" MasterPageFile="~/UserNonFilter.Master" AutoEventWireup="true" CodeBehind="ProcedurePage.aspx.cs" Inherits="CoiffeurAppointmentSystem.ProcedurePage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style8 {

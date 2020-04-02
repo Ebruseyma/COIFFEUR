@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Coiffeur_Appointment_System
+namespace CoiffeurAppointmentSystem
 {
 
 

@@ -10,7 +10,7 @@ using System.Configuration;
 
 
 
-namespace Coiffeur_Appointment_System
+namespace CoiffeurAppointmentSystem
 {
     public partial class ProcedurePage : System.Web.UI.Page
     {

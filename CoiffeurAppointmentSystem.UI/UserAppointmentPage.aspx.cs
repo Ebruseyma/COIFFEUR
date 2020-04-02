@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Coiffeur_Appointment_System
+namespace CoiffeurAppointmentSystem
 {
 	public partial class UserAppointmentPage : System.Web.UI.Page
 	{
