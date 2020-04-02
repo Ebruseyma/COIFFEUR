@@ -74,6 +74,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="adminMainPage.aspx" />
+    <Content Include="adminProcedurePage.aspx" />
     <Content Include="AppointmentPage.aspx" />
     <Content Include="bin\CoiffeurAppointmentSystem.ORM.dll" />
     <Content Include="bin\CoiffeurAppointmentSystem.ORM.pdb" />
@@ -142,6 +144,18 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adminMainPage.aspx.cs">
+      <DependentUpon>adminMainPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminMainPage.aspx.designer.cs">
+      <DependentUpon>adminMainPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminProcedurePage.aspx.cs">
+      <DependentUpon>adminProcedurePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminProcedurePage.aspx.designer.cs">
+      <DependentUpon>adminProcedurePage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AppointmentPage.aspx.cs">
       <DependentUpon>AppointmentPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
