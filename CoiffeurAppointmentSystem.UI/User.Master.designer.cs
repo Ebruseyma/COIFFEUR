@@ -7,11 +7,11 @@
 // </otomatik üretildi>
 //------------------------------------------------------------------------------
 
-namespace Coiffeur_Appointment_System
+namespace CoiffeurAppointmentSystem.UI
 {
 
 
-    public partial class User
+    public partial class adminNonFilter
     {
 
         /// <summary>

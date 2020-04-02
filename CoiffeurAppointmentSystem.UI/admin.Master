@@ -68,10 +68,10 @@
 
                     <table class="auto-style1">
                         <tr>
-                            <td class="auto-style5">INFORMATION</td>
-                            <td class="auto-style5">PROCEDURES</td>
-                            <td class="auto-style5">COMMENTS</td>
-                            <td class="auto-style5">CONTACT</td>
+                            <td class="auto-style5"><a href="infoPage.aspx"> INFORMATION</td>
+                            <td class="auto-style5"><a href="ProcedurePage.aspx">PROCEDURES</td>
+                            <td class="auto-style5"><a href="CommentPage.aspx">COMMENTS</td>
+                            <td class="auto-style5"><a href="CantactPage.aspx">CONTACT</td>
                         </tr>
                     </table>
 
