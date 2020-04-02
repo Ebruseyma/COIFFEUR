@@ -125,6 +125,7 @@
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
     <Content Include="CantactPage.aspx" />
     <Content Include="CommentPage.aspx" />
+    <Content Include="commentstyle.css" />
     <Content Include="Global.asax" />
     <Content Include="infoPage.aspx" />
     <Content Include="MainCss.css" />
@@ -135,6 +136,7 @@
     <Content Include="obj\Debug\CoiffeurAppointmentSystem.UI.pdb" />
     <Content Include="ProcedurePage.aspx" />
     <Content Include="SignUpPage.aspx" />
+    <Content Include="StyleSheet1.css" />
     <Content Include="UserAppointmentPage.aspx" />
     <Content Include="UserAppointmentView.aspx" />
     <Content Include="UserAppointmentView.css" />
@@ -146,12 +148,14 @@
   <ItemGroup>
     <Compile Include="adminMainPage.aspx.cs">
       <DependentUpon>adminMainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="adminMainPage.aspx.designer.cs">
       <DependentUpon>adminMainPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="adminProcedurePage.aspx.cs">
       <DependentUpon>adminProcedurePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="adminProcedurePage.aspx.designer.cs">
       <DependentUpon>adminProcedurePage.aspx</DependentUpon>

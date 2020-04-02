@@ -31,3 +31,14 @@ C:\Users\Dilek\Desktop\GITHUB\COIFFEUR\CoiffeurAppointmentSystem.ORM\obj\Debug\C
 C:\Users\Dilek\Desktop\GITHUB\COIFFEUR\CoiffeurAppointmentSystem.ORM\obj\Debug\CoiffeurAppointmentSystem.ORM.csproj.CopyComplete
 C:\Users\Dilek\Desktop\GITHUB\COIFFEUR\CoiffeurAppointmentSystem.ORM\obj\Debug\CoiffeurAppointmentSystem.ORM.dll
 C:\Users\Dilek\Desktop\GITHUB\COIFFEUR\CoiffeurAppointmentSystem.ORM\obj\Debug\CoiffeurAppointmentSystem.ORM.pdb
+C:\Users\kubra\OneDrive\Masaüstü\şeymanın attığı\COIFFEUR\CoiffeurAppointmentSystem.ORM\bin\Debug\CoiffeurAppointmentSystem.ORM.dll.config
+C:\Users\kubra\OneDrive\Masaüstü\şeymanın attığı\COIFFEUR\CoiffeurAppointmentSystem.ORM\bin\Debug\CoiffeurAppointmentSystem.ORM.dll
+C:\Users\kubra\OneDrive\Masaüstü\şeymanın attığı\COIFFEUR\CoiffeurAppointmentSystem.ORM\bin\Debug\CoiffeurAppointmentSystem.ORM.pdb
+C:\Users\kubra\OneDrive\Masaüstü\şeymanın attığı\COIFFEUR\CoiffeurAppointmentSystem.ORM\bin\Debug\EntityFramework.dll
+C:\Users\kubra\OneDrive\Masaüstü\şeymanın attığı\COIFFEUR\CoiffeurAppointmentSystem.ORM\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kubra\OneDrive\Masaüstü\şeymanın attığı\COIFFEUR\CoiffeurAppointmentSystem.ORM\bin\Debug\EntityFramework.xml
+C:\Users\kubra\OneDrive\Masaüstü\şeymanın attığı\COIFFEUR\CoiffeurAppointmentSystem.ORM\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kubra\OneDrive\Masaüstü\şeymanın attığı\COIFFEUR\CoiffeurAppointmentSystem.ORM\obj\Debug\CoiffeurAppointmentSystem.ORM.csprojAssemblyReference.cache
+C:\Users\kubra\OneDrive\Masaüstü\şeymanın attığı\COIFFEUR\CoiffeurAppointmentSystem.ORM\obj\Debug\CoiffeurAppointmentSystem.ORM.csproj.CopyComplete
+C:\Users\kubra\OneDrive\Masaüstü\şeymanın attığı\COIFFEUR\CoiffeurAppointmentSystem.ORM\obj\Debug\CoiffeurAppointmentSystem.ORM.dll
+C:\Users\kubra\OneDrive\Masaüstü\şeymanın attığı\COIFFEUR\CoiffeurAppointmentSystem.ORM\obj\Debug\CoiffeurAppointmentSystem.ORM.pdb
