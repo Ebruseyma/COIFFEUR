@@ -37,7 +37,7 @@
 .list {
     max-width: 100%;
     width: 77%;
-    height: 730px;
+    height: auto;
     background-color: forestgreen;
     margin-top: 53px;
     margin-left: 3.2%;
