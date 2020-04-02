@@ -10,3 +10,14 @@ C:\Users\LENOVO\Desktop\GITHUB\COIFFEUR\CoiffeurAppointmentSystem.ORM\obj\Debug\
 C:\Users\LENOVO\Desktop\GITHUB\COIFFEUR\CoiffeurAppointmentSystem.ORM\obj\Debug\CoiffeurAppointmentSystem.ORM.csproj.CopyComplete
 C:\Users\LENOVO\Desktop\GITHUB\COIFFEUR\CoiffeurAppointmentSystem.ORM\obj\Debug\CoiffeurAppointmentSystem.ORM.dll
 C:\Users\LENOVO\Desktop\GITHUB\COIFFEUR\CoiffeurAppointmentSystem.ORM\obj\Debug\CoiffeurAppointmentSystem.ORM.pdb
+C:\Users\Beyza\Desktop\proje\COIFFEUR\CoiffeurAppointmentSystem.ORM\bin\Debug\CoiffeurAppointmentSystem.ORM.dll.config
+C:\Users\Beyza\Desktop\proje\COIFFEUR\CoiffeurAppointmentSystem.ORM\bin\Debug\CoiffeurAppointmentSystem.ORM.dll
+C:\Users\Beyza\Desktop\proje\COIFFEUR\CoiffeurAppointmentSystem.ORM\bin\Debug\CoiffeurAppointmentSystem.ORM.pdb
+C:\Users\Beyza\Desktop\proje\COIFFEUR\CoiffeurAppointmentSystem.ORM\bin\Debug\EntityFramework.dll
+C:\Users\Beyza\Desktop\proje\COIFFEUR\CoiffeurAppointmentSystem.ORM\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Beyza\Desktop\proje\COIFFEUR\CoiffeurAppointmentSystem.ORM\bin\Debug\EntityFramework.xml
+C:\Users\Beyza\Desktop\proje\COIFFEUR\CoiffeurAppointmentSystem.ORM\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Beyza\Desktop\proje\COIFFEUR\CoiffeurAppointmentSystem.ORM\obj\Debug\CoiffeurAppointmentSystem.ORM.csprojAssemblyReference.cache
+C:\Users\Beyza\Desktop\proje\COIFFEUR\CoiffeurAppointmentSystem.ORM\obj\Debug\CoiffeurAppointmentSystem.ORM.csproj.CopyComplete
+C:\Users\Beyza\Desktop\proje\COIFFEUR\CoiffeurAppointmentSystem.ORM\obj\Debug\CoiffeurAppointmentSystem.ORM.dll
+C:\Users\Beyza\Desktop\proje\COIFFEUR\CoiffeurAppointmentSystem.ORM\obj\Debug\CoiffeurAppointmentSystem.ORM.pdb
