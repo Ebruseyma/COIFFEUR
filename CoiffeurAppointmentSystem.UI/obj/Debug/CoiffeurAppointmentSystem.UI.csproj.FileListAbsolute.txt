@@ -304,3 +304,6 @@ C:\Users\kubra\OneDrive\Masaüstü\şeymanın attığı\COIFFEUR\CoiffeurAppoint
 C:\Users\kubra\OneDrive\Masaüstü\şeymanın attığı\COIFFEUR\CoiffeurAppointmentSystem.UI\obj\Debug\CoiffeurAppointmentSystem.UI.dll
 C:\Users\kubra\OneDrive\Masaüstü\şeymanın attığı\COIFFEUR\CoiffeurAppointmentSystem.UI\obj\Debug\CoiffeurAppointmentSystem.UI.pdb
 >>>>>>> 81c82fd57469b506ed84369fedf6827cde9b1743
+C:\Users\Beyza\Desktop\proje\COIFFEUR\CoiffeurAppointmentSystem.UI\obj\Debug\CoiffeurAppointmentSystem.UI.csprojAssemblyReference.cache
+C:\Users\Beyza\Desktop\proje\COIFFEUR\CoiffeurAppointmentSystem.UI\obj\Debug\CoiffeurAppointmentSystem.UI.dll
+C:\Users\Beyza\Desktop\proje\COIFFEUR\CoiffeurAppointmentSystem.UI\obj\Debug\CoiffeurAppointmentSystem.UI.pdb

@@ -5,16 +5,11 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Coiffeur_Appointment_System
+namespace CoiffeurAppointmentSystem.UI
 {
-    public partial class MemberMain : System.Web.UI.Page
+    public partial class Pop_Up : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void DataList1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
