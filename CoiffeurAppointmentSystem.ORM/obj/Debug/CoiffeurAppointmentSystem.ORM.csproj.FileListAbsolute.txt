@@ -9,3 +9,14 @@ C:\Users\user\source\repos\CoiffeurAppointmentSystem\CoiffeurAppointmentSystem.O
 C:\Users\user\source\repos\CoiffeurAppointmentSystem\CoiffeurAppointmentSystem.ORM\obj\Debug\CoiffeurAppointmentSystem.ORM.csproj.CopyComplete
 C:\Users\user\source\repos\CoiffeurAppointmentSystem\CoiffeurAppointmentSystem.ORM\obj\Debug\CoiffeurAppointmentSystem.ORM.dll
 C:\Users\user\source\repos\CoiffeurAppointmentSystem\CoiffeurAppointmentSystem.ORM\obj\Debug\CoiffeurAppointmentSystem.ORM.pdb
+C:\Users\Dilek\Desktop\Yeni klasör (2)\COIFFEUR\CoiffeurAppointmentSystem.ORM\bin\Debug\CoiffeurAppointmentSystem.ORM.dll.config
+C:\Users\Dilek\Desktop\Yeni klasör (2)\COIFFEUR\CoiffeurAppointmentSystem.ORM\bin\Debug\CoiffeurAppointmentSystem.ORM.dll
+C:\Users\Dilek\Desktop\Yeni klasör (2)\COIFFEUR\CoiffeurAppointmentSystem.ORM\bin\Debug\CoiffeurAppointmentSystem.ORM.pdb
+C:\Users\Dilek\Desktop\Yeni klasör (2)\COIFFEUR\CoiffeurAppointmentSystem.ORM\bin\Debug\EntityFramework.dll
+C:\Users\Dilek\Desktop\Yeni klasör (2)\COIFFEUR\CoiffeurAppointmentSystem.ORM\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Dilek\Desktop\Yeni klasör (2)\COIFFEUR\CoiffeurAppointmentSystem.ORM\bin\Debug\EntityFramework.xml
+C:\Users\Dilek\Desktop\Yeni klasör (2)\COIFFEUR\CoiffeurAppointmentSystem.ORM\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Dilek\Desktop\Yeni klasör (2)\COIFFEUR\CoiffeurAppointmentSystem.ORM\obj\Debug\CoiffeurAppointmentSystem.ORM.csprojAssemblyReference.cache
+C:\Users\Dilek\Desktop\Yeni klasör (2)\COIFFEUR\CoiffeurAppointmentSystem.ORM\obj\Debug\CoiffeurAppointmentSystem.ORM.csproj.CopyComplete
+C:\Users\Dilek\Desktop\Yeni klasör (2)\COIFFEUR\CoiffeurAppointmentSystem.ORM\obj\Debug\CoiffeurAppointmentSystem.ORM.dll
+C:\Users\Dilek\Desktop\Yeni klasör (2)\COIFFEUR\CoiffeurAppointmentSystem.ORM\obj\Debug\CoiffeurAppointmentSystem.ORM.pdb

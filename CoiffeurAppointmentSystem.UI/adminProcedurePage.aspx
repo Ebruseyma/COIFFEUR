@@ -2,6 +2,51 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         
+
+     
+        .auto-style5 {
+            height: 43px;
+            width: 131px;
+            border-bottom: double;
+            border-bottom: medium solid darksalmon;
+        }
+
+        .auto-style6 {
+            height: 47px;
+        }
+
+        .auto-style7 {
+            width: 90%;
+            height: 31px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            border-bottom: medium solid darksalmon;
+        }
+
+        .auto-style8 {
+            height: 31px;
+            width: 100px;
+        }
+
+        .auto-style9 {
+            height: 31px;
+            width: 120px;
+            border-bottom: medium solid black;
+            background-color: gray;
+        }
+
+        .auto-style10 {
+            height: 43px;
+            width: 120px;
+            border-bottom: medium solid darksalmon;
+        }
+
+        .auto-style11 {
+            height: 43px;
+            width: 120px;
+        }
+
         .tableboard {
             border-radius: 10px;
             background-color: dimgray;
@@ -27,76 +72,63 @@
         .p {
             text-align: center;
         }
-        .auto-style6 {
-            text-align: right;
-            height: 30px;
-            width: 653px;
-        }
-        .auto-style7 {
-            height: 30px;
-            text-align: right;
-            width: 100%;
-        }
-        .auto-style8 {
-            width: 83%;
-        }
-        .auto-style9 {
-            height: 30px;
-            text-align: right;
-            width: 81%;
-        }
-        .auto-style10 {
-            width: 81%;
-        }
-        .auto-style11 {
-            height: 30px;
-            text-align: right;
-            width: 80%;
-        }
-        .auto-style12 {
-            width: 48%;
-        }
         .auto-style13 {
             height: 30px;
+            width: 212px;
+            font-style: normal;
             text-align: right;
-            width: 48%;
+            border-bottom: medium solid black;
+            background-color: gray;
         }
         .auto-style14 {
-            border-radius: 10px;
-            background-color: dimgray;
-            width: 73%;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 5%;
-            height: 447px;
+            height: 43px;
+            width: 212px;
+            border-bottom: medium solid darksalmon;
         }
         .auto-style15 {
+            height: 30px;
+            width: 288px;
+            border-bottom: medium solid black;
+            background-color: gray;
+        }
+        .auto-style16 {
+            height: 32px;
+            width: 288px;
+            text-align: center;
+            border-bottom: medium solid darksalmon;
+        }
+        .auto-style17 {
+            width: 602px;
+            height: 30px;
+            font-size: 15px;
             text-align: right;
-            height: 363px;
-            width: 653px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            padding: 4%;
+            background-color: lightgray;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <p>
-        <p class="p">
+    <p class="p">
         PROCEDURES&nbsp;
     </p>
-    <div class="auto-style14">
-        <table border="0" class="auto-style15">
+    <div class="tableboard">
+        <table border="0" class="auto-style17">
             <tr>
-                <th class="auto-style13">Procedure</th>
+                <th align="center" class="auto-style13">Procedure</th>
                 <th class="auto-style9">Approximate Time</th>
-                <th class="auto-style4">Price</th>
+                <th class="auto-style15">Price</th>
             </tr>
             <tr>
-                <td align="center" class="auto-style12">Haircut</td>
+                <td align="center" class="auto-style14">Haircut</td>
                 <td align="center" class="auto-style10">30 minute</td>
-                <td align="center" class="auto-style5">30 ₺</td>
+                <td align="center" class="auto-style16">30 ₺</td>
                 <tr>
-                    <td align="center" class="auto-style12">Haircut</td>
+                    <td align="center" class="auto-style14">Haircut</td>
                     <td align="center" class="auto-style10">30 minute</td>
-                    <td align="center" class="auto-style5">30 ₺</td>
+                    <td align="center" class="auto-style16">30 ₺</td>
                     <tr>
                         <td colspan="3" class="auto-style6"></td>
                     </tr>
@@ -119,5 +151,5 @@
             </tr>
         </table>
         <asp:Button ID="Button1" runat="server" Text="ADD" CssClass="buttonstyle" />
-    </div></p>
+    </div>
 </asp:Content>
