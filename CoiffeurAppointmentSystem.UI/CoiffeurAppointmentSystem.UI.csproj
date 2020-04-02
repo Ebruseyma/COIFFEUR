@@ -125,6 +125,7 @@
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
     <Content Include="CantactPage.aspx" />
     <Content Include="CommentPage.aspx" />
+    <Content Include="commentstyle.css" />
     <Content Include="Global.asax" />
     <Content Include="img\dribble_04_1x.jpg" />
     <Content Include="img\iindir.jpg" />
@@ -140,6 +141,7 @@
     <Content Include="obj\Debug\CoiffeurAppointmentSystem.UI.pdb" />
     <Content Include="ProcedurePage.aspx" />
     <Content Include="SignUpPage.aspx" />
+    <Content Include="StyleSheet1.css" />
     <Content Include="UserAppointmentPage.aspx" />
     <Content Include="UserAppointmentView.aspx" />
     <Content Include="UserAppointmentView.css" />
