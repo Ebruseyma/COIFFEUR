@@ -125,6 +125,7 @@
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
     <Content Include="CantactPage.aspx" />
     <Content Include="CommentPage.aspx" />
+    <Content Include="deneme.css" />
     <Content Include="Global.asax" />
     <Content Include="img\dribble_04_1x.jpg" />
     <Content Include="img\iindir.jpg" />
