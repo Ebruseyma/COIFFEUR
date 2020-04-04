@@ -33,7 +33,7 @@
             <div class="info_one">
                 <h2><b>COIFFEUR NAME: MOON BEAUTY </b></h2>
                 <br />
-                <h3>PROCEDURES:  MakeMake up-Facial-Hair Cut-Eyelash Lifting</h3>
+                <h3>PROCEDURES:Makeee up-Facial-Hair Cut-Eyelash Lifting</h3>
                 <h3>RATING: <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star "></span>
