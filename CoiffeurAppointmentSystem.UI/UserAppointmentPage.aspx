@@ -5,9 +5,9 @@
     <h1 style="margin-top:30px;" class="auto-style7">
         <strong>Appointments</strong></h1>
     <p>
-        &nbsp;</p>
+        &nbsp;&nbsp;</p>
     <p>
-        &nbsp;</p>
+        &nbsp;&nbsp;</p>
     <p class="auto-style8">
         &nbsp;Current Appointments:</p>
     <p class="auto-style8">
