@@ -12,7 +12,7 @@
             <div class="info">
                 <h2><b>COIFFEUR NAME: HAIR COIFFEUR</b></h2>
                 <br />
-                <h3><b>PROCEDURES:  Hair Cut-Hair Coloring-Eyelash Lifting-Nail Arts</b></h3>
+                <h3><b>PROCEDURES:  Haair Cut-Hair Coloring-Eyelash Lifting-Nail Arts</b></h3>
                 <h3><b>RATING: </b><span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
@@ -33,7 +33,7 @@
             <div class="info_one">
                 <h2><b>COIFFEUR NAME: MOON BEAUTY </b></h2>
                 <br />
-                <h3>PROCEDURES: up-Facial-Hair Cut-Eyelash Lifting</h3>
+                <h3>PROCEDURES:Makeee up-Facial-Hair Cut-Eyelash Lifting</h3>
                 <h3>RATING: <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star "></span>
