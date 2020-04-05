@@ -28,7 +28,6 @@ C:\Users\user\Desktop\GITCOUFFEUR\COIFFEUR\CoiffeurAppointmentSystem.ORM\bin\Deb
 C:\Users\user\Desktop\GITCOUFFEUR\COIFFEUR\CoiffeurAppointmentSystem.ORM\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\user\Desktop\GITCOUFFEUR\COIFFEUR\CoiffeurAppointmentSystem.ORM\bin\Debug\EntityFramework.xml
 C:\Users\user\Desktop\GITCOUFFEUR\COIFFEUR\CoiffeurAppointmentSystem.ORM\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\user\Desktop\GITCOUFFEUR\COIFFEUR\CoiffeurAppointmentSystem.ORM\obj\Debug\CoiffeurAppointmentSystem.ORM.csprojAssemblyReference.cache
 C:\Users\user\Desktop\GITCOUFFEUR\COIFFEUR\CoiffeurAppointmentSystem.ORM\obj\Debug\CoiffeurAppointmentSystem.ORM.csproj.CoreCompileInputs.cache
 C:\Users\user\Desktop\GITCOUFFEUR\COIFFEUR\CoiffeurAppointmentSystem.ORM\obj\Debug\CoiffeurAppointmentSystem.ORM.csproj.CopyComplete
 C:\Users\user\Desktop\GITCOUFFEUR\COIFFEUR\CoiffeurAppointmentSystem.ORM\obj\Debug\CoiffeurAppointmentSystem.ORM.dll
