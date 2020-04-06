@@ -28,9 +28,7 @@
             width: 276px;
         }
         .auto-style5 {
-            text-align: center;
-            height: 32px;
-            
+            width: 250px;
         }
     </style>
 </head>
@@ -38,48 +36,41 @@
     <form id="form1" runat="server">
         
         <div style="width:100%; height:10%">
-            <div class="title">Coiffeur Appointment System</div>
+            <a href="adminMainPage.aspx">
+                <div class="title">Coiffeur Appointment System</div></a>
             <div class="nav"><asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
-                <table class="auto-style1">
-                    <tr>
-                        <td class="auto-style2">
-                            <asp:Label ID="Label1" runat="server" CssClass="navLabel" Text="Search:" Font-Size="X-Large"></asp:Label>
-                        </td>
-                        <td class="auto-style4">
-                            <asp:TextBox ID="TextBox1" runat="server" Width="250px"></asp:TextBox>
-                        </td>
-                        <td class="auto-style3">
-                            <asp:Label ID="Label2" runat="server" Text="Log In" CssClass="navLabel" Font-Size="X-Large"></asp:Label>
-&nbsp; |&nbsp;
-                            <asp:Label ID="Label3" runat="server" Text="Sign Up" CssClass="navLabel" Font-Size="X-Large"></asp:Label>
-                        </td>
-                    </tr>
-                </table>
+                 <table class="auto-style1">
+                     <tr class="auto-style7">
+                         <td class="auto-style2">
+                             <asp:Label ID="Label1" runat="server" CssClass="navLabelSearch" Text="Search:" Font-Size="X-Large"></asp:Label>
+                         </td>
+                         <td class="auto-style4">
+                             <input id="Text1" class="auto-style5" placeholder="Search a coiffeur..." type="text" /></td>
+                         <td class="auto-style3">
+                             <asp:Label ID="Label2" runat="server" Text="[Admin Name]" CssClass="navLabelSearch" Font-Size="X-Large"></asp:Label>
+                             &nbsp;<asp:Label ID="Label11" runat="server" CssClass="navLabelSearch" Font-Size="Larger" Text="|"></asp:Label>
+                             &nbsp;&nbsp;
+                             <div class="dropdown">
+                                 <button class="dropbtn">
+                                     <asp:Label ID="Label12" runat="server" Text="Menu" Font-Size="X-Large"></asp:Label>
+                                 </button>
+                                 <div class="dropdown-content">
+                                     <a href="AdminStaffs.aspx" >Staffs</a>
+                                     <a href="adminProcedurePage.aspx" >Procedures</a>
+                                     <a href="MainPage.aspx" >Sign out</a>
+                                 </div>
+                             </div>
+                             &nbsp; </td>
+                     </tr>
+                 </table>
             </asp:ContentPlaceHolder></div>
-        </div>
+            </div>
+      
 
         <div style="width:1500px; height: 20px"></div>
 
         <div style ="width:90%; height: 100%">
-            <div class="list2">
-                <div class="navinfo"><asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
-
-                
-
-                    <table class="auto-style1">
-                        <tr>
-                            <td class="auto-style5"><a href="infoPage.aspx"> INFORMATION</td>
-                            <td class="auto-style5"><a href="ProcedurePage.aspx">PROCEDURES</td>
-                            <td class="auto-style5"><a href="CommentPage.aspx">COMMENTS</td>
-                            <td class="auto-style5"><a href="CantactPage.aspx">CONTACT</td>
-                        </tr>
-                    </table>
-
-                
-
-            </asp:ContentPlaceHolder></div>
-                
-                
+            <div class="list2">          
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder></div>
             

@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace CoiffeurAppointmentSystem.UI
 {
-    public partial class adminNonFilter : System.Web.UI.MasterPage
+    public partial class AdminAddStaff : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
