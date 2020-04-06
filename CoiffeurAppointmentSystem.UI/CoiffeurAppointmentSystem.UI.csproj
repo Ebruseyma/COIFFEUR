@@ -74,8 +74,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminAddStaff.aspx" />
     <Content Include="adminMainPage.aspx" />
     <Content Include="adminProcedurePage.aspx" />
+    <Content Include="AdminStaffs.aspx" />
     <Content Include="AppointmentPage.aspx" />
     <Content Include="bin\CoiffeurAppointmentSystem.ORM.dll" />
     <Content Include="bin\CoiffeurAppointmentSystem.ORM.pdb" />
@@ -136,15 +138,11 @@
     <Content Include="MainCss.css" />
     <Content Include="MainPage.aspx" />
     <Content Include="MemberMain.aspx" />
-    <Content Include="Pop-Up.aspx" />
     <Content Include="ProcedurePage.aspx" />
     <Content Include="SignUpPage.aspx" />
     <Content Include="UserAppointmentPage.aspx" />
-    <Content Include="UserAppointmentView.aspx" />
-    <Content Include="UserAppointmentView.css" />
     <Content Include="UserLogIn.aspx" />
-    <Content Include="UserMainPage.aspx" />
-    <Content Include="UserMainPage.css" />
+    <Content Include="UserSettings.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -157,6 +155,13 @@
     <Compile Include="admin.Master.designer.cs">
       <DependentUpon>admin.Master</DependentUpon>
     </Compile>
+    <Compile Include="AdminAddStaff.aspx.cs">
+      <DependentUpon>AdminAddStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminAddStaff.aspx.designer.cs">
+      <DependentUpon>AdminAddStaff.aspx</DependentUpon>
+    </Compile>
     <Compile Include="adminMainPage.aspx.cs">
       <DependentUpon>adminMainPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -164,19 +169,19 @@
     <Compile Include="adminMainPage.aspx.designer.cs">
       <DependentUpon>adminMainPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="adminNonFilter.Master.cs">
-      <DependentUpon>adminNonFilter.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="adminNonFilter.Master.designer.cs">
-      <DependentUpon>adminNonFilter.Master</DependentUpon>
-    </Compile>
     <Compile Include="adminProcedurePage.aspx.cs">
       <DependentUpon>adminProcedurePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="adminProcedurePage.aspx.designer.cs">
       <DependentUpon>adminProcedurePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminStaffs.aspx.cs">
+      <DependentUpon>AdminStaffs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminStaffs.aspx.designer.cs">
+      <DependentUpon>AdminStaffs.aspx</DependentUpon>
     </Compile>
     <Compile Include="AppointmentPage.aspx.cs">
       <DependentUpon>AppointmentPage.aspx</DependentUpon>
@@ -237,13 +242,6 @@
     <Compile Include="NonNavbar.Master.designer.cs">
       <DependentUpon>NonNavbar.Master</DependentUpon>
     </Compile>
-    <Compile Include="Pop-Up.aspx.cs">
-      <DependentUpon>Pop-Up.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pop-Up.aspx.designer.cs">
-      <DependentUpon>Pop-Up.aspx</DependentUpon>
-    </Compile>
     <Compile Include="ProcedurePage.aspx.cs">
       <DependentUpon>ProcedurePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -273,13 +271,6 @@
     <Compile Include="UserAppointmentPage.aspx.designer.cs">
       <DependentUpon>UserAppointmentPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UserAppointmentView.aspx.cs">
-      <DependentUpon>UserAppointmentView.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserAppointmentView.aspx.designer.cs">
-      <DependentUpon>UserAppointmentView.aspx</DependentUpon>
-    </Compile>
     <Compile Include="UserLogIn.aspx.cs">
       <DependentUpon>UserLogIn.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -287,19 +278,19 @@
     <Compile Include="UserLogIn.aspx.designer.cs">
       <DependentUpon>UserLogIn.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UserMainPage.aspx.cs">
-      <DependentUpon>UserMainPage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserMainPage.aspx.designer.cs">
-      <DependentUpon>UserMainPage.aspx</DependentUpon>
-    </Compile>
     <Compile Include="UserNonFilter.Master.cs">
       <DependentUpon>UserNonFilter.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UserNonFilter.Master.designer.cs">
       <DependentUpon>UserNonFilter.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UserSettings.aspx.cs">
+      <DependentUpon>UserSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserSettings.aspx.designer.cs">
+      <DependentUpon>UserSettings.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -317,7 +308,6 @@
     <Content Include="bin\roslyn\vbc.exe.config" />
     <Content Include="bin\roslyn\vbc.rsp" />
     <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
-    <Content Include="adminNonFilter.Master" />
     <Content Include="admin.Master" />
     <None Include="packages.config" />
     <Content Include="UserNonFilter.Master" />

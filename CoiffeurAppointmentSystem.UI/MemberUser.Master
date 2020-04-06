@@ -37,34 +37,36 @@
         .auto-style7 {
             text-align: left;
         }
+        .auto-style8 {
+            height: 20px;
+            width: 250px;
+        }
         </style>
 </head>
 <body>
     <form id="form1" runat="server">
         
         <div style="width:100%; height:10%">
-            <div class="title">Coiffeur Appointment System</div>
+            <a href="MemberMain.aspx">
+                <div class="title">Coiffeur Appointment System</div></a>
             <div class="nav"><asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
                 <table class="auto-style1">
                     <tr class="auto-style7">
                         <td class="auto-style2">
-                            <asp:Label ID="Label1" runat="server" CssClass="navLabel" Text="Search:" Font-Size="X-Large"></asp:Label>
+                            <asp:Label ID="Label1" runat="server" CssClass="navLabelSearch" Text="Search:" Font-Size="X-Large"></asp:Label>
                         </td>
                         <td class="auto-style4">
-                            <asp:TextBox ID="TextBox1" runat="server" Width="250px"></asp:TextBox>
-                        </td>
+                            <input id="Text1" class="auto-style8" type="text" /></td>
                         <td class="auto-style3">
                             <asp:Label ID="Label2" runat="server" Text="[User Name]" CssClass="navLabel" Font-Size="X-Large"></asp:Label>
-                            &nbsp;<asp:Label ID="Label11" runat="server" CssClass="navLabel" Font-Size="Larger" Text="|"></asp:Label>
+                            &nbsp;<asp:Label ID="Label11" runat="server" CssClass="navLabelSearch" Font-Size="Larger" Text="|"></asp:Label>
                             &nbsp;&nbsp;
                             <div class="dropdown">
                                 <button class="dropbtn">
                                     <asp:Label ID="Label12" runat="server" Text="Menu" Font-Size="X-Large"></asp:Label>
                                 </button>
                                 <div class="dropdown-content">
-                                    <a href="#" >Appointments</a>
-                                    <a href="#" >Settings</a>
-                                    <a href="#" >Sign out</a>
+                                    <a href="UserAppointmentPage.aspx" >Appointments</a> <a href="UserSettings.aspx" >Settings</a> <a href="MainPage.aspx" >Sign out</a>
                                 </div>
                             </div>
                             &nbsp; </td>
@@ -80,56 +82,56 @@
                 <table class="auto-style5">
                     <tr>
                         <td class="auto-style6">
-                            <asp:Label ID="Label4" runat="server" Font-Size="XX-Large" Text="Filter"></asp:Label>
+                            <asp:Label ID="Label4" runat="server" Font-Size="40px" Text="Filter" Font-Bold="False"></asp:Label>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <asp:Label ID="Label5" runat="server" Text="Country:"></asp:Label>
+                            <asp:Label ID="Label5" runat="server" Text="Country:" CssClass="filterLabel" Font-Size="X-Large"></asp:Label>
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style6">
-                            <asp:DropDownList ID="DropDownList1" runat="server" Height="16px" Width="127px">
+                            <asp:DropDownList ID="DropDownList1" runat="server" Height="22px" Width="130px">
                             </asp:DropDownList>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <asp:Label ID="Label6" runat="server" Text="Town:"></asp:Label>
+                            <asp:Label ID="Label6" runat="server" Text="Town:" CssClass="filterLabel" Font-Size="X-Large"></asp:Label>
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style6">
-                            <asp:DropDownList ID="DropDownList2" runat="server" Height="16px" Width="127px">
+                            <asp:DropDownList ID="DropDownList2" runat="server" Height="22px" Width="130px">
                             </asp:DropDownList>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <asp:Label ID="Label7" runat="server" Text="Services:"></asp:Label>
+                            <asp:Label ID="Label7" runat="server" Text="Services:" CssClass="filterLabel" Font-Size="X-Large"></asp:Label>
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style6">
-                            <asp:DropDownList ID="DropDownList3" runat="server" Height="16px" Width="127px">
+                            <asp:DropDownList ID="DropDownList3" runat="server" Height="22px" Width="130px">
                             </asp:DropDownList>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <asp:Label ID="Label8" runat="server" Text="Budget:"></asp:Label>
+                            <asp:Label ID="Label8" runat="server" Text="Budget:" CssClass="filterLabel" Font-Size="X-Large"></asp:Label>
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style6"><asp:TextBox ID="TextBox2" runat="server" Width="30px"></asp:TextBox>
+                        <td class="auto-style6"><asp:TextBox ID="TextBox2" runat="server" Width="36px" Height="22px"></asp:TextBox>
 &nbsp;<asp:Label ID="Label9" runat="server" Text="- "></asp:Label>
-                            <asp:TextBox ID="TextBox3" runat="server" Width="30px"></asp:TextBox>
+                            <asp:TextBox ID="TextBox3" runat="server" Width="36px" Height="22px"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <asp:Button ID="Button1" runat="server" Text="List" Width="43px" />
+                            <asp:Button ID="Button1" runat="server" Text="List" Width="65px" CssClass="filterButton" Height="34px" />
 &nbsp;&nbsp;
                             <asp:Label ID="Label10" runat="server" Text="Clear"></asp:Label>
                         </td>
