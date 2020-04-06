@@ -1,67 +1,167 @@
-﻿.title {
+﻿body {
+    width: 100%;
+    height: 1080px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    z-index: 0;
+}
+
+    body::after {
+        content: "";
+        background-image: url('Images/background.jpg');
+        background-attachment: scroll;
+        opacity: 0.7;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+.title {
     font-family: Garamond;
-    font-size: 35px;
+    font-size: 45px;
     color: #110505;
     width: 1%;
     float: left;
     margin-left: 3%;
     margin-top: 1%;
+    text-shadow: 8px 8px 3px rgba(0,0,0,0.2);
 }
 
 .nav {
     width: 63%;
-    height: 40px;
+    height: 35px;
     background-color: #403B3B;
     margin-top: 59px;
     margin-left: 16.3%;
-    float:left;
+    float: left;
 }
+
+a.info1, a.info2, a.info3, a.info4 {
+    font-family: Garamond;
+    color: #f2efeb;
+    font-size: 18px;
+    padding: 5px;
+}
+
+    a.info1:hover {
+        background-color: #f1f1f1;
+        color: black;
+    }
+
+    a.info2:hover {
+        background-color: #f1f1f1;
+        color: black;
+    }
+
+    a.info3:hover {
+        background-color: #f1f1f1;
+        color: black;
+    }
+
+    a.info4:hover {
+        background-color: #f1f1f1;
+        color: black;
+    }
 
 .navinfo {
     width: 100%;
     height: 35px;
     background-color: #403B3B;
-    
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
 .filter {
- 
     width: 13%;
     height: 500px;
-    background-color: orangered;
+    background-color: rgba(255,255,255,0.9);
     margin-top: 120px;
     margin-left: -1.5%;
     float: left;
+    border-radius: 12px;
 }
+
+.filterLabel {
+    font-family: Garamond;
+    color: rgb(23,12,11);
+    padding-left: 5px;
+}
+
+.filterButton {
+    background: linear-gradient(to bottom, #e3d6cf 5%, #b8b8b8 100%);
+    background-color: #e3d6cf;
+    border-radius: 10px;
+    border: 2px solid #f0f3f5;
+    display: inline-block;
+    cursor: pointer;
+    color: #08060d;
+    font-family: Garamond;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+    .filterButton:hover {
+        background: linear-gradient(to bottom, #b8b8b8 5%, #e3d6cf 100%);
+        background-color: #b8b8b8;
+    }
+
+    .filterButton:active {
+        position: relative;
+        top: 1px;
+    }
 
 .list {
     max-width: 100%;
     width: 77%;
-    height: auto;
-    background-color: forestgreen;
     height: 730px;
-    background-color: lightgray;
+    background-color: rgba(255,255,255,0.9);
     margin-top: 53px;
     margin-left: 3.2%;
     float: left;
+    border-radius: 12px;
 }
+
 
 .list2 {
     width: 77%;
-    height: 1000px;
-    background-color: lightgray;
+    height: 750px;
+    background-color: rgba(255,255,255,0.9);
     margin-top: 35px;
     margin-left: 19%;
     float: left;
+    border-radius: 12px;
 }
 
-.navLabel {
+.navLabel /*.navLabel2 */ {
     font-family: Garamond;
-    color: aliceblue;
+    color: #f2efeb;
+    padding: 5px 8px 5px 6px;
 }
+
+.navLabelSearch {
+    font-family: Garamond;
+    color: #f2efeb;
+    padding: 5px 8px 5px 6px;
+}
+
+.navLabel:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+/*.navLabel2:hover {
+        background-color: #f1f1f1;
+        color: black;
+        border-top-right-radius:12px;
+        border-bottom-right-radius:12px;
+    }*/
 
 .searchBox {
-    margin-left:50%;
+    margin-left: 50%;
     margin-top: 30px;
 }
 
@@ -72,7 +172,7 @@
 .dropbtn {
     background-color: #403B3B;
     color: white;
-    padding: 4px;
+    padding: 2px 4px 2px 4px;
     font-size: 16px;
     border: none;
     font-family: Garamond;
@@ -92,7 +192,7 @@
     z-index: 1;
 }
 
-.dropdown-content a {
+    .dropdown-content a {
         color: black;
         padding: 5px 10px;
         margin-top: 3px;
@@ -100,12 +200,12 @@
         text-align: left;
         display: block;
         font-size: large;
-        font-family:Garamond;
-}
+        font-family: Garamond;
+    }
 
-.dropdown-content a:hover {
-        background-color: #ddd;
-}
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
 
 .dropdown:hover .dropdown-content {
     display: block;
