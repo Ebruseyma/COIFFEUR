@@ -35,7 +35,7 @@ integrated Security=True;"))
                 }
                 else
                 {
-                    lblErrorMessage.Visible = true; ;
+                    lblErrorMessage.Visible = true; 
                     
                 }
 
