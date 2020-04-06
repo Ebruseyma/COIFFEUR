@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="User.master.cs" Inherits="CoiffeurAppointmentSystem.User" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MemberUser.master.cs" Inherits="CoiffeurAppointmentSystem.MemberUser" %>
 
 <!DOCTYPE html>
 
@@ -58,7 +58,7 @@
                         <td class="auto-style4">
                             <input id="Text1" class="auto-style8" type="text" /></td>
                         <td class="auto-style3">
-                            <asp:Label ID="Label2" runat="server" Text="[User Name]" CssClass="navLabel" Font-Size="X-Large"></asp:Label>
+                            <asp:Label ID="lblUserName" runat="server" Text="[User Name]" CssClass="navLabel" Font-Size="X-Large"></asp:Label>
                             &nbsp;<asp:Label ID="Label11" runat="server" CssClass="navLabelSearch" Font-Size="Larger" Text="|"></asp:Label>
                             &nbsp;&nbsp;
                             <div class="dropdown">

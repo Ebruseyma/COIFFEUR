@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Data;
+using CoiffeurAppointmentSystem.ORM;
 
 namespace CoiffeurAppointmentSystem
 {
@@ -18,29 +19,45 @@ namespace CoiffeurAppointmentSystem
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            using (SqlConnection sqlCon = new SqlConnection(@"Data Source=DILEK\SQLEXPRESS01;initial Catalog=CoiffeurAppointmentSystem;
-integrated Security=True;"))
-
+            using (Entities db = new Entities())
             {
-                sqlCon.Open();
-                string query = "SELECT COUNT(1) FROM cas.person WHERE username=@username AND password=@password";
-                SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
-                sqlCmd.Parameters.AddWithValue("@username", username.Text.Trim());
-                sqlCmd.Parameters.AddWithValue("@password", txtPassword.Text.Trim());
-                int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
-                if (count == 1)
+                var usermail = txtUserName.Text.Trim();
+                var password = txtPassword.Text.Trim();
+                var loginedUser = db.people.FirstOrDefault(a => a.email == usermail && a.password == password);
+                if (loginedUser != null)
                 {
-                    Session["username"] = username.Text.Trim();
+                    Session["username"] = loginedUser;
                     Response.Redirect("MainPage.aspx");
                 }
                 else
                 {
-                    lblErrorMessage.Visible = true; 
-                    
+                    lblErrorMessage.Visible = true;
+
                 }
-
-
             }
+            //            using (SqlConnection sqlCon = new SqlConnection(@"Data Source=MSI\SQLEXPRESS01;initial Catalog=CoiffeurAppointmentSystem;
+            //integrated Security=True;"))
+
+            //            {
+            //                sqlCon.Open();
+            //                string query = "SELECT COUNT(1) FROM cas.person WHERE username=@username AND password=@password";
+            //                SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
+            //                sqlCmd.Parameters.AddWithValue("@username", username.Text.Trim());
+            //                sqlCmd.Parameters.AddWithValue("@password", txtPassword.Text.Trim());
+            //                int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
+            //                if (count == 1)
+            //                {
+            //                    Session["username"] = username.Text.Trim();
+            //                    Response.Redirect("MainPage.aspx");
+            //                }
+            //                else
+            //                {
+            //                    lblErrorMessage.Visible = true;
+
+            //                }
+
+
+            //      }
 
         }
     }
