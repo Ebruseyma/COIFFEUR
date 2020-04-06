@@ -7,7 +7,7 @@
     <p>
         &nbsp;</p>
     <p>
-        &nbsp;</p>
+        &nbsp; </p>
     <p class="auto-style8">
         &nbsp;Current Appointments:</p>
     <p class="auto-style8">
