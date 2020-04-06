@@ -10,7 +10,7 @@
             <div class="first_border">
             </div>
             <div class="info">
-                <h2><b>COIFFEUR NAME: HAIR COIFFEUR</b></h2>
+                <h2><b>COIFFEUR NAME: HAIiiR COIFFEUR</b></h2>
                 <br />
                 <h3><b>PROCEDURES:  Haair Cut-Hair Coloring-Eyelash Lifting-Nail Arts</b></h3>
                 <h3><b>RATING: </b><span class="fa fa-star checked"></span>
