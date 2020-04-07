@@ -147,7 +147,7 @@
         <tr>
             <td class="auto-style9">
                 <input id="Checkbox5" class="auto-style11" type="checkbox" /></td>
-            <td class="auto-style12">I would like to recieve personalized and other revelant emails about campaigns, promotions and news.</td>
+            <td class="auto-style12">I would    like to recieve personalized and other revelant emails about campaigns, promotions and news.</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
