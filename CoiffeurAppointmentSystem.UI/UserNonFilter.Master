@@ -33,11 +33,7 @@
             height: 32px;
             
         }
-        .auto-style6 {
-            width: 250px;
-            height: 16px;
-        }
-    </style>
+        </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -52,7 +48,8 @@
                             <asp:Label ID="Label1" runat="server" CssClass="navLabelSearch" Text="Search:" Font-Size="X-Large"></asp:Label>
                         </td>
                         <td class="auto-style4">
-                            <input id="Text1" class="auto-style6" placeholder="Search a coiffeur..." type="text" /></td>
+                            <asp:TextBox ID="TextBox1" runat="server" Width="250px"></asp:TextBox>
+                        </td>
                         <td class="auto-style3"><a href="UserLogIn.aspx">
                             <asp:Label ID="Label2" runat="server" Text="Log In" CssClass="navLabel" Font-Size="X-Large"></asp:Label>
                             </a>&nbsp;
