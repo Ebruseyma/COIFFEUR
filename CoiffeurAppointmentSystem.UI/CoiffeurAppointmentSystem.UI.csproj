@@ -137,6 +137,7 @@
     <Content Include="infoPage.aspx" />
     <Content Include="MainCss.css" />
     <Content Include="MainPage.aspx" />
+    <Content Include="MainPage2.aspx" />
     <Content Include="MemberMain.aspx" />
     <Content Include="ProcedurePage.aspx" />
     <Content Include="SignUpPage.aspx" />
@@ -220,6 +221,13 @@
     </Compile>
     <Compile Include="MainPage.aspx.designer.cs">
       <DependentUpon>MainPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage2.aspx.cs">
+      <DependentUpon>MainPage2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainPage2.aspx.designer.cs">
+      <DependentUpon>MainPage2.aspx</DependentUpon>
     </Compile>
     <Compile Include="MemberMain.aspx.cs">
       <DependentUpon>MemberMain.aspx</DependentUpon>

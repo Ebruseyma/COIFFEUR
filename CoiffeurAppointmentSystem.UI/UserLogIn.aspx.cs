@@ -27,7 +27,7 @@ namespace CoiffeurAppointmentSystem
                 if (loginedUser != null)
                 {
                     Session["username"] = loginedUser;
-                    Response.Redirect("MainPage.aspx");
+                    Response.Redirect("MainPage2.aspx");
                 }
                 else
                 {
