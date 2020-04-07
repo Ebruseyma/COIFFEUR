@@ -1,6 +1,23 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MemberUser.Master" AutoEventWireup="true" CodeBehind="UserSettings.aspx.cs" Inherits="CoiffeurAppointmentSystem.UI.UserSettings" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
+        .auto-style8 {
+            width: 100%;
+            height: 728px;
+        }
+        .auto-style10 {
+            width: 185px;
+        }
+        .auto-style11 {
+            width: 23px;
+            height: 21px;
+        }
+        .auto-style13 {
+            width: 210px;
+        }
+        .auto-style14 {
+            width: 130px;
+        }
         .auto-style15 {
             text-align: right;
             width: 341px;
@@ -18,6 +35,11 @@
         .auto-style18 {
             width: 341px;
         }
+        .auto-style19 {
+            
+            width: 110px;
+            height: 41px;
+        }
         .auto-style20 {
             height: 76px;
             width: 379px;
@@ -34,19 +56,14 @@
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <table class="auto-style22">
         <tr>
-            <td class="auto-style16">
-                <asp:Label ID="Label13" runat="server" CssClass="filterLabel" Font-Size="40px" Text="Settings"></asp:Label>
-            </td>
+            <td class="auto-style16">Settings</td>
             <td class="auto-style20">&nbsp;</td>
             <td class="auto-style17"></td>
         </tr>
         <tr>
-            <td class="auto-style15">
-                <asp:Label ID="Label14" runat="server" CssClass="filterLabel" Font-Size="X-Large" Text="First Name: "></asp:Label>
-            </td>
+            <td class="auto-style15">First Name:</td>
             <td class="auto-style21">
-                <asp:TextBox ID="TextBox5" runat="server" Height="22px" Width="185px"></asp:TextBox>
-            </td>
+                <input id="Text1" class="auto-style10" type="text" required="required" value:"char" maxlength="15" autofocus="autofocus" placeholder="Enter your name"/></td>
             <td rowspan="4" class="auto-style7">
                 <asp:Image ID="Image1" runat="server" Height="143px" Width="224px" />
                 <br />
@@ -54,56 +71,37 @@
             </td>
         </tr>
         <tr>
-            <td class="auto-style15">
-                <asp:Label ID="Label15" runat="server" CssClass="filterLabel" Font-Size="X-Large" Text="Last Name: "></asp:Label>
-            </td>
+            <td class="auto-style15">Last Name:</td>
             <td class="auto-style21">
-                <asp:TextBox ID="TextBox6" runat="server" Height="22px" Width="185px"></asp:TextBox>
+                <input id="Text2" class="auto-style10" type="text" maxlength:15 required="required" value:"char" maxlength="15" placeholder="Enter your last name"/></td>
+        </tr>
+        <tr>
+            <td class="auto-style15">Gender:</td>
+            <td class="auto-style21">
+                <input id="Checkbox1" class="auto-style11" type="checkbox" /><asp:Label ID="Label5" runat="server" Text="Male"></asp:Label>
+                <input id="Checkbox2" class="auto-style11" type="checkbox" /><asp:Label ID="Label6" runat="server" Text="Female"></asp:Label>
+                <input id="Checkbox3" class="auto-style11" type="checkbox" /><asp:Label ID="Label7" runat="server" Text="Undefined"></asp:Label>
             </td>
         </tr>
         <tr>
-            <td class="auto-style15">
-                <asp:Label ID="Label16" runat="server" CssClass="filterLabel" Font-Size="X-Large" Text="Gender: "></asp:Label>
-            </td>
+            <td class="auto-style15">E-mail:</td>
             <td class="auto-style21">
-                <asp:CheckBox ID="CheckBox4" runat="server" />
-                <asp:Label ID="Label17" runat="server" CssClass="filterLabel" Font-Size="X-Large" Text="Male"></asp:Label>
-                <asp:CheckBox ID="CheckBox5" runat="server" />
-                <asp:Label ID="Label18" runat="server" CssClass="filterLabel" Font-Size="X-Large" Text="Female"></asp:Label>
-                <asp:CheckBox ID="CheckBox6" runat="server" />
-                <asp:Label ID="Label19" runat="server" CssClass="filterLabel" Font-Size="X-Large" Text="Undefined"></asp:Label>
-            </td>
+                <input id="Text3" class="auto-style13" type="email" maxlength:15 required="required" value:"char" placeholder="example01@outlook.com"/></td>
         </tr>
         <tr>
-            <td class="auto-style15">
-                <asp:Label ID="Label20" runat="server" CssClass="filterLabel" Font-Size="X-Large" Text="E-mail: "></asp:Label>
-            </td>
+            <td class="auto-style15">Password:</td>
             <td class="auto-style21">
-                <asp:TextBox ID="TextBox7" runat="server" Height="22px" Width="215px"></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style15">
-                <asp:Label ID="Label21" runat="server" CssClass="filterLabel" Font-Size="X-Large" Text="Password: "></asp:Label>
-            </td>
-            <td class="auto-style21">
-                <asp:TextBox ID="TextBox8" runat="server" Height="22px" Width="130px"></asp:TextBox>
-            </td>
+                <input id="Password1" class="auto-style14" required="required" type="password" maxlength="8" placeholder="*****" /></td>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style15">
-                <asp:Label ID="Label22" runat="server" CssClass="filterLabel" Font-Size="X-Large" Text="Password Confirm: "></asp:Label>
-            </td>
+            <td class="auto-style15">Password Confirm:</td>
             <td class="auto-style21">
-                <asp:TextBox ID="TextBox9" runat="server" Height="22px" Width="130px"></asp:TextBox>
-            </td>
+                <input id="Password2" class="auto-style14" required="required" type="password" maxlength="8" placeholder="*****" /></td>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style15">
-                <asp:Label ID="Label23" runat="server" CssClass="filterLabel" Font-Size="X-Large" Text="City: "></asp:Label>
-            </td>
+            <td class="auto-style15">City</td>
             <td class="auto-style21">
                 <asp:DropDownList ID="DropDownList1" runat="server" Height="16px" Width="110px">
                 </asp:DropDownList>
@@ -111,20 +109,16 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style15">
-                <asp:Label ID="Label24" runat="server" CssClass="filterLabel" Font-Size="X-Large" Text="Birth Date: "></asp:Label>
-            </td>
+            <td class="auto-style15">Birth Date:</td>
             <td class="auto-style21">
-                <asp:TextBox ID="TextBox10" runat="server" Height="22px" Width="125px"></asp:TextBox>
-            </td>
+                <input id="Text4" class="auto-style14" type="date" min="01-01-1920" /></td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style18">&nbsp;</td>
             <td class="auto-style21">&nbsp;</td>
             <td>
-                <asp:Button ID="Button2" runat="server" CssClass="filterButton" Height="40px" Text="Submit" Width="136px" />
-            </td>
+                <input id="Submit1" class="auto-style19" type="submit" value="Update" /></td>
         </tr>
         <tr>
             <td class="auto-style18">&nbsp;</td>

@@ -27,7 +27,10 @@
             height: 30px;
             width: 276px;
         }
-        </style>
+        .auto-style5 {
+            width: 250px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -42,8 +45,7 @@
                              <asp:Label ID="Label1" runat="server" CssClass="navLabelSearch" Text="Search:" Font-Size="X-Large"></asp:Label>
                          </td>
                          <td class="auto-style4">
-                             <asp:TextBox ID="TextBox2" runat="server" Width="250px"></asp:TextBox>
-                         </td>
+                             <input id="Text1" class="auto-style5" placeholder="Search a coiffeur..." type="text" /></td>
                          <td class="auto-style3">
                              <asp:Label ID="Label2" runat="server" Text="[Admin Name]" CssClass="navLabelSearch" Font-Size="X-Large"></asp:Label>
                              &nbsp;<asp:Label ID="Label11" runat="server" CssClass="navLabelSearch" Font-Size="Larger" Text="|"></asp:Label>
@@ -53,7 +55,9 @@
                                      <asp:Label ID="Label12" runat="server" Text="Menu" Font-Size="X-Large"></asp:Label>
                                  </button>
                                  <div class="dropdown-content">
-                                     <a href="AdminStaffs.aspx" >Staffs</a> <a href="adminProcedurePage.aspx" >Procedures</a> <a href="MainPage.aspx" >Sign out</a>
+                                     <a href="AdminStaffs.aspx" >Staffs</a>
+                                     <a href="adminProcedurePage.aspx" >Procedures</a>
+                                     <a href="MainPage.aspx" >Sign out</a>
                                  </div>
                              </div>
                              &nbsp; </td>
