@@ -34,14 +34,7 @@
             text-align: center;
             width: 357px;
         }
-        .auto-style19 {
-            width: 140px;
-            height: 20px;
-        }
-        .auto-style20 {
-            width: 35px;
-        }
-    </style>
+        </style>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <table class="auto-style1">
@@ -81,11 +74,14 @@
     <table class="auto-style16">
         <tr>
             <td class="auto-style14">Procedure Name:
-                <input id="Text2" class="auto-style19" type="text" /></td>
+                <asp:TextBox ID="TextBox3" runat="server" Height="16px" Width="160px"></asp:TextBox>
+            </td>
             <td class="auto-style15">Approximate Time:
-                <input id="Text3" class="auto-style20" type="text" /></td>
+                <asp:TextBox ID="TextBox4" runat="server" Width="35px"></asp:TextBox>
+            </td>
             <td>Price:
-                <input id="Text4" class="auto-style20" type="text" /></td>
+                <asp:TextBox ID="TextBox5" runat="server" Width="35px"></asp:TextBox>
+            </td>
         </tr>
         <tr>
             <td class="auto-style14">&nbsp;</td>
