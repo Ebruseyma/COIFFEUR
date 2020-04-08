@@ -49,14 +49,32 @@ namespace CoiffeurAppointmentSystem {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
+<<<<<<< HEAD
         /// lblUserName control.
+=======
+        /// TextBox1 control.
+>>>>>>> 6fc2fe8a5746f3e6a9e184c77d37924b5dc1d41b
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.Label lblUserName;
         
+=======
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+
+        /// <summary>
+        /// Label2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label2;
+
+>>>>>>> 6fc2fe8a5746f3e6a9e184c77d37924b5dc1d41b
         /// <summary>
         /// Label11 control.
         /// </summary>
@@ -65,7 +83,11 @@ namespace CoiffeurAppointmentSystem {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label11;
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6fc2fe8a5746f3e6a9e184c77d37924b5dc1d41b
         /// <summary>
         /// Label12 control.
         /// </summary>
@@ -74,7 +96,11 @@ namespace CoiffeurAppointmentSystem {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label12;
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6fc2fe8a5746f3e6a9e184c77d37924b5dc1d41b
         /// <summary>
         /// ContentPlaceHolder1 control.
         /// </summary>
