@@ -58,7 +58,7 @@
                             </a>&nbsp;
                             <asp:Label ID="Label11" runat="server" CssClass="navLabelSearch" Font-Size="Larger" Text="|"></asp:Label>
                             &nbsp; <a href="SignUpPage.aspx">
-                            <asp:Label ID="Label3" runat="server" Text="Sign Up" CssClass="navLabel" Font-Size="X-Large"></asp:Label>
+                            <asp:Label ID="lblUserName" runat="server" Text="Sign Up" CssClass="navLabel" Font-Size="X-Large"></asp:Label>
                             </a></td>
                     </tr>
                 </table>

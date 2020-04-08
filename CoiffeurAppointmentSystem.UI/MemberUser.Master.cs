@@ -21,7 +21,12 @@ namespace CoiffeurAppointmentSystem
             else
             {
                 loginedUser = (person)Session["username"];
-                lblUserName.Text = loginedUser.first_name + " " + loginedUser.last_name;
+                if (loginedUser.role_id != 2)
+                {
+                    Response.Redirect("UserLogIn.aspx");
+                }
+                
+                lblUserName.Text =("Welcome "+ loginedUser.first_name + " " + loginedUser.last_name);
             }
 
             

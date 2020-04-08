@@ -52,7 +52,7 @@
         <tr>
             <td class="auto-style9">Send a comment:</td>
             <td class="auto-style11">
-                <asp:TextBox ID="TextBox2" runat="server" Height="70px" Width="501px"></asp:TextBox>
+                <asp:TextBox ID="txtComment" runat="server" Height="70px" Width="501px"></asp:TextBox>
             </td>
             <td class="auto-style8"></td>
         </tr>
@@ -60,7 +60,8 @@
             <td class="auto-style10"></td>
             <td class="auto-style12"></td>
             <td class="auto-style7">
-                <asp:Button ID="Button1" runat="server" Text="Send" />
+                <asp:Label runat="server" ID="lblError" Visible="false"></asp:Label>
+                <asp:Button ID="btnSendCommend" OnClick="btnSendCommend_Click" runat="server" Text="Send" />
             </td>
         </tr>
     </table>
