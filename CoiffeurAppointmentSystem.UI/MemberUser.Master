@@ -89,8 +89,9 @@
                     </tr>
                     <tr>
                         <td class="auto-style6">
-                            <asp:DropDownList ID="DropDownList1" runat="server" Height="22px" Width="130px">
+                            <asp:DropDownList ID="DropDownList1" runat="server" Height="22px" Width="130px" AutoPostBack="true" DataSourceID="DataList" DataTextField="city" DataValueField="city_id" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
                             </asp:DropDownList>
+                            <asp:SqlDataSource ID="DataList" runat="server" ConnectionString="<%$ ConnectionStrings:CoiffeurAppointmentSystemConnectionString %>" SelectCommand="SELECT city_id, city FROM cas.city"></asp:SqlDataSource>
                         </td>
                     </tr>
                     <tr>
@@ -111,8 +112,9 @@
                     </tr>
                     <tr>
                         <td class="auto-style6">
-                            <asp:DropDownList ID="DropDownList3" runat="server" Height="22px" Width="130px">
+                            <asp:DropDownList ID="DropDownList3" runat="server" Height="22px" Width="130px" DataSourceID="SqlDataSource1" DataTextField="service_name" DataValueField="service_id">
                             </asp:DropDownList>
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CoiffeurAppointmentSystemConnectionString %>" SelectCommand="select * from cas.service"></asp:SqlDataSource>
                         </td>
                     </tr>
                     <tr>
