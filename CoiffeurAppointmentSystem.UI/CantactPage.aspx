@@ -30,7 +30,7 @@
                         <asp:Image ID="Image1" runat="server" Height="228px" Width="300px" />
                     </td>
                     <td>Phone Number:
-                <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="Label4" runat="server" Text='<%# Eval("tel_no") %>'></asp:Label>
                     </td>
                 </tr>
                 <tr>
@@ -38,7 +38,7 @@
                 </tr>
                 <tr>
                     <td>Address:
-                <asp:Label ID="Label8" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="Label8" runat="server" Text='<%# Eval("address") %>'></asp:Label>
                     </td>
                 </tr>
                 <tr>
@@ -46,12 +46,11 @@
                 </tr>
                 <tr>
                     <td>E-mail:
-                <asp:Label ID="Label6" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="Label6" runat="server" Text='<%# Eval("email") %>'></asp:Label>
                     </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
                 <tr>
                     <td>Rating:
                 <asp:Label ID="Label7" runat="server" Text="Label"></asp:Label>
