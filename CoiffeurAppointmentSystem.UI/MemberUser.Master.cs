@@ -13,7 +13,26 @@ namespace CoiffeurAppointmentSystem
         public static person loginedUser = new person();
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
+            //if (Session["username"] == null)
+            //{
+            //    Response.Redirect("UserLogIn.aspx");
+            //}
+            //else
+            //{
+            //    loginedUser = (person)Session["username"];
+            //    if (loginedUser.role_id == 2)
+            //    {
+            //        Response.Redirect("MainPage2.aspx");
+            //    }
+
+            //    lblUserName.Text = ("Welcome " + loginedUser.first_name + " " + loginedUser.last_name);
+            //}
+
+
+
+
+
             if (Session["username"] == null)
             {
                 Response.Redirect("UserLogIn.aspx");
@@ -22,14 +41,17 @@ namespace CoiffeurAppointmentSystem
             {
                 loginedUser = (person)Session["username"];
                 if (loginedUser.role_id != 2)
-                {
-                    Response.Redirect("UserLogIn.aspx");
-                }
-                
-                lblUserName.Text =("Welcome "+ loginedUser.first_name + " " + loginedUser.last_name);
+                      {
+                        Response.Redirect("UserLogIn.aspx");
+                        }
+                    lblUserName.Text = "Welcome    " + loginedUser.first_name ;
             }
 
-            
+
+
+
+
+
         }
     }
 }
