@@ -24,16 +24,10 @@ namespace CoiffeurAppointmentSystem.UI
             }
             txt1.Text = MemberUser.loginedUser.first_name;
             txt2.Text = MemberUser.loginedUser.last_name;
-    
-
         }
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-
-
-
-    
 
             SqlConnection conn;
             SqlCommand comm;
