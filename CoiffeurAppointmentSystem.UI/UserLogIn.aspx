@@ -45,14 +45,18 @@
                 <asp:Label ID="lblUserName" runat="server" Text="E-mail: " Font-Size="20px"></asp:Label>
             </td>
             <td>
-                <asp:TextBox ID="txtUserName" runat="server" CssClass="auto-style9" TextMode="Email" /></td>
+                <asp:TextBox ID="txtUserName" runat="server" CssClass="auto-style9" TextMode="Email" /><asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="   Email cannot be blank" ControlToValidate="txtUserName" ForeColor="Red"></asp:RequiredFieldValidator> </td>
+
+
         </tr>
         <tr>
             <td class="auto-style8">
                 <asp:Label ID="lblPassword" runat="server" Text="Password: " Font-Size="20px"></asp:Label>
             </td>
             <td>
-                <asp:TextBox ID="txtPassword" runat="server" CssClass="auto-style10" TextMode="Password" /></td>
+                <asp:TextBox ID="txtPassword" runat="server" CssClass="auto-style10" TextMode="Password" />
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Password cannot be blank" ControlToValidate="txtPassword" ForeColor="Red"></asp:RequiredFieldValidator>
+            </td>
         </tr>
         <tr>
             <td class="auto-style8">&nbsp;</td>

@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="Main Page - C.A.S" Language="C#" MasterPageFile="~/MemberUser.Master" AutoEventWireup="true" CodeBehind="MainPage.aspx.cs" Inherits="CoiffeurAppointmentSystem.MainPage" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style type="text/css">
+   <%-- <style type="text/css">
         .auto-style7 {
             width: 100%;
             height: 355px;
@@ -21,7 +22,7 @@
         .auto-style13 {
             height: 89px;
         }
-    </style>
+    </style>--%>
 </asp:Content>
 <asp:Content ID="Content2" runat="server" contentplaceholderid="ContentPlaceHolder1">
                 <table class="auto-style1">

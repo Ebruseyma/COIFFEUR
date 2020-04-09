@@ -12,13 +12,12 @@ namespace CoiffeurAppointmentSystem
     {
         public static person loginedUser = new person();
         protected void Page_Load(object sender, EventArgs e)
+
         {
 
             if (Session["username"] == null)
             {
                 Response.Redirect("UserLogIn.aspx");
-           
-
             }
             else
             {
@@ -29,6 +28,7 @@ namespace CoiffeurAppointmentSystem
                 }
                
                 lblUserName.Text = loginedUser.first_name + " " + loginedUser.last_name;
+                
             }
         }
     }

@@ -45,7 +45,7 @@
                 <asp:Label ID="Label14" runat="server" CssClass="filterLabel" Font-Size="X-Large" Text="First Name: "></asp:Label>
             </td>
             <td class="auto-style21">
-                <asp:TextBox ID="TextBox5" runat="server" Height="22px" Width="185px"></asp:TextBox>
+                <asp:TextBox ID="txt1" runat="server" Height="22px" Width="185px"></asp:TextBox>
             </td>
             <td rowspan="4" class="auto-style7">
                 <asp:Image ID="Image1" runat="server" Height="143px" Width="224px" />
@@ -58,7 +58,7 @@
                 <asp:Label ID="Label15" runat="server" CssClass="filterLabel" Font-Size="X-Large" Text="Last Name: "></asp:Label>
             </td>
             <td class="auto-style21">
-                <asp:TextBox ID="TextBox6" runat="server" Height="22px" Width="185px"></asp:TextBox>
+                <asp:TextBox ID="txt2" runat="server" Height="22px" Width="185px"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -79,7 +79,7 @@
                 <asp:Label ID="Label20" runat="server" CssClass="filterLabel" Font-Size="X-Large" Text="E-mail: "></asp:Label>
             </td>
             <td class="auto-style21">
-                <asp:TextBox ID="TextBox7" runat="server" Height="22px" Width="215px"></asp:TextBox>
+                <asp:TextBox ID="txt3" runat="server" Height="22px" Width="215px"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -87,7 +87,7 @@
                 <asp:Label ID="Label21" runat="server" CssClass="filterLabel" Font-Size="X-Large" Text="Password: "></asp:Label>
             </td>
             <td class="auto-style21">
-                <asp:TextBox ID="TextBox8" runat="server" Height="22px" Width="130px"></asp:TextBox>
+                <asp:TextBox ID="txt4" runat="server" Height="22px" Width="130px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
@@ -96,7 +96,7 @@
                 <asp:Label ID="Label22" runat="server" CssClass="filterLabel" Font-Size="X-Large" Text="Password Confirm: "></asp:Label>
             </td>
             <td class="auto-style21">
-                <asp:TextBox ID="TextBox9" runat="server" Height="22px" Width="130px"></asp:TextBox>
+                <asp:TextBox ID="txt5" runat="server" Height="22px" Width="130px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
@@ -115,15 +115,16 @@
                 <asp:Label ID="Label24" runat="server" CssClass="filterLabel" Font-Size="X-Large" Text="Birth Date: "></asp:Label>
             </td>
             <td class="auto-style21">
-                <asp:TextBox ID="TextBox10" runat="server" Height="22px" Width="125px"></asp:TextBox>
+                <asp:TextBox ID="txt6" runat="server" Height="22px" Width="125px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style18">&nbsp;</td>
-            <td class="auto-style21">&nbsp;</td>
+            <td class="auto-style21">
+                <asp:Label ID="lblHata" runat="server" Text=""></asp:Label>&nbsp;</td>
             <td>
-                <asp:Button ID="Button2" runat="server" CssClass="filterButton" Height="40px" Text="Submit" Width="136px" />
+                <asp:Button ID="Button2" runat="server" CssClass="filterButton" Height="40px" Text="Submit" Width="136px" OnClick="Button2_Click" />
             </td>
         </tr>
         <tr>

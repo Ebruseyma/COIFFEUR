@@ -21,12 +21,14 @@ namespace CoiffeurAppointmentSystem
         {
             using (Entities db = new Entities())
             {
+
                 var usermail = txtUserName.Text.Trim();
                 var password = txtPassword.Text.Trim();
                 var loginedUser = db.people.FirstOrDefault(a => a.email == usermail && a.password == password);
                 if (loginedUser != null)
                 {
                     Session["username"] = loginedUser;
+                    
                     Response.Redirect("MainPage2.aspx");
                 }
                 else
