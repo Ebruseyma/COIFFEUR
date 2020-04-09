@@ -1,30 +1,36 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MemberUser.Master" AutoEventWireup="true" CodeBehind="UserSettings.aspx.cs" Inherits="CoiffeurAppointmentSystem.UI.UserSettings" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style15 {
             text-align: right;
             width: 341px;
         }
+
         .auto-style16 {
             text-align: center;
             height: 76px;
             width: 341px;
             font-size: xx-large;
         }
+
         .auto-style17 {
             height: 76px;
-
         }
+
         .auto-style18 {
             width: 341px;
         }
+
         .auto-style20 {
             height: 76px;
             width: 379px;
         }
+
         .auto-style21 {
             width: 379px;
         }
+
         .auto-style22 {
             width: 1223px;
             height: 649px;
@@ -48,7 +54,7 @@
                 <asp:TextBox ID="txt1" runat="server" Height="22px" Width="185px"></asp:TextBox>
             </td>
             <td rowspan="4" class="auto-style7">
-                <asp:Image ID="Image1" runat="server" Height="143px" Width="224px" />
+                <asp:Image ID="Image1" runat="server" Height="143px" Width="224px"  />
                 <br />
                 <asp:FileUpload ID="FileUpload1" runat="server" Width="223px" />
             </td>
@@ -66,12 +72,12 @@
                 <asp:Label ID="Label16" runat="server" CssClass="filterLabel" Font-Size="X-Large" Text="Gender: "></asp:Label>
             </td>
             <td class="auto-style21">
-                <asp:CheckBox ID="CheckBox4" runat="server" />
-                <asp:Label ID="Label17" runat="server" CssClass="filterLabel" Font-Size="X-Large" Text="Male"></asp:Label>
-                <asp:CheckBox ID="CheckBox5" runat="server" />
-                <asp:Label ID="Label18" runat="server" CssClass="filterLabel" Font-Size="X-Large" Text="Female"></asp:Label>
-                <asp:CheckBox ID="CheckBox6" runat="server" />
-                <asp:Label ID="Label19" runat="server" CssClass="filterLabel" Font-Size="X-Large" Text="Undefined"></asp:Label>
+               
+                <asp:RadioButtonList ID="rdpGender" runat="server">
+                    <asp:ListItem Text="Male" Value="1" />
+                    <asp:ListItem Text="Female" Value="2" />
+                    <asp:ListItem Text="Undefined" Value="5"  />
+                </asp:RadioButtonList>
             </td>
         </tr>
         <tr>
@@ -115,7 +121,7 @@
                 <asp:Label ID="Label24" runat="server" CssClass="filterLabel" Font-Size="X-Large" Text="Birth Date: "></asp:Label>
             </td>
             <td class="auto-style21">
-                <asp:TextBox ID="txt6" runat="server" Height="22px" Width="125px"></asp:TextBox>
+                <asp:TextBox ID="dtBirthDate" runat="server" Height="22px" Width="125px" TextMode="Date"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
@@ -135,8 +141,7 @@
         <tr>
             <td class="auto-style18">&nbsp;</td>
             <td class="auto-style21">&nbsp;</td>
-            <td class="auto-style7">
-                &nbsp;</td>
+            <td class="auto-style7">&nbsp;</td>
         </tr>
     </table>
 </asp:Content>
