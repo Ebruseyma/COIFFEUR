@@ -49,7 +49,7 @@ namespace CoiffeurAppointmentSystem
                     }
                     else if (loginedUser.role_id == 2)
                     {
-                        Response.Redirect("MainPage2.aspx");
+                        Response.Redirect("MamberMain.aspx");
                     }
                     else
                         Response.Redirect("MainPage.aspx");
