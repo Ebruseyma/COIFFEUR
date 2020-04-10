@@ -35,7 +35,7 @@ namespace CoiffeurAppointmentSystem
 
 
                 connection.Open();
-                SqlCommand kmt2 = new SqlCommand("select ap.appointment_date, s.service_name, wp.wp_name, (p.first_name+' '+p.last_name) as name from cas.appointment as ap inner join cas.work as w on w.work_id = ap.work_id inner join cas.workplace as wp on wp.wp_id = ap.work_id inner join cas.person as p on p.user_id = ap.staff_id inner join cas.service as s on s.service_id = w.service_id where ap.appointment_date >= GETDATE() and ap.user_id = @input", connection);
+                SqlCommand kmt2 = new SqlCommand("select ap.appointment_date, s.service_name, wp.wp_name, (p.first_name+' '+p.last_name) as name from cas.appointment as ap inner join cas.work as w on w.work_id = ap.work_id inner join cas.workplace as wp on wp.wp_id = ap.work_id inner join cas.person as p on p.user_id = ap.staff_id inner join cas.service as s on s.service_id = w.service_id where ap.appointment_date >= GETDATE() and ap.user_id = @input2", connection);
                 kmt2.Parameters.AddWithValue("@input2", loginedUser.user_id);
                 SqlDataReader dr2 = kmt2.ExecuteReader();
                 DataList2.DataSource = dr2;
