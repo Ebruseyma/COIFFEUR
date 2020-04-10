@@ -80,7 +80,7 @@
                                 <td class="auto-style14">&nbsp;</td>
                                 <td class="auto-style13">&nbsp;</td>
                                 <td class="auto-style10">
-                                    <asp:Button ID="Button1" runat="server" Height="37px" Text="Make Appointment" Width="115px" />
+                                    <asp:Button ID="Button1" runat="server" Height="37px" Text="Make Appointment" Width="115px" OnClick="Button1_Click1" />
                                 </td>
                             </tr>
                             <tr>

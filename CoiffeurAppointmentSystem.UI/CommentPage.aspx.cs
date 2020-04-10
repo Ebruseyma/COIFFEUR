@@ -17,7 +17,6 @@ namespace CoiffeurAppointmentSystem
         protected void Page_Load(object sender, EventArgs e)
         {
             string id1 = Request.QueryString["id"];
-            int id2 = Convert.ToInt32(id1);
 
             string connectionString = ConfigurationManager.ConnectionStrings["listConnectionString"].ConnectionString;
             SqlConnection connection = new SqlConnection(connectionString);
@@ -46,14 +45,16 @@ namespace CoiffeurAppointmentSystem
         {
             if (Session["username"] != null)
             {
+                string id1 = Request.QueryString["id"];
                 loginedUser = (person)Session["username"];
                 string connectionString = ConfigurationManager.ConnectionStrings["listConnectionString"].ConnectionString;
                 SqlConnection connection = new SqlConnection(connectionString);
                 connection.Open();
 
-                SqlCommand kmt = new SqlCommand("insert into cas.comment(comment,wp_id,user_id) values(@p1,@p2,1)", connection);
+                SqlCommand kmt = new SqlCommand("insert into cas.comment(comment,wp_id,user_id) values(@p1,@p2,@p3)", connection);
                 kmt.Parameters.AddWithValue("@p1", TextBox2.Text);
-                kmt.Parameters.AddWithValue("@p2", loginedUser.user_id);
+                kmt.Parameters.AddWithValue("@p2", id1);
+                kmt.Parameters.AddWithValue("@p3", loginedUser.user_id);
                 kmt.ExecuteNonQuery();
                 connection.Close();
             }
