@@ -24,42 +24,75 @@ namespace CoiffeurAppointmentSystem
 
                 var usermail = txtUserName.Text.Trim();
                 var password = txtPassword.Text.Trim();
-                var loginedUser = db.people.FirstOrDefault(a => a.email == usermail && a.password == password);
-                if (loginedUser != null)
+                var loginedUser = db.people.Include("gender").FirstOrDefault(a => a.email == usermail && a.password == password);
+                //if (loginedUser != null)
+                //{
+                //    Session["username"] = loginedUser;
+
+                //    Response.Redirect("MainPage2.aspx");
+                //}
+                //else
+                //{
+                //    lblErrorMessage.Visible = true;
+
+                //}
+
+
+
+
+            if (loginedUser != null)
                 {
                     Session["username"] = loginedUser;
-                    
-                    Response.Redirect("MemberMain.aspx");
+                    if (loginedUser.role_id == 1)
+                    {
+                        Response.Redirect("adminMainPage.aspx");
+                    }
+                    else if (loginedUser.role_id == 2)
+                    {
+                        Response.Redirect("MainPage2.aspx");
+                    }
+                    else
+                        Response.Redirect("MainPage.aspx");
                 }
+
                 else
                 {
-                    lblErrorMessage.Visible = true;
+                     lblErrorMessage.Visible = true;
 
                 }
+
+
+
+
+
+
+                //if (Session["username"] == null)
+                //{
+                //    Response.Redirect("UserLogIn.aspx");
+                //}
+                //else
+                //{
+                //    loginedUser = (person)Session["username"];
+                //    if (loginedUser.role_id == 1)
+                //    {
+                //        Response.Redirect("adminMainPage.aspx");
+
+
+                //        lblUserName.Text = loginedUser.first_name + " " + loginedUser.last_name;
+                //    }
+                //    else if (loginedUser.role_id == 2)
+                //    {
+                //        Response.Redirect("MainPage2.aspx");
+
+                //    }
+                //    else
+                //        Response.Redirect("MainPage.aspx");
+
+                //}
+
+
+
             }
-            //            using (SqlConnection sqlCon = new SqlConnection(@"Data Source=MSI\SQLEXPRESS01;initial Catalog=CoiffeurAppointmentSystem;
-            //integrated Security=True;"))
-
-            //            {
-            //                sqlCon.Open();
-            //                string query = "SELECT COUNT(1) FROM cas.person WHERE username=@username AND password=@password";
-            //                SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
-            //                sqlCmd.Parameters.AddWithValue("@username", username.Text.Trim());
-            //                sqlCmd.Parameters.AddWithValue("@password", txtPassword.Text.Trim());
-            //                int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
-            //                if (count == 1)
-            //                {
-            //                    Session["username"] = username.Text.Trim();
-            //                    Response.Redirect("MainPage.aspx");
-            //                }
-            //                else
-            //                {
-            //                    lblErrorMessage.Visible = true;
-
-            //                }
-
-
-            //      }
 
         }
     }
