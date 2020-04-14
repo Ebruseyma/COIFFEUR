@@ -33,9 +33,8 @@ namespace CoiffeurAppointmentSystem
             //}
 
 
-
-
-
+         
+            
             if (Session["username"] == null)
             {
                 Response.Redirect("UserLogIn.aspx");
@@ -43,16 +42,13 @@ namespace CoiffeurAppointmentSystem
             else
             {
                 loginedUser = (person)Session["username"];
-                if (loginedUser.role_id != 2)
+                if (loginedUser.role_id != 2) //role_id=2 olmayan user memberuserdan türeyen sayfalara giriş yapamaz logine yönlendirilir.
                       {
                         Response.Redirect("UserLogIn.aspx");
-                        }
+                      }
                     lblUserName.Text = "Welcome    " + loginedUser.first_name ;
             }
-
-
-
-
+            
 
 
         }

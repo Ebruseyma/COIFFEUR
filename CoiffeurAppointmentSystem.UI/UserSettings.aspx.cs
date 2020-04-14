@@ -26,12 +26,8 @@ namespace CoiffeurAppointmentSystem.UI
                     LoadUserSettings();
 
                 }
-
             }
-
-
         }
-
 
         protected void Button2_Click(object sender, EventArgs e)
         {
@@ -52,12 +48,19 @@ namespace CoiffeurAppointmentSystem.UI
             comm.Parameters["@password"].Value = txt4.Text;
             comm.Parameters.Add("@city_id", System.Data.SqlDbType.Int);
             comm.Parameters["@city_id"].Value = Convert.ToInt32(DropDownList1.SelectedValue);
-            //date tipindeki alana string veri atılmaya çalışılmış düzeltilmesi gerekli
             comm.Parameters.Add("@birth_day", System.Data.SqlDbType.Date);
-            comm.Parameters["@birth_day"].Value = Convert.ToDateTime(dtBirthDate.Text);
+            if (string.IsNullOrWhiteSpace(dtBirthDate.Text))
+            {
+                comm.Parameters["@birth_day"].Value = DateTime.Now;
+            }
+            else
+            {
+                comm.Parameters["@birth_day"].Value = Convert.ToDateTime(dtBirthDate.Text);
+
+            }
+            
             //image yüklenirken fileupload componenti kullanılıyor ordan gelen dosyanın image'a çevrilip o image 'nin de byte[] hale getirilip öyle verilmesi gerekiyor.
-
-
+            
             comm.Parameters.Add("@user_id", System.Data.SqlDbType.Int);
             comm.Parameters["@user_id"].Value = MemberUser.loginedUser.user_id;
 
@@ -66,7 +69,11 @@ namespace CoiffeurAppointmentSystem.UI
                 comm.Parameters.Add("@img", System.Data.SqlDbType.Image);
                 comm.Parameters["@img"].Value = FileUpload1.FileBytes;
             }
-
+            else
+            {
+                comm.Parameters.Add("@img", System.Data.SqlDbType.Image);
+                comm.Parameters["@img"].Value = MemberUser.loginedUser.img;
+            }
             try
             {
                 conn.Open();
@@ -87,20 +94,6 @@ namespace CoiffeurAppointmentSystem.UI
                 conn.Close();
             }
         }
-        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-            //SqlConnection sqlcon = new SqlConnection();
-            //sqlcon.Open();
-            //SqlCommand sqlcmm = new SqlCommand("Select * from [cas].[city]", sqlcon);
-            //sqlcmm.CommandType = CommandType.Text;
-            //DropDownList1.DataSource = sqlcmm.ExecuteReader();
-            //DropDownList1.DataTextField = "city";
-            //DropDownList1.DataValueField = "city_id";
-            //DropDownList1.DataBind();
-            //DropDownList1.Items.Insert(0, new ListItem("select  city", "0"));
-            //sqlcon.Close();
-        }
 
         private void FillCities()
         {
@@ -114,7 +107,7 @@ namespace CoiffeurAppointmentSystem.UI
             }
         }
 
-        private System.Drawing.Image ByteArrayToImage(byte[] byteArrayIn)
+        private System.Drawing.Image ByteArrayToImage(byte[] byteArrayIn)  //byte array image çevriliyor
         {
             using (var ms = new MemoryStream(byteArrayIn))
             {
@@ -122,7 +115,7 @@ namespace CoiffeurAppointmentSystem.UI
             }
         }
 
-        private static string GetMimeType(System.Drawing.Image i)
+        private static string GetMimeType(System.Drawing.Image i)  //img formatı 
         {
             var imgguid = i.RawFormat.Guid;
             foreach (ImageCodecInfo codec in ImageCodecInfo.GetImageDecoders())
@@ -133,7 +126,7 @@ namespace CoiffeurAppointmentSystem.UI
             return "image/unknown";
         }
 
-        private void LoadUserSettings()
+        private void LoadUserSettings() //ekrana bilgileri logineduser dan çekip doldurdum.
         {
             FillCities();
             txt1.Text = MemberUser.loginedUser.first_name;
@@ -148,15 +141,16 @@ namespace CoiffeurAppointmentSystem.UI
             {
                 rdpGender.SelectedValue = "5";
             }
-            dtBirthDate.Text = MemberUser.loginedUser.birth_day.ToShortDateString();
+            dtBirthDate.Text = Convert.ToDateTime(MemberUser.loginedUser.birth_day).ToString("yyyy-MM-dd");
             if (MemberUser.loginedUser.img != null)
             {
 
                 System.Drawing.Image profImage = ByteArrayToImage(MemberUser.loginedUser.img);
                 var format = GetMimeType(profImage);
-                Image1.ImageUrl = "data:" + format + ";base64," + Convert.ToBase64String(MemberUser.loginedUser.img);
+                Image1.ImageUrl = "data:" + format + ";base64," + Convert.ToBase64String(MemberUser.loginedUser.img); //img byte array çevir
             }
+            DropDownList1.SelectedValue = MemberUser.loginedUser.city_id.ToString();//userda seçileni ekranda seçme
         }
-
+        
     }
 }

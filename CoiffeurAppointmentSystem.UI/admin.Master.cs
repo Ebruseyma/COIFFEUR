@@ -31,12 +31,7 @@ namespace CoiffeurAppointmentSystem
 
             //}
 
-
-
-
-
-
-
+           
             if (Session["username"] == null)
             {
                 Response.Redirect("UserLogIn.aspx");
@@ -44,7 +39,7 @@ namespace CoiffeurAppointmentSystem
             else
             {
                 loginedUser = (person)Session["username"];
-                if (loginedUser.role_id != 1)
+                if (loginedUser.role_id != 1) //id=1 değilse admin masterdan tüüreyen sayfalara giriş yapamıyor login sayfasına yönlendiriliyor.
                 {
                     Response.Redirect("UserLogIn.aspx");
                 }

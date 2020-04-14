@@ -36,10 +36,7 @@ namespace CoiffeurAppointmentSystem
                 //    lblErrorMessage.Visible = true;
 
                 //}
-
-
-
-
+                
             if (loginedUser != null)
                 {
                     Session["username"] = loginedUser;
@@ -49,7 +46,7 @@ namespace CoiffeurAppointmentSystem
                     }
                     else if (loginedUser.role_id == 2)
                     {
-                        Response.Redirect("MainPage2.aspx");
+                        Response.Redirect("MemberMain.aspx");
                     }
                     else
                         Response.Redirect("MainPage.aspx");
