@@ -116,3 +116,19 @@
     </asp:DataList>
 </asp:Content>
 
+<asp:Content ID="Content3" runat="server" contentplaceholderid="ContentPlaceHolder2">
+    <asp:DataList ID="DataList2" runat="server" CssClass="auto-style15" Width="949px">
+        <ItemTemplate>
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style5"><a class="info1" href="infoPage.aspx?id=<%#Eval("wp_id") %>">INFORMATION</a></td>
+                    <td class="auto-style5"><a class="info2" href="ProcedurePage.aspx?id=<%#Eval("wp_id") %>">PROCEDURES</a></td>
+                    <td class="auto-style5"><a class="info3" href="CommentPage.aspx?id=<%#Eval("wp_id") %>">COMMENTS</a></td>
+                    <td class="auto-style5"><a class="info4" href="CantactPage.aspx?id=<%#Eval("wp_id") %>">CONTACT</a></td>
+                </tr>
+            </table>
+        </ItemTemplate>
+    </asp:DataList>
+</asp:Content>
+
+

@@ -7,13 +7,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CoiffeurAppointmentSystem
-{
-
-
-    public partial class infoPage
-    {
-
+namespace CoiffeurAppointmentSystem {
+    
+    
+    public partial class MainPage2 {
+        
+        /// <summary>
+        /// Label11 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label11;
+        
         /// <summary>
         /// DataList1 control.
         /// </summary>
@@ -22,14 +29,5 @@ namespace CoiffeurAppointmentSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DataList DataList1;
-
-        /// <summary>
-        /// DataList2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList DataList2;
     }
 }
