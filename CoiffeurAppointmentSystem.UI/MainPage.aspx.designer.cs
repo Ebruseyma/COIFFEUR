@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CoiffeurAppointmentSystem {
-    
-    
-    public partial class MainPage {
-        
+namespace CoiffeurAppointmentSystem
+{
+
+
+    public partial class MainPage
+    {
+
         /// <summary>
         /// Label11 control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace CoiffeurAppointmentSystem {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label11;
-        
+
         /// <summary>
         /// DataList1 control.
         /// </summary>

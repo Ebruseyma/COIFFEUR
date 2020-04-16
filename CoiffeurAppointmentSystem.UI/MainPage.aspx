@@ -40,12 +40,11 @@
                                                 <asp:Image ID="Image1" runat="server" Height="250px" Width="295px" />
                                             </td>
                                             <td class="auto-style9">
-                                                <a href="infoPage.aspx?id=<%#Eval("wp_id") %>" > <asp:Label ID="Label12" runat="server" Text='<%# Eval("wp_name") %>'></asp:Label> </a>
+                                                <asp:Label ID="Label12" runat="server" Text="Label"></asp:Label>
                                                 <br />
                                                 <br />
                                                 <asp:Label ID="Label13" runat="server" Text="Procedures: "></asp:Label>
-                                               <asp:Label ID="Label17" runat="server" Text='<%# Eval("wp_id") %>'></asp:Label>
-                                                <br />
+                                                <asp:Label ID="Label14" runat="server" Text="Label"></asp:Label>
                                                 <br />
                                                 <asp:Label ID="Label15" runat="server" Text="Rating: "></asp:Label>
                                                 <asp:Label ID="Label16" runat="server" Text="Label"></asp:Label>

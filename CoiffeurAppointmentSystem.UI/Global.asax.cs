@@ -11,7 +11,6 @@ namespace CoiffeurAppointmentSystem.UI
     {
         protected void Application_Start(object sender, EventArgs e)
         {
-
         }
     }
 }

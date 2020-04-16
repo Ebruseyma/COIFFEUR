@@ -17,6 +17,10 @@
         .auto-style15 {
             height: 158px;
         }
+        .auto-style16 {
+            width: 247px;
+            height: 96px;
+        }
         .auto-style17 {
             height: 54px;
         }
@@ -34,6 +38,9 @@
         }
         .auto-style22 {
             height: 108px;
+        }
+        .auto-style24 {
+            height: 22px;
         }
         .auto-style25 {
             background-color: #e3d6cf;
@@ -69,7 +76,7 @@
                 <asp:Label ID="Label1" runat="server" Text="Staff ID: " CssClass="filterLabel" Font-Size="X-Large"></asp:Label>
             </td>
             <td class="auto-style17">
-                &nbsp;<asp:TextBox ID="TextBox2" runat="server" Height="22px"></asp:TextBox>
+                <input id="Text1" type="text" maxlength:15 required="required" value:"int" maxlength="15" class="auto-style24"/>
             </td>
         </tr>
         <tr>
@@ -77,7 +84,7 @@
                 <p class="auto-style21"><asp:Label ID="Label2" runat="server" Text="About Staff: " CssClass="filterLabel" Font-Size="X-Large"></asp:Label></p>
             </td>
             <td class="auto-style20">
-                &nbsp;<asp:TextBox ID="TextBox3" runat="server" Height="96px" Width="244px"></asp:TextBox>
+                <input id="Text2" type="text" maxlength:320 required="required" value:"char" maxlength="320" class="auto-style16"/>
             </td>
         </tr>
         <tr>

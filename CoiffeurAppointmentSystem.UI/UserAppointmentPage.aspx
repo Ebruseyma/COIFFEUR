@@ -16,16 +16,16 @@
                 <table class="auto-style1">
                     <tr>
                         <td class="auto-style12">Date:
-                            <asp:Label ID="Label12" runat="server" Text='<%# Eval("appointment_date") %>'></asp:Label>
+                            <asp:Label ID="Label12" runat="server" Text="Label"></asp:Label>
                         </td>
                         <td class="auto-style10">Procedure:
-                            <asp:Label ID="Label13" runat="server" Text='<%# Eval("service_name") %>'></asp:Label>
+                            <asp:Label ID="Label13" runat="server" Text="Label"></asp:Label>
                         </td>
                         <td class="auto-style13"><span class="auto-style9">Place:
-                            <asp:Label ID="Label14" runat="server" Text='<%# Eval("wp_name") %>'></asp:Label>
+                            <asp:Label ID="Label14" runat="server" Text="Label"></asp:Label>
                             </span></td>
                         <td class="auto-style11">Staff:
-                            <asp:Label ID="Label15" runat="server" Text='<%# Eval("name") %>'></asp:Label>
+                            <asp:Label ID="Label15" runat="server" Text="Label"></asp:Label>
                             </span></td>
                         <td class="auto-style6">
                             <asp:Button ID="Button2" runat="server" Text="Cancel" />
@@ -45,16 +45,16 @@
                 <table class="auto-style1">
                     <tr>
                         <td class="auto-style10">Date:
-                            <asp:Label ID="Label16" runat="server" Text='<%# Eval("appointment_date") %>'></asp:Label>
+                            <asp:Label ID="Label16" runat="server" Text="Label"></asp:Label>
                         </td>
                         <td class="auto-style14">Procedure:
-                            <asp:Label ID="Label17" runat="server" Text='<%# Eval("service_name") %>'></asp:Label>
+                            <asp:Label ID="Label17" runat="server" Text="Label"></asp:Label>
                         </td>
                         <td class="auto-style15">Place:
-                            <asp:Label ID="Label18" runat="server" Text='<%# Eval("wp_name") %>'></asp:Label>
+                            <asp:Label ID="Label18" runat="server" Text="Label"></asp:Label>
                         </td>
                         <td class="auto-style9">Staff:
-                            <asp:Label ID="Label19" runat="server" Text='<%# Eval("name") %>'></asp:Label>
+                            <asp:Label ID="Label19" runat="server" Text="Label"></asp:Label>
                         </td>
                     </tr>
                 </table>

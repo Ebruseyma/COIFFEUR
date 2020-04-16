@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MemberUser.master.cs" Inherits="CoiffeurAppointmentSystem.MemberUser" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="User.master.cs" Inherits="CoiffeurAppointmentSystem.User" %>
 
 <!DOCTYPE html>
 
@@ -38,7 +38,12 @@
             text-align: left;
         }
         .auto-style8 {
+<<<<<<< HEAD
             margin-left: 0px;
+=======
+            height: 20px;
+            width: 250px;
+>>>>>>> parent of 84c051d... SignUpPage
         }
         </style>
 </head>
@@ -53,12 +58,16 @@
                     <tr class="auto-style7">
                         <td class="auto-style2">&nbsp;</td>
                         <td class="auto-style4">
+<<<<<<< HEAD
                             <asp:TextBox ID="TextBox4" runat="server" Width="250px" CssClass="auto-style8"></asp:TextBox>
 &nbsp;
                             <asp:Button ID="Button2" runat="server" CssClass="filterButton" Height="27px" Text="Search" Width="70px" />
                         </td>
+=======
+                            <input id="Text1" class="auto-style8" type="text" /></td>
+>>>>>>> parent of 84c051d... SignUpPage
                         <td class="auto-style3">
-                            <asp:Label ID="lblUserName" runat="server" Text="[User Name]" CssClass="navLabel" Font-Size="X-Large"></asp:Label>
+                            <asp:Label ID="Label2" runat="server" Text="[User Name]" CssClass="navLabel" Font-Size="X-Large"></asp:Label>
                             &nbsp;<asp:Label ID="Label11" runat="server" CssClass="navLabelSearch" Font-Size="Larger" Text="|"></asp:Label>
                             &nbsp;&nbsp;
                             <div class="dropdown">
@@ -92,9 +101,8 @@
                     </tr>
                     <tr>
                         <td class="auto-style6">
-                            <asp:DropDownList ID="DropDownList1" runat="server" Height="22px" Width="130px" AutoPostBack="true" DataSourceID="DataList" DataTextField="city" DataValueField="city_id" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+                            <asp:DropDownList ID="DropDownList1" runat="server" Height="22px" Width="130px">
                             </asp:DropDownList>
-                            <asp:SqlDataSource ID="DataList" runat="server" ConnectionString="<%$ ConnectionStrings:CoiffeurAppointmentSystemConnectionString %>" SelectCommand="SELECT city_id, city FROM cas.city"></asp:SqlDataSource>
                         </td>
                     </tr>
                     <tr>
@@ -115,9 +123,8 @@
                     </tr>
                     <tr>
                         <td class="auto-style6">
-                            <asp:DropDownList ID="DropDownList3" runat="server" Height="22px" Width="130px" DataSourceID="SqlDataSource1" DataTextField="service_name" DataValueField="service_id">
+                            <asp:DropDownList ID="DropDownList3" runat="server" Height="22px" Width="130px">
                             </asp:DropDownList>
-                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CoiffeurAppointmentSystemConnectionString %>" SelectCommand="select * from cas.service"></asp:SqlDataSource>
                         </td>
                     </tr>
                     <tr>
