@@ -17,18 +17,10 @@
         .auto-style9 {
             width: 458px;
         }
-        .auto-style10 {
-            width: 289px;
-            height: 94px;
-        }
         .auto-style12 {
             text-align: left;
             width: 65px;
             height: 289px;
-        }
-        .auto-style13 {
-            width: 155px;
-            height: 22px;
         }
         .auto-style14 {
             width: 458px;
@@ -44,10 +36,6 @@
         }
         .auto-style18 {
             height: 289px;
-        }
-        .auto-style19 {
-            width: 200px;
-            height: 22px;
         }
         .auto-style25 {
             height: 82px;
@@ -140,10 +128,13 @@
             <td class="auto-style18">
                 <br />
                 <br />
-                <input id="Text1" class="auto-style10" type="text" /><br />
+                <asp:TextBox ID="TextBox4" runat="server" Height="90px" Width="255px"></asp:TextBox>
                 <br />
                 <br />
-                <input id="Text2" class="auto-style13" type="text" /></td>
+                <br />
+                <asp:TextBox ID="TextBox5" runat="server" Height="21px" Width="134px"></asp:TextBox>
+                <br />
+                </td>
         </tr>
         <tr>
             <td class="auto-style14"></td>
@@ -155,7 +146,7 @@
                 <br />
             </td>
             <td class="auto-style16">
-                <asp:TextBox ID="TextBox3" runat="server" Height="56px" Width="185px"></asp:TextBox>
+                <asp:TextBox ID="TextBox6" runat="server" Height="80px" Width="252px"></asp:TextBox>
                 </td>
         </tr>
         <tr>
@@ -164,7 +155,8 @@
                 <asp:Label ID="Label18" runat="server" Font-Size="20px" Text="E-mail: " CssClass="filterLabel"></asp:Label>
                 </td>
             <td class="auto-style31">
-                <input id="Text3" class="auto-style19" type="email" /></td>
+                <asp:TextBox ID="TextBox7" runat="server" Height="23px" Width="200px"></asp:TextBox>
+            </td>
         </tr>
         <tr>
             <td class="auto-style38"></td>

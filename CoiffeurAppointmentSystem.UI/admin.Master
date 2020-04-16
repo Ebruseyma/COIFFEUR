@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="User.master.cs" Inherits="CoiffeurAppointmentSystem.User" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="CoiffeurAppointmentSystem.admin" %>
 
 <!DOCTYPE html>
 
@@ -43,7 +43,7 @@
 &nbsp;<asp:Button ID="Button1" runat="server" CssClass="filterButton" Height="27px" Text="Search" Width="70px" />
                          </td>
                          <td class="auto-style3">
-                             <asp:Label ID="Label2" runat="server" Text="[Admin Name]" CssClass="navLabelSearch" Font-Size="X-Large"></asp:Label>
+                             <asp:Label ID="lblUserName" runat="server" Text="[Admin Name]" CssClass="navLabelSearch" Font-Size="X-Large"></asp:Label>
                              &nbsp;<asp:Label ID="Label11" runat="server" CssClass="navLabelSearch" Font-Size="Larger" Text="|"></asp:Label>
                              &nbsp;&nbsp;
                              <div class="dropdown">
