@@ -17,7 +17,7 @@
         .auto-style2 {
             text-align: right;
             height: 30px;
-            width: 433px;
+            width: 409px;
         }
         .auto-style3 {
             height: 30px;
@@ -25,7 +25,8 @@
         }
         .auto-style4 {
             height: 30px;
-            width: 276px;
+            width: 340px;
+            text-align: left;
         }
         .auto-style5 {
             width: 100%;
@@ -46,10 +47,10 @@
             <div class="nav"><asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
                 <table class="auto-style1">
                     <tr>
-                        <td class="auto-style2">
-                            <asp:Label ID="Label1" runat="server" CssClass="navLabelSearch" Text="Search:" Font-Size="X-Large"></asp:Label>
-                        </td>
+                        <td class="auto-style2">&nbsp;</td>
                         <td class="auto-style4">&nbsp;<asp:TextBox ID="TextBox4" runat="server" Width="250px"></asp:TextBox>
+&nbsp;
+                            <asp:Button ID="Button2" runat="server" CssClass="filterButton" Height="27px" Text="Search" Width="70px" />
                         </td>
                         <td class="auto-style3"><a href="UserLogIn.aspx">
                             <asp:Label ID="Label2" runat="server" Text="Log In" CssClass="navLabel" Font-Size="X-Large"></asp:Label>
@@ -70,7 +71,7 @@
                 <table class="auto-style5">
                     <tr>
                         <td class="auto-style6">
-                            <asp:Label ID="Label4" runat="server" Font-Size="40px" Text="Filter" CssClass="filterLabel" Font-Bold="True"></asp:Label>
+                            <asp:Label ID="Label4" runat="server" Font-Size="40px" Text="Filter" Font-Bold="False"></asp:Label>
                         </td>
                     </tr>
                     <tr>
