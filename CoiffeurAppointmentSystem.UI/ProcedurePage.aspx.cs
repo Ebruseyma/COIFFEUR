@@ -69,6 +69,5 @@ namespace CoiffeurAppointmentSystem
             Response.Redirect("AppointmentPage.aspx?id=" + id1);
         }
 
-     
     }
 }
