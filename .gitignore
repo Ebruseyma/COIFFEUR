@@ -264,3 +264,4 @@ CoiffeurAppointmentSystem.ORM/CoiffeurAppointmentSystem.ORM.csproj
 *.config
 CoiffeurAppointmentSystem.UI/Web.config
 CoiffeurAppointmentSystem.UI/Web.config
+*.Config
