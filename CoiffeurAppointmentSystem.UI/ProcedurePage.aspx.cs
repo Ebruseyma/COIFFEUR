@@ -62,5 +62,13 @@ namespace CoiffeurAppointmentSystem
     }
     */
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            string id1 = Request.QueryString["id"];
+            Response.Redirect("AppointmentPage.aspx?id=" + id1);
+        }
+
+     
     }
 }

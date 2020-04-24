@@ -50,6 +50,9 @@
         .auto-style17 {
             text-align: center;
         }
+        .auto-style18 {
+            margin-right: 0px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -66,8 +69,7 @@
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style9">
-                        <asp:CheckBox ID="CheckBox1" runat="server" />
-                    </td>
+                        <asp:CheckBox ID="CheckBox1" runat="server" />                    </td>
                     <td class="auto-style13">
                         <asp:Label ID="Label1" runat="server" Text='<%# Eval("service_name") %>'></asp:Label>
                     </td>
@@ -96,14 +98,14 @@
             <td class="auto-style14">&nbsp;</td>
             <td class="auto-style15">&nbsp;</td>
             <td class="auto-style17">
-                <asp:Button ID="Button1" runat="server" Height="40px" Text="CHOOSE" Width="154px" />
+                <asp:Button ID="Button1" runat="server" Height="40px" Text="CHOOSE" Width="154px" OnClick="Button1_Click" />
             </td>
         </tr>
     </table>
     <br />
 </asp:Content>
 <asp:Content ID="Content5" runat="server" ContentPlaceHolderID="ContentPlaceHolder2">
-    <asp:DataList ID="DataList2" runat="server" CssClass="auto-style15" Width="1334px">
+    <asp:DataList ID="DataList2" runat="server" CssClass="auto-style18" Width="952px">
         <ItemTemplate>
             <table class="auto-style1">
                 <tr>
