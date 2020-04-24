@@ -11,6 +11,7 @@
         .auto-style10 {
             height: 253px;
             width: 417px;
+            text-align: center;
         }
         .auto-style11 {
             width: 417px;
@@ -40,15 +41,15 @@
                                                 <asp:Image ID="Image1" runat="server" Height="250px" Width="295px" />
                                             </td>
                                             <td class="auto-style9">
-                                                <a href="infoPage.aspx?id=<%#Eval("wp_id") %>" > <asp:Label ID="Label12" runat="server" Text='<%# Eval("wp_name") %>'></asp:Label> </a>
+                                                <a href="infoPage.aspx?id=<%#Eval("wp_id") %>" > <asp:Label ID="Label12" runat="server" Text='<%# Eval("wp_name") %>' CssClass="filterLabel"></asp:Label> </a>
                                                 <br />
                                                 <br />
-                                                <asp:Label ID="Label13" runat="server" Text="Procedures: "></asp:Label>
-                                               <asp:Label ID="Label17" runat="server" Text='<%# Eval("wp_id") %>'></asp:Label>
+                                                <asp:Label ID="Label13" runat="server" Text="Procedures: " CssClass="filterLabel"></asp:Label>
+                                               <asp:Label ID="Label17" runat="server" Text='<%# Eval("wp_id") %>' CssClass="filterLabel"></asp:Label>
                                                 <br />
                                                 <br />
-                                                <asp:Label ID="Label15" runat="server" Text="Rating: "></asp:Label>
-                                                <asp:Label ID="Label16" runat="server" Text="Label"></asp:Label>
+                                                <asp:Label ID="Label15" runat="server" Text="Rating: " CssClass="filterLabel"></asp:Label>
+                                                <asp:Label ID="Label16" runat="server" Text="Label" CssClass="filterLabel"></asp:Label>
                                             </td>
                                             <td class="auto-style9"></td>
                                         </tr>
@@ -56,7 +57,7 @@
                                             <td class="auto-style11">&nbsp;</td>
                                             <td>&nbsp;</td>
                                             <td class="auto-style12">
-                                                <asp:Button ID="Button2" runat="server" Height="43px" Text="Make Appointment" Width="135px" />
+                                                <asp:Button ID="Button2" runat="server" Height="43px" Text="Make Appointment" Width="155px" CssClass="filterButton" />
                                             </td>
                                         </tr>
                                     </table>

@@ -10,6 +10,7 @@
 
         .auto-style9 {
             width: 37px;
+            text-align: right;
         }
 
         .auto-style10 {
@@ -27,11 +28,13 @@
         }
 
         .auto-style12 {
-            width: 381px;
+            width: 385px;
+            text-align: center;
         }
 
         .auto-style13 {
-            width: 325px;
+            width: 362px;
+            text-align: center;
         }
 
         .auto-style14 {
@@ -51,7 +54,7 @@
             text-align: center;
         }
         .auto-style18 {
-            margin-right: 0px;
+            width: 120%;
         }
     </style>
 </asp:Content>
@@ -66,17 +69,18 @@
 
     <asp:DataList ID="DataList1" runat="server" Width="1100px">
         <ItemTemplate>
-            <table class="auto-style1">
+            <table class="auto-style18">
                 <tr>
                     <td class="auto-style9">
-                        <asp:CheckBox ID="CheckBox1" runat="server" />                    </td>
+                        <asp:CheckBox ID="CheckBox1" runat="server" />
+                    </td>
                     <td class="auto-style13">
                         <asp:Label ID="Label1" runat="server" Text='<%# Eval("service_name") %>'></asp:Label>
                     </td>
                     <td class="auto-style12">
                         <asp:Label ID="Label2" runat="server" Text='<%# Eval("estimate_time") %>'></asp:Label>
                     </td>
-                    <td>
+                    <td class="auto-style17">
                         <asp:Label ID="Label3" runat="server" Text='<%# Eval("price") %>'></asp:Label>
                     </td>
                 </tr>
@@ -98,14 +102,14 @@
             <td class="auto-style14">&nbsp;</td>
             <td class="auto-style15">&nbsp;</td>
             <td class="auto-style17">
-                <asp:Button ID="Button1" runat="server" Height="40px" Text="CHOOSE" Width="154px" OnClick="Button1_Click" />
+                <asp:Button ID="Button1" runat="server" Height="40px" Text="CHOOSE" Width="154px" CssClass="filterButton" />
             </td>
         </tr>
     </table>
     <br />
 </asp:Content>
 <asp:Content ID="Content5" runat="server" ContentPlaceHolderID="ContentPlaceHolder2">
-    <asp:DataList ID="DataList2" runat="server" CssClass="auto-style18" Width="952px">
+    <asp:DataList ID="DataList2" runat="server" CssClass="auto-style15" Width="1334px">
         <ItemTemplate>
             <table class="auto-style1">
                 <tr>

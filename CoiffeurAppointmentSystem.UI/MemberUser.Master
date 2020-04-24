@@ -17,7 +17,7 @@
         .auto-style2 {
             text-align: right;
             height: 30px;
-            width: 433px;
+            width: 386px;
         }
         .auto-style3 {
             height: 30px;
@@ -25,7 +25,7 @@
         }
         .auto-style4 {
             height: 30px;
-            width: 276px;
+            width: 344px;
         }
         .auto-style5 {
             width: 100%;
@@ -36,6 +36,9 @@
         }
         .auto-style7 {
             text-align: left;
+        }
+        .auto-style8 {
+            margin-left: 0px;
         }
         </style>
 </head>
@@ -48,14 +51,14 @@
             <div class="nav"><asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
                 <table class="auto-style1">
                     <tr class="auto-style7">
-                        <td class="auto-style2">
-                            <asp:Label ID="Label1" runat="server" CssClass="navLabelSearch" Text="Search:" Font-Size="X-Large"></asp:Label>
-                        </td>
+                        <td class="auto-style2">&nbsp;</td>
                         <td class="auto-style4">
-                            <asp:TextBox ID="TextBox4" runat="server" Width="250px"></asp:TextBox>
+                            <asp:TextBox ID="TextBox4" runat="server" Width="250px" CssClass="auto-style8"></asp:TextBox>
+                            &nbsp;
+                            <asp:Button ID="Button2" runat="server" CssClass="filterButton" Height="27px" Text="Search" Width="70px" />
                         </td>
                         <td class="auto-style3">
-                            <asp:Label ID="lblUserName" runat="server" Text="[User Name]" CssClass="navLabel" Font-Size="X-Large"></asp:Label>
+                            <asp:Label ID="lblUserName" runat="server" Text="[User Name]" CssClass="navLabelSearch" Font-Size="X-Large"></asp:Label>
                             &nbsp;<asp:Label ID="Label11" runat="server" CssClass="navLabelSearch" Font-Size="Larger" Text="|"></asp:Label>
                             &nbsp;&nbsp;
                             <div class="dropdown">
@@ -63,7 +66,9 @@
                                     <asp:Label ID="Label12" runat="server" Text="Menu" Font-Size="X-Large"></asp:Label>
                                 </button>
                                 <div class="dropdown-content">
-                                    <a href="UserAppointmentPage.aspx" >Appointments</a> <a href="UserSettings.aspx" >Settings</a> <a href="MainPage.aspx" >Sign out</a>
+                                    <a href="UserAppointmentPage.aspx">Appointments</a> 
+                                    <a href="UserSettings.aspx">Settings</a> 
+                                    <a href="MainPage.aspx" >Sign out</a>
                                 </div>
                             </div>
                             &nbsp; </td>
