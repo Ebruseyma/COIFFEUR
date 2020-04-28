@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="Services - C.A.S" Language="C#" MasterPageFile="~/UserNonFilter.Master" AutoEventWireup="true" CodeBehind="ProcedurePage.aspx.cs" Inherits="CoiffeurAppointmentSystem.ProcedurePage" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style8 {
@@ -6,39 +7,54 @@
             text-align: center;
             height: 100px;
         }
+
         .auto-style9 {
             width: 37px;
+            text-align: right;
         }
+
         .auto-style10 {
             width: 421px;
             font-size: xx-large;
             text-align: center;
             height: 100px;
         }
+
         .auto-style11 {
             width: 374px;
             font-size: xx-large;
             text-align: center;
             height: 100px;
         }
+
         .auto-style12 {
-            width: 381px;
+            width: 385px;
+            text-align: center;
         }
+
         .auto-style13 {
-            width: 325px;
+            width: 362px;
+            text-align: center;
         }
+
         .auto-style14 {
             width: 513px;
         }
+
         .auto-style15 {
             width: 284px;
         }
+
         .auto-style16 {
             width: 100%;
             height: 116px;
         }
+
         .auto-style17 {
             text-align: center;
+        }
+        .auto-style18 {
+            width: 120%;
         }
     </style>
 </asp:Content>
@@ -51,9 +67,9 @@
         </tr>
     </table>
 
-    <asp:DataList ID="DataList1" runat="server" Width="1100px" OnSelectedIndexChanged="DataList1_SelectedIndexChanged">
+    <asp:DataList ID="DataList1" runat="server" Width="1100px">
         <ItemTemplate>
-            <table class="auto-style1">
+            <table class="auto-style18">
                 <tr>
                     <td class="auto-style9">
                         <asp:CheckBox ID="CheckBox1" runat="server" />
@@ -62,10 +78,10 @@
                         <asp:Label ID="Label1" runat="server" Text='<%# Eval("service_name") %>'></asp:Label>
                     </td>
                     <td class="auto-style12">
-                        <asp:Label ID="Label2" runat="server" Text='<%# Eval("service_id") %>'></asp:Label>
+                        <asp:Label ID="Label2" runat="server" Text='<%# Eval("estimate_time") %>'></asp:Label>
                     </td>
-                    <td>
-                        <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+                    <td class="auto-style17">
+                        <asp:Label ID="Label3" runat="server" Text='<%# Eval("price") %>'></asp:Label>
                     </td>
                 </tr>
             </table>
@@ -86,9 +102,24 @@
             <td class="auto-style14">&nbsp;</td>
             <td class="auto-style15">&nbsp;</td>
             <td class="auto-style17">
-                <asp:Button ID="Button1" runat="server" Height="40px" Text="CHOOSE" Width="154px" />
+                <asp:Button ID="Button1" runat="server" Height="40px" Text="CHOOSE" Width="154px" CssClass="filterButton" />
             </td>
         </tr>
     </table>
     <br />
-    </asp:Content>
+</asp:Content>
+<asp:Content ID="Content5" runat="server" ContentPlaceHolderID="ContentPlaceHolder2">
+    <asp:DataList ID="DataList2" runat="server" CssClass="auto-style15" Width="1334px">
+        <ItemTemplate>
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style5"><a class="info1" href="infoPage.aspx?id=<%#Eval("wp_id") %>">INFORMATION</a></td>
+                    <td class="auto-style5"><a class="info2" href="ProcedurePage.aspx?id=<%#Eval("wp_id") %>">PROCEDURES</a></td>
+                    <td class="auto-style5"><a class="info3" href="CommentPage.aspx?id=<%#Eval("wp_id") %>">COMMENTS</a></td>
+                    <td class="auto-style5"><a class="info4" href="CantactPage.aspx?id=<%#Eval("wp_id") %>">CONTACT</a></td>
+                </tr>
+            </table>
+        </ItemTemplate>
+    </asp:DataList>
+</asp:Content>
+
