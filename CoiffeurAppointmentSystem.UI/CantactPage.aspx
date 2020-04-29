@@ -12,24 +12,27 @@
 
         .auto-style9 {
             font-size: 50px;
-            text-align: center;
+            text-align: left;
+        }
+        .auto-style10 {
+            width: 159%;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content6" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:DataList ID="DataList1" runat="server">
         <ItemTemplate>
-            <table class="auto-style1">
+            <table class="auto-style10">
                 <tr>
                     <td class="auto-style8" colspan="2">
-                        <h1 class="auto-style9">Contact</h1>
+                        <h1 class="auto-style9">&nbsp;&nbsp; Contact</h1>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style6" rowspan="7">
                         <asp:Image ID="Image1" runat="server" Height="228px" Width="300px" />
                     </td>
-                    <td>Phone Number:
+                    <td>&nbsp;&nbsp; Phone Number:
                 <asp:Label ID="Label4" runat="server" Text='<%# Eval("tel_no") %>'></asp:Label>
                     </td>
                 </tr>
@@ -37,7 +40,7 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>Address:
+                    <td>&nbsp;&nbsp; Address:
                 <asp:Label ID="Label8" runat="server" Text='<%# Eval("address") %>'></asp:Label>
                     </td>
                 </tr>
@@ -45,14 +48,14 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>E-mail:
+                    <td>&nbsp;&nbsp; E-mail:
                 <asp:Label ID="Label6" runat="server" Text='<%# Eval("email") %>'></asp:Label>
                     </td>
                     <tr>
                         <td>&nbsp;</td>
                     </tr>
                 <tr>
-                    <td>Rating:
+                    <td>&nbsp;&nbsp; Rating:
                 <asp:Label ID="Label7" runat="server" Text="Label"></asp:Label>
                     </td>
                 </tr>
@@ -68,7 +71,7 @@
 </asp:Content>
 
 <asp:Content ID="Content7" runat="server" ContentPlaceHolderID="ContentPlaceHolder2">
-    <asp:DataList ID="DataList2" runat="server" CssClass="auto-style15" Width="949px">
+    <asp:DataList ID="DataList2" runat="server" CssClass="auto-style15" Width="1334px">
         <ItemTemplate>
             <table class="auto-style1">
                 <tr>

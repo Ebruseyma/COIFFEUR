@@ -60,18 +60,18 @@
                                 <td class="auto-style8">
                                     <asp:Image ID="Image1" runat="server" Height="296px" Width="348px" />
                                 </td>
-                                <td class="auto-style11">&nbsp;&nbsp;<asp:Label ID="Label4" runat="server" Font-Size="XX-Large" Text='<%# Eval("wp_name") %>'></asp:Label>
+                                <td class="auto-style11">&nbsp;&nbsp;<asp:Label ID="Label4" runat="server" Font-Size="XX-Large" Text='<%# Eval("wp_name") %>' CssClass="filterLabel"></asp:Label>
                                     <br />
                                     <br />
                                     <br />
-                                    &nbsp;<asp:Label ID="Label5" runat="server" Text="About:"></asp:Label>
-                                    &nbsp;<asp:Label ID="Label6" runat="server" Text='<%# Eval("about") %>'></asp:Label>
+                                    &nbsp;<asp:Label ID="Label5" runat="server" Text="About:" CssClass="filterLabel"></asp:Label>
+                                    &nbsp;<asp:Label ID="Label6" runat="server" Text='<%# Eval("about") %>' CssClass="filterLabel"></asp:Label>
                                 </td>
                                 <td class="auto-style7"></td>
                             </tr>
                             <tr>
-                                <td class="auto-style14">&nbsp;&nbsp;<asp:Label ID="Label7" runat="server" Text="Rating: "></asp:Label>
-                                    <asp:Label ID="Label8" runat="server" Text='<%# Eval("wp_id") %>'></asp:Label>
+                                <td class="auto-style14">&nbsp;&nbsp;<asp:Label ID="Label7" runat="server" Text="Rating: " CssClass="filterLabel"></asp:Label>
+                                    <asp:Label ID="Label8" runat="server" Text='<%# Eval("wp_id") %>' CssClass="filterLabel"></asp:Label>
                                 </td>
                                 <td class="auto-style13">&nbsp;</td>
                                 <td>&nbsp;</td>
@@ -80,12 +80,12 @@
                                 <td class="auto-style14">&nbsp;</td>
                                 <td class="auto-style13">&nbsp;</td>
                                 <td class="auto-style10">
-                                    <asp:Button ID="Button1" runat="server" Height="37px" Text="Make Appointment" Width="115px" OnClick="Button1_Click1" />
+                                    <asp:Button ID="Button1" runat="server" Height="40px" Text="Make Appointment" Width="155px" OnClick="Button1_Click1" CssClass="filterButton" />
                                 </td>
                             </tr>
                             <tr>
                                 <td class="auto-style14">&nbsp;
-                                    <asp:Label ID="Label9" runat="server" Text="Pictures:"></asp:Label>
+                                    <asp:Label ID="Label9" runat="server" Text="Pictures:" CssClass="filterLabel"></asp:Label>
                                 </td>
                                 <td class="auto-style13">&nbsp;</td>
                                 <td>&nbsp;</td>
@@ -104,7 +104,7 @@
 </asp:Content>
 
 <asp:Content ID="Content3" runat="server" ContentPlaceHolderID="ContentPlaceHolder2">
-    <asp:DataList ID="DataList2" runat="server" CssClass="auto-style15" Width="949px">
+    <asp:DataList ID="DataList2" runat="server" CssClass="auto-style15" Width="1334px">
         <ItemTemplate>
             <table class="auto-style1">
                 <tr>

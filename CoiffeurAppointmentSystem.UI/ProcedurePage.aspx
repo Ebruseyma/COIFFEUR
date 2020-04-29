@@ -10,6 +10,7 @@
 
         .auto-style9 {
             width: 37px;
+            text-align: right;
         }
 
         .auto-style10 {
@@ -27,11 +28,13 @@
         }
 
         .auto-style12 {
-            width: 381px;
+            width: 385px;
+            text-align: center;
         }
 
         .auto-style13 {
-            width: 325px;
+            width: 362px;
+            text-align: center;
         }
 
         .auto-style14 {
@@ -50,6 +53,9 @@
         .auto-style17 {
             text-align: center;
         }
+        .auto-style18 {
+            width: 120%;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -63,7 +69,7 @@
 
     <asp:DataList ID="DataList1" runat="server" Width="1100px">
         <ItemTemplate>
-            <table class="auto-style1">
+            <table class="auto-style18">
                 <tr>
                     <td class="auto-style9">
                         <asp:CheckBox ID="CheckBox1" runat="server" />
@@ -74,7 +80,7 @@
                     <td class="auto-style12">
                         <asp:Label ID="Label2" runat="server" Text='<%# Eval("estimate_time") %>'></asp:Label>
                     </td>
-                    <td>
+                    <td class="auto-style17">
                         <asp:Label ID="Label3" runat="server" Text='<%# Eval("price") %>'></asp:Label>
                     </td>
                 </tr>
@@ -96,7 +102,7 @@
             <td class="auto-style14">&nbsp;</td>
             <td class="auto-style15">&nbsp;</td>
             <td class="auto-style17">
-                <asp:Button ID="Button1" runat="server" Height="40px" Text="CHOOSE" Width="154px" />
+                <asp:Button ID="Button1" runat="server" Height="40px" Text="CHOOSE" Width="154px" CssClass="filterButton" />
             </td>
         </tr>
     </table>

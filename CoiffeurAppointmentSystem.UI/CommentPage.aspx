@@ -14,11 +14,11 @@
         }
 
         .auto-style8 {
-            height: 333px;
+            height: 221px;
         }
 
         .auto-style9 {
-            height: 333px;
+            height: 221px;
             width: 279px;
             text-align: right;
         }
@@ -30,7 +30,7 @@
         }
 
         .auto-style11 {
-            height: 333px;
+            height: 221px;
             width: 725px;
             text-align: center;
         }
@@ -49,6 +49,13 @@
             text-align: right;
             width: 212px;
         }
+        .auto-style15 {
+            width: 100%;
+            margin-bottom: 0px;
+        }
+        .auto-style16 {
+            margin-bottom: 0px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -57,7 +64,7 @@
         <asp:Label ID="Label4" runat="server" Font-Size="XX-Large" Text="Comments"></asp:Label>
     </div>
     <br />
-    <table align="center" class="auto-style1">
+    <table align="center" class="auto-style15">
         <tr>
             <td class="auto-style9">Send a comment:</td>
             <td class="auto-style11">
@@ -70,19 +77,19 @@
             <td class="auto-style12"></td>
             <td class="auto-style7">
                 <asp:Label runat="server" ID="lblError" Visible="false"></asp:Label>
-                <asp:Button ID="btnSendCommend" OnClick="btnSendCommend_Click" runat="server" Text="Send" />
+                <asp:Button ID="btnSendCommend" OnClick="btnSendCommend_Click" runat="server" Text="Send" CssClass="filterButton" Height="30px" Width="60px" />
             </td>
         </tr>
     </table>
     <br />
-    <asp:DataList ID="DataList1" runat="server">
+    <asp:DataList ID="DataList1" runat="server" Height="239px" Width="1138px">
         <ItemTemplate>
-            <table class="auto-style13" style="background-color: white">
+            <table class="auto-style13">
                 <tr>
-                    <td class="auto-style14" style="background-color: white">
-                        <asp:Label ID="Label5" runat="server" Text='<%# Eval("first_name") %>'></asp:Label>
+                    <td class="auto-style14">
+                        <asp:Label ID="Label5" runat="server" Text='<%# Eval("first_name") %>' CssClass="filterLabel"></asp:Label>
                         : </td>
-                    <td style="background-color: white">&nbsp;&nbsp;<asp:Label ID="Label6" runat="server" Text='<%# Eval("comment") %>'></asp:Label>
+                    <td>&nbsp;&nbsp;<asp:Label ID="Label6" runat="server" Text='<%# Eval("comment") %>' CssClass="filterLabel"></asp:Label>
                     </td>
                 </tr>
             </table>
@@ -90,7 +97,7 @@
     </asp:DataList>
 </asp:Content>
 <asp:Content ID="Content5" runat="server" ContentPlaceHolderID="ContentPlaceHolder2">
-    <asp:DataList ID="DataList2" runat="server" CssClass="auto-style15" Width="949px">
+    <asp:DataList ID="DataList2" runat="server" CssClass="auto-style16" Width="1334px">
         <ItemTemplate>
             <table class="auto-style1">
                 <tr>

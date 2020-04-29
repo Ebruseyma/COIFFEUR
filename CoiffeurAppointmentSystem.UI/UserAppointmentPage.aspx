@@ -28,7 +28,7 @@
                             <asp:Label ID="Label15" runat="server" Text='<%# Eval("name") %>'></asp:Label>
                             </span></td>
                         <td class="auto-style6">
-                            <asp:Button ID="Button2" runat="server" Text="Cancel" />
+                            <asp:Button ID="Button2" runat="server" Text="Cancel" CssClass="filterButton" />
                         </td>
                     </tr>
                 </table>

@@ -36,13 +36,13 @@
     <table class="auto-style6">
         <tr>
             <td class="auto-style7">
-                <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="60px" Font-Strikeout="False" Text="Log In"></asp:Label>
+                <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="60px" Font-Strikeout="False" Text="Log In" CssClass="filterLabel"></asp:Label>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style8">
-                <asp:Label ID="lblUserName" runat="server" Text="E-mail: " Font-Size="20px"></asp:Label>
+                <asp:Label ID="lblUserName" runat="server" Text="E-mail: " Font-Size="20px" CssClass="filterLabel"></asp:Label>
             </td>
             <td>
                 <asp:TextBox ID="txtUserName" runat="server" CssClass="auto-style9" TextMode="Email" /><asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="   Email cannot be blank" ControlToValidate="txtUserName" ForeColor="Red"></asp:RequiredFieldValidator> </td>
@@ -51,7 +51,7 @@
         </tr>
         <tr>
             <td class="auto-style8">
-                <asp:Label ID="lblPassword" runat="server" Text="Password: " Font-Size="20px"></asp:Label>
+                <asp:Label ID="lblPassword" runat="server" Text="Password: " Font-Size="20px" CssClass="filterLabel"></asp:Label>
             </td>
             <td>
                 <asp:TextBox ID="txtPassword" runat="server" CssClass="auto-style10" TextMode="Password" />
@@ -62,13 +62,13 @@
             <td class="auto-style8">&nbsp;</td>
             <td>
                 <input id="Checkbox1" class="auto-style11" type="checkbox" />
-                <asp:Label ID="Label4" runat="server" Font-Size="20px" Text=" Remember me."></asp:Label>
+                <asp:Label ID="Label4" runat="server" Font-Size="20px" Text=" Remember me." CssClass="filterLabel"></asp:Label>
             </td>
         </tr>
         <tr>
             <td class="auto-style7">&nbsp;</td>
             <td>
-                <asp:Button ID="Button1" runat="server" Height="30px" Text="Log In" Width="62px" OnClick="Button1_Click" />
+                <asp:Button ID="Button1" runat="server" Height="35px" Text="Log In" Width="70px" OnClick="Button1_Click" CssClass="filterButton" />
             </td>
         </tr>
         <tr>
