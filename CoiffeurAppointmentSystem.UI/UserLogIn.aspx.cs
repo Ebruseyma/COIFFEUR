@@ -24,7 +24,7 @@ namespace CoiffeurAppointmentSystem
 
                 var usermail = txtUserName.Text.Trim();
                 var password = txtPassword.Text.Trim();
-                var loginedUser = db.people.Include("gender").FirstOrDefault(a => a.email == usermail && a.password == password);
+                var loginedUser = db.people.Include("gender").Include("workplaces").FirstOrDefault(a => a.email == usermail && a.password == password);
                 //if (loginedUser != null)
                 //{
                 //    Session["username"] = loginedUser;
@@ -42,7 +42,7 @@ namespace CoiffeurAppointmentSystem
                     Session["username"] = loginedUser;
                     if (loginedUser.role_id == 1)
                     {
-                        Response.Redirect("adminMainPage.aspx");
+                        Response.Redirect("adminMainPage.aspx",true);
                     }
                     else if (loginedUser.role_id == 2)
                     {

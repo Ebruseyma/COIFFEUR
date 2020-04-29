@@ -14,24 +14,7 @@ namespace CoiffeurAppointmentSystem
         protected void Page_Load(object sender, EventArgs e)
 
         {
-
-            //if (Session["username"] == null)
-            //{
-            //    Response.Redirect("UserLogIn.aspx");
-            //}
-            //else
-            //{
-            //    loginedUser = (person)Session["username"];
-            //    if (loginedUser.role_id == 1)
-            //    {
-            //        Response.Redirect("adminMainPage.aspx");
-            //    }
-
-            //    lblUserName.Text = loginedUser.first_name + " " + loginedUser.last_name;
-
-            //}
-
-           
+            
             if (Session["username"] == null)
             {
                 Response.Redirect("UserLogIn.aspx");

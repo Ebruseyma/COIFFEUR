@@ -80,7 +80,7 @@ namespace CoiffeurAppointmentSystem.UI
                 comm.ExecuteNonQuery();
                 using (Entities db = new Entities())
                 {
-                    MemberUser.loginedUser = db.people.Include("gender").FirstOrDefault(a => a.user_id == MemberUser.loginedUser.user_id);
+                    MemberUser.loginedUser = db.people.Include("gender").Include("workplaces").FirstOrDefault(a => a.user_id == MemberUser.loginedUser.user_id);
                 }
                 Session["username"] = MemberUser.loginedUser;
                 LoadUserSettings();

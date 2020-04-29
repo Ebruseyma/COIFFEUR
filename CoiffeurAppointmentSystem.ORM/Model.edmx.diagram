@@ -33,6 +33,7 @@
         <AssociationConnector Association="CoiffeurAppointmentSystemModel.FK__workplace__admin__46E78A0C" ManuallyRouted="false" />
         <AssociationConnector Association="CoiffeurAppointmentSystemModel.FK__work__service_id__52593CB8" ManuallyRouted="false" />
         <AssociationConnector Association="CoiffeurAppointmentSystemModel.FK__work__wp_id__534D60F1" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="CoiffeurAppointmentSystemModel.sysdiagram" Width="1.5" PointX="2.375" PointY="1.125" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

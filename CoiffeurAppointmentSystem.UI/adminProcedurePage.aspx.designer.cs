@@ -7,83 +7,90 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CoiffeurAppointmentSystem
-{
-
-
-    public partial class adminProcedurePage
-    {
-
+namespace CoiffeurAppointmentSystem {
+    
+    
+    public partial class adminProcedurePage {
+        
         /// <summary>
-        /// Label14 control.
+        /// lblProcedure control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label14;
-
+        protected global::System.Web.UI.WebControls.Label lblProcedure;
+        
         /// <summary>
-        /// Label15 control.
+        /// lblApproximateTime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label15;
-
+        protected global::System.Web.UI.WebControls.Label lblApproximateTime;
+        
         /// <summary>
-        /// Label16 control.
+        /// lblPrice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label16;
-
+        protected global::System.Web.UI.WebControls.Label lblPrice;
+        
         /// <summary>
-        /// DataList1 control.
+        /// dtlAdminProcedurePage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList DataList1;
-
+        protected global::System.Web.UI.WebControls.DataList dtlAdminProcedurePage;
+        
         /// <summary>
-        /// TextBox2 control.
+        /// drpStaffList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
-
+        protected global::System.Web.UI.WebControls.DropDownList drpStaffList;
+        
         /// <summary>
-        /// TextBox3 control.
+        /// drpSeviceList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
-
+        protected global::System.Web.UI.WebControls.DropDownList drpSeviceList;
+        
         /// <summary>
-        /// TextBox4 control.
+        /// txtApproximateTime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox4;
-
+        protected global::System.Web.UI.WebControls.TextBox txtApproximateTime;
+        
         /// <summary>
-        /// Button1 control.
+        /// txtPrice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.TextBox txtPrice;
+        
+        /// <summary>
+        /// btnAdd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAdd;
     }
 }
