@@ -73,7 +73,7 @@
                     <table class="auto-style1">
                         <tr>
                             <td class="auto-style5"><a class="info1" href="infoPage.aspx">INFORMATION</a></td>
-                            <td class="auto-style5"><a class="info2" href="ProcedurePage.aspx">PROCEDURES</a></td>
+                            <td class="auto-style5"><a class="info2" href="ProcedurePage2.aspx">PROCEDURES</a></td>
                             <td class="auto-style5"><a class="info3" href="CommentPage.aspx">COMMENTS</a></td>
                             <td class="auto-style5"><a class="info4" href="CantactPage.aspx">CONTACT</a></td>
                         </tr>

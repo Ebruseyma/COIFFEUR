@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CoiffeurAppointmentSystem
-{
-
-
-    public partial class User
-    {
-
+namespace CoiffeurAppointmentSystem {
+    
+    
+    public partial class User {
+        
         /// <summary>
         /// head control.
         /// </summary>
@@ -22,7 +20,7 @@ namespace CoiffeurAppointmentSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
-
+        
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -31,7 +29,7 @@ namespace CoiffeurAppointmentSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
+        
         /// <summary>
         /// ContentPlaceHolder3 control.
         /// </summary>
@@ -40,7 +38,7 @@ namespace CoiffeurAppointmentSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder3;
-
+        
         /// <summary>
         /// TextBox1 control.
         /// </summary>
@@ -49,7 +47,7 @@ namespace CoiffeurAppointmentSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox1;
-
+        
         /// <summary>
         /// Button1 control.
         /// </summary>
@@ -58,7 +56,7 @@ namespace CoiffeurAppointmentSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button1;
-
+        
         /// <summary>
         /// Label2 control.
         /// </summary>
@@ -67,7 +65,7 @@ namespace CoiffeurAppointmentSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label2;
-
+        
         /// <summary>
         /// Label11 control.
         /// </summary>
@@ -76,7 +74,7 @@ namespace CoiffeurAppointmentSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label11;
-
+        
         /// <summary>
         /// lblUserName control.
         /// </summary>
@@ -85,7 +83,7 @@ namespace CoiffeurAppointmentSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblUserName;
-
+        
         /// <summary>
         /// ContentPlaceHolder2 control.
         /// </summary>
@@ -94,7 +92,7 @@ namespace CoiffeurAppointmentSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder2;
-
+        
         /// <summary>
         /// ContentPlaceHolder1 control.
         /// </summary>

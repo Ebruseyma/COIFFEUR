@@ -34,6 +34,7 @@ namespace CoiffeurAppointmentSystem.ORM
         public string address { get; set; }
         public Nullable<int> zipcode { get; set; }
         public byte[] wp_image { get; set; }
+        public Nullable<double> rating { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<appointment> appointments { get; set; }

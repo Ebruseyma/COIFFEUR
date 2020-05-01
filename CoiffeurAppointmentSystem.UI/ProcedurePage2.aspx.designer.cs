@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CoiffeurAppointmentSystem
-{
-
-
-    public partial class ProcedurePage
-    {
-
+namespace CoiffeurAppointmentSystem {
+    
+    
+    public partial class ProcedurePage2 {
+        
         /// <summary>
         /// DataList1 control.
         /// </summary>
@@ -22,7 +20,7 @@ namespace CoiffeurAppointmentSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DataList DataList1;
-
+        
         /// <summary>
         /// Label4 control.
         /// </summary>
@@ -31,7 +29,7 @@ namespace CoiffeurAppointmentSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label4;
-
+        
         /// <summary>
         /// Label5 control.
         /// </summary>
@@ -40,16 +38,16 @@ namespace CoiffeurAppointmentSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label5;
-
+        
         /// <summary>
-        /// Button1 control.
+        /// btnChoose control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
-
+        protected global::System.Web.UI.WebControls.Button btnChoose;
+        
         /// <summary>
         /// DataList2 control.
         /// </summary>

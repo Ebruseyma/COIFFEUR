@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Services - C.A.S" Language="C#" MasterPageFile="~/UserNonFilter.Master" AutoEventWireup="true" CodeBehind="ProcedurePage.aspx.cs" Inherits="CoiffeurAppointmentSystem.ProcedurePage" %>
+﻿<%@ Page Title="Services - C.A.S" Language="C#" MasterPageFile="~/UserNonFilter.Master" AutoEventWireup="true" CodeBehind="ProcedurePage2.aspx.cs" Inherits="CoiffeurAppointmentSystem.ProcedurePage2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
@@ -102,7 +102,7 @@
             <td class="auto-style14">&nbsp;</td>
             <td class="auto-style15">&nbsp;</td>
             <td class="auto-style17">
-                <asp:Button ID="Button1" runat="server" Height="40px" Text="CHOOSE" Width="154px" CssClass="filterButton" />
+                <asp:Button ID="btnChoose" runat="server" Height="40px" Text="CHOOSE" Width="154px" CssClass="filterButton" OnClick="btnChoose_Click" />
             </td>
         </tr>
     </table>
@@ -114,7 +114,7 @@
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style5"><a class="info1" href="infoPage.aspx?id=<%#Eval("wp_id") %>">INFORMATION</a></td>
-                    <td class="auto-style5"><a class="info2" href="ProcedurePage.aspx?id=<%#Eval("wp_id") %>">PROCEDURES</a></td>
+                    <td class="auto-style5"><a class="info2" href="ProcedurePage2.aspx?id=<%#Eval("wp_id") %>">PROCEDURES</a></td>
                     <td class="auto-style5"><a class="info3" href="CommentPage.aspx?id=<%#Eval("wp_id") %>">COMMENTS</a></td>
                     <td class="auto-style5"><a class="info4" href="CantactPage.aspx?id=<%#Eval("wp_id") %>">CONTACT</a></td>
                 </tr>

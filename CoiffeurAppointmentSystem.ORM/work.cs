@@ -14,6 +14,12 @@ namespace CoiffeurAppointmentSystem.ORM
     
     public partial class work
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public work()
+        {
+            this.appointments = new HashSet<appointment>();
+        }
+    
         public int work_id { get; set; }
         public Nullable<int> staff_id { get; set; }
         public Nullable<int> service_id { get; set; }
@@ -25,5 +31,7 @@ namespace CoiffeurAppointmentSystem.ORM
         public virtual person person { get; set; }
         public virtual service service { get; set; }
         public virtual workplace workplace { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<appointment> appointments { get; set; }
     }
 }

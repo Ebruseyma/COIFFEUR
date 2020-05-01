@@ -10,9 +10,11 @@
             <PropertyRef Name="appointment_id" />
           </Key>
           <Property Name="appointment_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="appointment_date" Type="date" Nullable="false" />
+          <Property Name="appointment_date" Type="datetime" Nullable="false" />
           <Property Name="user_id" Type="int" />
           <Property Name="wp_id" Type="int" />
+          <Property Name="staff_id" Type="int" />
+          <Property Name="work_id" Type="int" />
         </EntityType>
         <EntityType Name="city">
           <Key>
@@ -46,6 +48,7 @@
           <Property Name="wp_id" Type="int" />
           <Property Name="staff_id" Type="int" />
           <Property Name="description" Type="nvarchar" MaxLength="320" />
+          <Property Name="ws_id" Type="int" />
         </EntityType>
         <EntityType Name="gender">
           <Key>
@@ -112,6 +115,7 @@
           <Property Name="address" Type="nvarchar" MaxLength="320" Nullable="false" />
           <Property Name="zipcode" Type="int" />
           <Property Name="wp_image" Type="image" />
+          <Property Name="rating" Type="float" />
         </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
@@ -123,7 +127,19 @@
           <Property Name="version" Type="int" />
           <Property Name="definition" Type="varbinary(max)" />
         </EntityType>
-        <Association Name="FK__appointme__user___5AEE82B9">
+        <Association Name="FK__appointme__staff__07C12930">
+          <End Role="person" Type="Self.person" Multiplicity="0..1" />
+          <End Role="appointment" Type="Self.appointment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="person">
+              <PropertyRef Name="user_id" />
+            </Principal>
+            <Dependent Role="appointment">
+              <PropertyRef Name="staff_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__appointme__user___05D8E0BE">
           <End Role="person" Type="Self.person" Multiplicity="0..1" />
           <End Role="appointment" Type="Self.appointment" Multiplicity="*" />
           <ReferentialConstraint>
@@ -135,7 +151,19 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__appointme__wp_id__5BE2A6F2">
+        <Association Name="FK__appointme__work___08B54D69">
+          <End Role="work" Type="Self.work" Multiplicity="0..1" />
+          <End Role="appointment" Type="Self.appointment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="work">
+              <PropertyRef Name="work_id" />
+            </Principal>
+            <Dependent Role="appointment">
+              <PropertyRef Name="work_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__appointme__wp_id__06CD04F7">
           <End Role="workplace" Type="Self.workplace" Multiplicity="0..1" />
           <End Role="appointment" Type="Self.appointment" Multiplicity="*" />
           <ReferentialConstraint>
@@ -340,11 +368,19 @@
           <EntitySet Name="work" EntityType="Self.work" Schema="cas" store:Type="Tables" />
           <EntitySet Name="workplace" EntityType="Self.workplace" Schema="cas" store:Type="Tables" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK__appointme__user___5AEE82B9" Association="Self.FK__appointme__user___5AEE82B9">
+          <AssociationSet Name="FK__appointme__staff__07C12930" Association="Self.FK__appointme__staff__07C12930">
             <End Role="person" EntitySet="person" />
             <End Role="appointment" EntitySet="appointment" />
           </AssociationSet>
-          <AssociationSet Name="FK__appointme__wp_id__5BE2A6F2" Association="Self.FK__appointme__wp_id__5BE2A6F2">
+          <AssociationSet Name="FK__appointme__user___05D8E0BE" Association="Self.FK__appointme__user___05D8E0BE">
+            <End Role="person" EntitySet="person" />
+            <End Role="appointment" EntitySet="appointment" />
+          </AssociationSet>
+          <AssociationSet Name="FK__appointme__work___08B54D69" Association="Self.FK__appointme__work___08B54D69">
+            <End Role="work" EntitySet="work" />
+            <End Role="appointment" EntitySet="appointment" />
+          </AssociationSet>
+          <AssociationSet Name="FK__appointme__wp_id__06CD04F7" Association="Self.FK__appointme__wp_id__06CD04F7">
             <End Role="workplace" EntitySet="workplace" />
             <End Role="appointment" EntitySet="appointment" />
           </AssociationSet>
@@ -418,11 +454,15 @@
             <PropertyRef Name="appointment_id" />
           </Key>
           <Property Name="appointment_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="appointment_date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="appointment_date" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="user_id" Type="Int32" />
           <Property Name="wp_id" Type="Int32" />
           <NavigationProperty Name="person" Relationship="Self.FK__appointme__user___5AEE82B9" FromRole="appointment" ToRole="person" />
           <NavigationProperty Name="workplace" Relationship="Self.FK__appointme__wp_id__5BE2A6F2" FromRole="appointment" ToRole="workplace" />
+          <Property Name="staff_id" Type="Int32" />
+          <Property Name="work_id" Type="Int32" />
+          <NavigationProperty Name="person1" Relationship="CoiffeurAppointmentSystemModel.FK__appointme__staff__07C12930" FromRole="appointment" ToRole="person" />
+          <NavigationProperty Name="work" Relationship="CoiffeurAppointmentSystemModel.FK__appointme__work___08B54D69" FromRole="appointment" ToRole="work" />
         </EntityType>
         <EntityType Name="city">
           <Key>
@@ -466,6 +506,7 @@
           <Property Name="description" Type="String" MaxLength="320" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="person" Relationship="Self.FK__employee__staff___4CA06362" FromRole="employee" ToRole="person" />
           <NavigationProperty Name="workplace" Relationship="Self.FK__employee__wp_id__4BAC3F29" FromRole="employee" ToRole="workplace" />
+          <Property Name="ws_id" Type="Int32" />
         </EntityType>
         <EntityType Name="gender">
           <Key>
@@ -500,6 +541,7 @@
           <NavigationProperty Name="role" Relationship="Self.FK__person__role_id__440B1D61" FromRole="person" ToRole="role" />
           <NavigationProperty Name="works" Relationship="Self.FK__work__staff_id__5165187F" FromRole="person" ToRole="work" />
           <NavigationProperty Name="workplaces" Relationship="Self.FK__workplace__admin__46E78A0C" FromRole="person" ToRole="workplace" />
+          <NavigationProperty Name="appointments1" Relationship="CoiffeurAppointmentSystemModel.FK__appointme__staff__07C12930" FromRole="person" ToRole="appointment" />
         </EntityType>
         <EntityType Name="role">
           <Key>
@@ -531,6 +573,7 @@
           <NavigationProperty Name="person" Relationship="Self.FK__work__staff_id__5165187F" FromRole="work" ToRole="person" />
           <NavigationProperty Name="service" Relationship="Self.FK__work__service_id__52593CB8" FromRole="work" ToRole="service" />
           <NavigationProperty Name="workplace" Relationship="Self.FK__work__wp_id__534D60F1" FromRole="work" ToRole="workplace" />
+          <NavigationProperty Name="appointments" Relationship="CoiffeurAppointmentSystemModel.FK__appointme__work___08B54D69" FromRole="work" ToRole="appointment" />
         </EntityType>
         <EntityType Name="workplace">
           <Key>
@@ -554,6 +597,7 @@
           <NavigationProperty Name="person" Relationship="Self.FK__workplace__admin__46E78A0C" FromRole="workplace" ToRole="person" />
           <NavigationProperty Name="works" Relationship="Self.FK__work__wp_id__534D60F1" FromRole="workplace" ToRole="work" />
           <Property Name="wp_image" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="rating" Type="Double" />
         </EntityType>
         <Association Name="FK__appointme__user___5AEE82B9">
           <End Role="person" Type="Self.person" Multiplicity="0..1" />
@@ -840,6 +884,14 @@
             <End Role="work" EntitySet="works" />
           </AssociationSet>
           <EntitySet Name="sysdiagrams" EntityType="CoiffeurAppointmentSystemModel.sysdiagram" />
+          <AssociationSet Name="FK__appointme__staff__07C12930" Association="CoiffeurAppointmentSystemModel.FK__appointme__staff__07C12930">
+            <End Role="person" EntitySet="people" />
+            <End Role="appointment" EntitySet="appointments" />
+          </AssociationSet>
+          <AssociationSet Name="FK__appointme__work___08B54D69" Association="CoiffeurAppointmentSystemModel.FK__appointme__work___08B54D69">
+            <End Role="work" EntitySet="works" />
+            <End Role="appointment" EntitySet="appointments" />
+          </AssociationSet>
         </EntityContainer>
         <EntityType Name="sysdiagram">
           <Key>
@@ -851,6 +903,30 @@
           <Property Name="version" Type="Int32" />
           <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
+        <Association Name="FK__appointme__staff__07C12930">
+          <End Type="CoiffeurAppointmentSystemModel.person" Role="person" Multiplicity="0..1" />
+          <End Type="CoiffeurAppointmentSystemModel.appointment" Role="appointment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="person">
+              <PropertyRef Name="user_id" />
+            </Principal>
+            <Dependent Role="appointment">
+              <PropertyRef Name="staff_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__appointme__work___08B54D69">
+          <End Type="CoiffeurAppointmentSystemModel.work" Role="work" Multiplicity="0..1" />
+          <End Type="CoiffeurAppointmentSystemModel.appointment" Role="appointment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="work">
+              <PropertyRef Name="work_id" />
+            </Principal>
+            <Dependent Role="appointment">
+              <PropertyRef Name="work_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -860,6 +936,8 @@
           <EntitySetMapping Name="appointments">
             <EntityTypeMapping TypeName="CoiffeurAppointmentSystemModel.appointment">
               <MappingFragment StoreEntitySet="appointment">
+                <ScalarProperty Name="work_id" ColumnName="work_id" />
+                <ScalarProperty Name="staff_id" ColumnName="staff_id" />
                 <ScalarProperty Name="appointment_id" ColumnName="appointment_id" />
                 <ScalarProperty Name="appointment_date" ColumnName="appointment_date" />
                 <ScalarProperty Name="user_id" ColumnName="user_id" />
@@ -897,6 +975,7 @@
           <EntitySetMapping Name="employees">
             <EntityTypeMapping TypeName="CoiffeurAppointmentSystemModel.employee">
               <MappingFragment StoreEntitySet="employee">
+                <ScalarProperty Name="ws_id" ColumnName="ws_id" />
                 <ScalarProperty Name="emp_id" ColumnName="emp_id" />
                 <ScalarProperty Name="wp_id" ColumnName="wp_id" />
                 <ScalarProperty Name="staff_id" ColumnName="staff_id" />
@@ -962,6 +1041,7 @@
           <EntitySetMapping Name="workplaces">
             <EntityTypeMapping TypeName="CoiffeurAppointmentSystemModel.workplace">
               <MappingFragment StoreEntitySet="workplace">
+                <ScalarProperty Name="rating" ColumnName="rating" />
                 <ScalarProperty Name="wp_image" ColumnName="wp_image" />
                 <ScalarProperty Name="wp_id" ColumnName="wp_id" />
                 <ScalarProperty Name="wp_name" ColumnName="wp_name" />

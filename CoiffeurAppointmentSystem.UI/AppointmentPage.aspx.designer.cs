@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CoiffeurAppointmentSystem
-{
-
-
-    public partial class AppointmentPage
-    {
-
+namespace CoiffeurAppointmentSystem {
+    
+    
+    public partial class AppointmentPage {
+        
         /// <summary>
         /// ddlDay control.
         /// </summary>
@@ -22,7 +20,7 @@ namespace CoiffeurAppointmentSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlDay;
-
+        
         /// <summary>
         /// ddlMonth control.
         /// </summary>
@@ -31,7 +29,7 @@ namespace CoiffeurAppointmentSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlMonth;
-
+        
         /// <summary>
         /// ddlYear control.
         /// </summary>
@@ -40,7 +38,7 @@ namespace CoiffeurAppointmentSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlYear;
-
+        
         /// <summary>
         /// btndate control.
         /// </summary>
@@ -49,7 +47,7 @@ namespace CoiffeurAppointmentSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btndate;
-
+        
         /// <summary>
         /// DataList1 control.
         /// </summary>
@@ -58,7 +56,7 @@ namespace CoiffeurAppointmentSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DataList DataList1;
-
+        
         /// <summary>
         /// DataList2 control.
         /// </summary>

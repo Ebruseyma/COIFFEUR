@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UserNonFilter.Master" AutoEventWireup="true" CodeBehind="AppointmentPage.aspx.cs" Inherits="CoiffeurAppointmentSystem.AppointmentPage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UserNonFilter.Master" AutoEventWireup="true" EnableEventValidation="true" CodeBehind="AppointmentPage.aspx.cs" Inherits="CoiffeurAppointmentSystem.AppointmentPage" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
@@ -67,7 +67,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
-    <table class="auto-style1">
+    <table class="auto-style1" runat="server">
         <tr>
             <td class="auto-style9"></td>
             <td class="auto-style7">APPOINTMENT DATE: </td>
@@ -123,7 +123,7 @@
                     <asp:ListItem>2020</asp:ListItem>
                     <asp:ListItem>2021</asp:ListItem>
                 </asp:DropDownList>
-                <asp:Button ID="btndate" runat="server" Text="date" OnClick="btndate_Click" />
+                <asp:Button ID="btndate" runat="server" Text="date"  />
             </td>
         </tr>
     </table>
@@ -131,9 +131,9 @@
 
 
 
-    &nbsp;<asp:DataList ID="DataList1" runat="server" Width="1075px">
+    &nbsp;<asp:DataList ID="DataList1" runat="server" Width="1075px" OnItemCommand="DataList1_ItemCommand">
         <ItemTemplate>
-            <table class="auto-style1">
+            <table class="auto-style1" runat="server">
                 <tr>
                     <td class="auto-style11">&nbsp;</td>
                     <td class="auto-style14">&nbsp;</td>
@@ -150,7 +150,7 @@
                     </td>
                     <td class="auto-style16"></td>
                 </tr>
-                <tr>
+                <tr runat="server">
                     <td class="auto-style10">Expertise:</td>
                     <td class="auto-style17">
                         <table class="auto-style1">
@@ -162,11 +162,27 @@
                             </tr>
                         </table>
                     </td>
-                    <td class="auto-style21" rowspan="2">
-                        <asp:ListBox ID="ListBox1" runat="server" Height="75px" Width="323px" ></asp:ListBox>
+                    <td class="auto-style21" rowspan="2" runat="server">
+                        <asp:HiddenField ID="hdStaffID" runat="server" Value='<%#Eval("user_id") %>'/>
+                        <asp:HiddenField ID="hdWorkID" runat="server" Value='<%#Eval("work_id") %>'/>
+                        <asp:DropDownList ID="ddHours" runat="server" Height="21px" Width="62px">
+                            <asp:ListItem Value="10">10.00</asp:ListItem>
+                            <asp:ListItem Value="11">11.00</asp:ListItem>
+                            <asp:ListItem Value="12">12.00</asp:ListItem>
+                            <asp:ListItem Value="13">13.00</asp:ListItem>
+                            <asp:ListItem Value="14">14.00</asp:ListItem>
+                            <asp:ListItem Value="15">15.00</asp:ListItem>
+                            <asp:ListItem Value="16">16.00</asp:ListItem>
+                            <asp:ListItem Value="17">17.00</asp:ListItem>
+                            <asp:ListItem Value="18">18.00</asp:ListItem>
+                            <asp:ListItem Value="19">19.00</asp:ListItem>
+                            <asp:ListItem Value="20">20.00</asp:ListItem>
+                            <asp:ListItem Value="21">21.00</asp:ListItem>
+                            <asp:ListItem Value="22">22.00</asp:ListItem>
+                        </asp:DropDownList>
                         <br />
                         <br />
-                        <asp:Button ID="Button1" runat="server" Height="32px" Text="Choose" Width="112px" />
+                        <asp:Button ID="btnChooseAH" runat="server" Height="32px" Text="Choose" Width="112px" />
                     </td>
                 </tr>
                 <tr>
