@@ -22,6 +22,7 @@ namespace CoiffeurAppointmentSystem.ORM
             this.employees = new HashSet<employee>();
             this.works = new HashSet<work>();
             this.workplaces = new HashSet<workplace>();
+            this.appointments1 = new HashSet<appointment>();
         }
     
         public int user_id { get; set; }
@@ -51,5 +52,7 @@ namespace CoiffeurAppointmentSystem.ORM
         public virtual ICollection<work> works { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<workplace> workplaces { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<appointment> appointments1 { get; set; }
     }
 }

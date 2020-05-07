@@ -6,8 +6,7 @@
             text-align: center;
             height: 100px;
             width: 347px;
-        }
-      
+        }      
         .auto-style11 {
             width: 409px;
             font-size: xx-large;
@@ -35,29 +34,25 @@
             width: 357px;
         }
         .auto-style19 {
-            width: 140px;
-            height: 20px;
+            width: 126px;
         }
-        .auto-style20 {
-            width: 35px;
-        }
-    </style>
+        </style>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <table class="auto-style1">
         <tr>
             <td class="auto-style18">
-                <asp:Label ID="Label14" runat="server" CssClass="filterLabel" Font-Size="36px" Text="PROCEDURE"></asp:Label>
+                <asp:Label ID="lblProcedure" runat="server" CssClass="filterLabel" Font-Size="36px" Text="PROCEDURE"></asp:Label>
             </td>
             <td class="auto-style11">
-                <asp:Label ID="Label15" runat="server" CssClass="filterLabel" Font-Size="36px" Text="APPROXIMATE TIME"></asp:Label>
+                <asp:Label ID="lblApproximateTime" runat="server" CssClass="filterLabel" Font-Size="36px" Text="APPROXIMATE TIME"></asp:Label>
             </td>
             <td class="auto-style8">
-                <asp:Label ID="Label16" runat="server" CssClass="filterLabel" Font-Size="36px" Text="PRICE"></asp:Label>
+                <asp:Label ID="lblPrice" runat="server" CssClass="filterLabel" Font-Size="36px" Text="PRICE"></asp:Label>
             </td>
         </tr>
     </table>
-    &nbsp;<asp:DataList ID="DataList1" runat="server" Height="184px" Width="1046px">
+    &nbsp;<asp:DataList ID="dtlAdminProcedurePage" runat="server" Height="184px" Width="1046px">
         <ItemTemplate>
             <table class="auto-style1">
                 <tr>
@@ -65,13 +60,13 @@
                         <asp:CheckBox ID="CheckBox1" runat="server" />
                     </td>
                     <td class="auto-style13">
-                        <asp:Label ID="Label1" runat="server" Text='<%# Eval("service_name") %>'></asp:Label>
+                        <asp:Label ID="lblServiceName" runat="server" Text='<%# Eval("service.service_name") %>'></asp:Label>
                     </td>
                     <td class="auto-style12">
-                        <asp:Label ID="Label2" runat="server" Text='<%# Eval("service_id") %>'></asp:Label>
+                        <asp:Label ID="lblServiceId" runat="server" Text='<%# Eval("estimate_time") %>'></asp:Label>
                     </td>
                     <td>
-                        <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+                        <asp:Label ID="lblPrice" runat="server" Text='<%# Eval("price") %>'></asp:Label>
                     </td>
                 </tr>
             </table>
@@ -80,18 +75,27 @@
     <br />
     <table class="auto-style16">
         <tr>
+            <td class="auto-style14">Staff Name:
+                <asp:DropDownList ID="drpStaffList" runat="server" Height="16px" Width="110px">
+                </asp:DropDownList>
+            </td>
             <td class="auto-style14">Procedure Name:
-                <input id="Text2" class="auto-style19" type="text" /></td>
+               <%-- <asp:TextBox ID="txtProcedureName" runat="server" Height="16px" Width="160px"></asp:TextBox>--%>
+                <asp:DropDownList ID="drpSeviceList" runat="server" Height="16px" Width="110px">
+                </asp:DropDownList>
+            </td>
             <td class="auto-style15">Approximate Time:
-                <input id="Text3" class="auto-style20" type="text" /></td>
-            <td>Price:
-                <input id="Text4" class="auto-style20" type="text" /></td>
+                <asp:TextBox ID="txtApproximateTime" runat="server" Width="35px" TextMode="Number"></asp:TextBox>
+            </td>
+            <td class="auto-style19">Price:
+                <asp:TextBox ID="txtPrice" runat="server" Width="35px" TextMode="Number"></asp:TextBox>
+            </td>
         </tr>
         <tr>
             <td class="auto-style14">&nbsp;</td>
             <td class="auto-style15">&nbsp;</td>
             <td class="auto-style17">
-                <asp:Button ID="Button1" runat="server" Height="40px" Text="ADD" Width="137px" CssClass="filterButton" />
+                <asp:Button ID="btnAdd" runat="server" Height="40px" Text="ADD" Width="176px" CssClass="filterButton" OnClick="btnAdd_Click" />
             </td>
         </tr>
     </table>
