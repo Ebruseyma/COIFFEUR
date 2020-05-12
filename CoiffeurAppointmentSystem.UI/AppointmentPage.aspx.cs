@@ -8,7 +8,10 @@ using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Data;//contain classes for accessing and managing data from diverse
 using System.Configuration;
-
+using System.Net.Mail;
+using System.Text;
+using System.Net;
+using System.IO;
 
 namespace CoiffeurAppointmentSystem
 {
@@ -53,11 +56,30 @@ namespace CoiffeurAppointmentSystem
 
         }
 
-        public void btndate_Click(object sender, EventArgs e)
-        {
 
-
+        private void SendEmail()
+        {    
+            var v = loginedUser.email;
+            MailMessage mail = new MailMessage("Coiffeur.coiffeur1954@gmail.com", v);
+            using (SmtpClient client = new SmtpClient
+            {
+                DeliveryMethod = SmtpDeliveryMethod.Network,
+                UseDefaultCredentials = false,
+                EnableSsl = true,
+                Host = "smtp.gmail.com",
+                Timeout = 100000,
+                Port = 587,
+                Credentials = new NetworkCredential("Coiffeur.coiffeur1954@gmail.com", "Coiffeur.Coiffeur54")
+            })
+            {
+                mail.To.Add("EbruAkboyun.34@hotmail.com");
+                mail.To.Add("b.mete@iku.edu.tr");
+                mail.Subject = "Message from the Coiffeur Appointment System " ;//mailin konusu;
+                mail.Body = "E-Posta:" + " Ebru's mail \n" + "Subject:" + " Appointment \n" + "Content:" + " Your appointment has been created successfully. You must be at our hair salon at least 15 minutes before your appointment time. \n" +"We wish you good days...";
+                client.Send(mail);
+            }
         }
+
 
 
         protected void DataList1_ItemCommand(object source, DataListCommandEventArgs e)
@@ -99,6 +121,7 @@ namespace CoiffeurAppointmentSystem
                     added.appointment_date = fullDate;
                     db.appointments.Add(added);
                     db.SaveChanges();
+                    SendEmail();
                 }
             }
 
