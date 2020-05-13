@@ -5,6 +5,7 @@ using System.Web;
 using CoiffeurAppointmentSystem.ORM;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using CoiffeurAppointmentSystem.UI;
 
 namespace CoiffeurAppointmentSystem
 {
@@ -29,9 +30,16 @@ namespace CoiffeurAppointmentSystem
                 lblUserName.Text = "Welcome    " + loginedUser.first_name;
             }
 
+            
 
 
+        }
 
+        protected void btnSignOut_Click(object sender, EventArgs e)
+        {
+            Session["username"] = null;
+            Response.Redirect("MainPage.aspx");                       
+            
         }
     }
 }

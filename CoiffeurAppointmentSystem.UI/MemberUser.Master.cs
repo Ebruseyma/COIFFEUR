@@ -17,24 +17,8 @@ namespace CoiffeurAppointmentSystem
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            //if (Session["username"] == null)
-            //{
-            //    Response.Redirect("UserLogIn.aspx");
-            //}
-            //else
-            //{
-            //    loginedUser = (person)Session["username"];
-            //    if (loginedUser.role_id == 2)
-            //    {
-            //        Response.Redirect("MainPage2.aspx");
-            //    }
-
-            //    lblUserName.Text = ("Welcome " + loginedUser.first_name + " " + loginedUser.last_name);
-            //}
 
 
-         
-            
             if (Session["username"] == null)
             {
                 Response.Redirect("UserLogIn.aspx");
@@ -43,12 +27,12 @@ namespace CoiffeurAppointmentSystem
             {
                 loginedUser = (person)Session["username"];
                 if (loginedUser.role_id != 2) //role_id=2 olmayan user memberuserdan türeyen sayfalara giriş yapamaz logine yönlendirilir.
-                      {
-                        Response.Redirect("UserLogIn.aspx");
-                      }
-                    lblUserName.Text = "Welcome    " + loginedUser.first_name ;
+                {
+                    Response.Redirect("UserLogIn.aspx");
+                }
+                lblUserName.Text = "Welcome    " + loginedUser.first_name;
             }
-            
+
 
 
         }
@@ -70,6 +54,12 @@ namespace CoiffeurAppointmentSystem
             DropDownList2.DataSource = dr;
             DropDownList2.DataBind();
             connection.Close();
+        }
+
+        protected void btnSignOut_Click(object sender, EventArgs e)
+        {
+            Session["username"] = null;
+            Response.Redirect("MainPage.aspx");
         }
     }
 }

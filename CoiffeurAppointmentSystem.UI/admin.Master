@@ -51,7 +51,8 @@
                                      <asp:Label ID="Label12" runat="server" Text="Menu" Font-Size="X-Large"></asp:Label>
                                  </button>
                                  <div class="dropdown-content">
-                                     <a href="AdminStaffs.aspx" >Staffs</a> <a href="adminProcedurePage.aspx" >Procedures</a> <a href="MainPage.aspx" >Sign out</a>
+                                     <a href="AdminStaffs.aspx" >Staffs</a> <a href="adminProcedurePage.aspx" >Procedures</a> 
+                                    <asp:LinkButton runat="server" ID="btnSignOut" OnClick="btnSignOut_Click" >Sign out</asp:LinkButton>
                                  </div>
                              </div>
                              &nbsp; </td>
