@@ -17,6 +17,7 @@ namespace CoiffeurAppointmentSystem
 {
     public partial class AppointmentPage : System.Web.UI.Page
     {
+        bool flag = false;
         public static person loginedUser = new person();
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -84,6 +85,11 @@ namespace CoiffeurAppointmentSystem
 
         protected void DataList1_ItemCommand(object source, DataListCommandEventArgs e)
         {
+            string connectionString = ConfigurationManager.ConnectionStrings["listConnectionString"].ConnectionString;
+            SqlConnection connection = new SqlConnection(connectionString);
+            connection.Open();
+            SqlCommand cmd = new SqlCommand("select * from cas.appointment", connection);
+            SqlDataReader reader = cmd.ExecuteReader();
             person loginedUser = (person)Session["username"];
             int id1 = Convert.ToInt32(Request.QueryString["id"]);
             DropDownList drp1 = e.Item.FindControl("ddHours") as DropDownList;
@@ -113,15 +119,30 @@ namespace CoiffeurAppointmentSystem
                 {
                     var fullDate = Convert.ToDateTime(ddlDay.SelectedValue + ddlMonth.SelectedValue + ddlYear.SelectedValue);
                     fullDate = fullDate.AddHours(Convert.ToDouble(drp1.SelectedValue));
-                    appointment added = new appointment();
-                    added.staff_id = Convert.ToInt32(staff.Value);
-                    added.wp_id = id1;
-                    added.user_id = loginedUser.user_id;
-                    added.work_id = Convert.ToInt32(work.Value);
-                    added.appointment_date = fullDate;
-                    db.appointments.Add(added);
-                    db.SaveChanges();
-                    SendEmail();
+
+                    while (reader.Read())
+                    {
+                        if (reader[1].ToString() == fullDate.ToString() && reader[4].ToString() == (staff.Value).ToString())
+                        {
+                            flag = true;
+                            break;
+                        }
+                    }
+
+                    if (flag == false)
+                    {
+                        appointment added = new appointment();
+                        added.staff_id = Convert.ToInt32(staff.Value);
+                        added.wp_id = id1;
+                        added.user_id = loginedUser.user_id;
+                        added.work_id = Convert.ToInt32(work.Value);
+                        added.appointment_date = fullDate;
+                        db.appointments.Add(added);
+                        db.SaveChanges();
+                        Response.Write("Your appointment is taken");
+                    }
+                    else { Response.Write("This date is full, please choose another date"); }
+
                 }
             }
 
