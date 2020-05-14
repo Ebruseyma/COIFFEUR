@@ -137,8 +137,7 @@
                         <td class="auto-style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <asp:Button ID="Button1" runat="server" Text="List" Width="65px" CssClass="filterButton" Height="34px" />
 &nbsp;&nbsp;
-                            <asp:Label ID="Label10" runat="server" Text="Clear"></asp:Label>
-                        </td>
+ <asp:Button ID="Button3" runat="server" Text="Clear" Width="65px" CssClass="filterButton" Font-Bold="True" Font-Names="Garamond" Height="34px" OnClick="Clear"/>                        </td>
                     </tr>
                 </table>
             </asp:ContentPlaceHolder></div>

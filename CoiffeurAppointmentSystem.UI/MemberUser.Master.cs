@@ -61,5 +61,15 @@ namespace CoiffeurAppointmentSystem
             Session["username"] = null;
             Response.Redirect("MainPage.aspx");
         }
+
+        protected void Clear(object sender, EventArgs e)
+        {
+            this.DropDownList1.ClearSelection();
+            this.DropDownList2.ClearSelection();
+            this.DropDownList3.ClearSelection();
+            TextBox2.Text = string.Empty;
+            TextBox3.Text = string.Empty;
+
+        }
     }
 }
