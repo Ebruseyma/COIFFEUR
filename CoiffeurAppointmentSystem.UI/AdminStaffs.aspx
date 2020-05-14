@@ -60,7 +60,8 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <table class="auto-style6">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Staffs    <table class="auto-style6">
         <tr>
             <td class="auto-style13">
                 <asp:Label ID="lblTitle" runat="server" Font-Size="60px" Text="Staffs" CssClass="filterLabel"></asp:Label>

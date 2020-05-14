@@ -100,7 +100,8 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <table class="auto-style6">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Main Page    <table class="auto-style6">
         <tr>
             <td class="auto-style8">
                 <asp:Label ID="lblTitle" runat="server" Font-Size="60px" Text="My Coiffeur" CssClass="filterLabel"></asp:Label>

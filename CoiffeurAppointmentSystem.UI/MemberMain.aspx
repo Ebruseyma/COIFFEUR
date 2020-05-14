@@ -1,5 +1,8 @@
 ﻿<%@ Page Title="Main Page - C.A.S" Language="C#" MasterPageFile="~/MemberUser.Master" AutoEventWireup="true" CodeBehind="MemberMain.aspx.cs" Inherits="CoiffeurAppointmentSystem.MemberMain" %>
 
+<%@ Register Src="~/Breadcrumbs.ascx" TagPrefix="uc1" TagName="Breadcrumbs" %>
+
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style9 {

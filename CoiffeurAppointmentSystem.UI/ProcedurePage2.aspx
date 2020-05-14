@@ -109,7 +109,7 @@
     <br />
 </asp:Content>
 <asp:Content ID="Content5" runat="server" ContentPlaceHolderID="ContentPlaceHolder2">
-    <asp:DataList ID="DataList2" runat="server" CssClass="auto-style15" Width="1334px">
+    <asp:DataList ID="DataList2" runat="server" CssClass="auto-style15" Width="1334px" >
         <ItemTemplate>
             <table class="auto-style1">
                 <tr>

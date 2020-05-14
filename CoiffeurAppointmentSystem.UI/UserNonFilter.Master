@@ -1,4 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserNonFilter.Master.cs" Inherits="CoiffeurAppointmentSystem.UserNonFilter" %>
+<%@ Register Src="~/Breadcrumbs.ascx" TagPrefix="uc1" TagName="Breadcrumbs" %>
 
 <!DOCTYPE html>
 
@@ -89,10 +90,11 @@
 
                 
 
-            </asp:ContentPlaceHolder></div>
+             </asp:ContentPlaceHolder></div>
                 
-                
-                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+              <div class="breadcrumbs"> <uc1:Breadcrumbs runat="server" ID="Breadcrumbs" />            
+                &nbsp;            
+                </div>  <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder></div>
             
         </div>

@@ -41,6 +41,8 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="AdminStaffs.aspx">Staffs</a> : Add Staff
     <table class="auto-style6">
         <tr>
             <td class="auto-style13">
