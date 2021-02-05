@@ -18,8 +18,12 @@ namespace CoiffeurAppointmentSystem.ORM
         public System.DateTime appointment_date { get; set; }
         public Nullable<int> user_id { get; set; }
         public Nullable<int> wp_id { get; set; }
+        public Nullable<int> staff_id { get; set; }
+        public Nullable<int> work_id { get; set; }
     
         public virtual person person { get; set; }
         public virtual workplace workplace { get; set; }
+        public virtual person person1 { get; set; }
+        public virtual work work { get; set; }
     }
 }

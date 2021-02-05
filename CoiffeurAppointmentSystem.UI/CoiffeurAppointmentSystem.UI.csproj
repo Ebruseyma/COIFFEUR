@@ -125,9 +125,9 @@
     <Content Include="bin\roslyn\System.Xml.XPath.XDocument.dll" />
     <Content Include="bin\roslyn\vbc.exe" />
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="Breadcrumbs.ascx" />
     <Content Include="CantactPage.aspx" />
     <Content Include="CommentPage.aspx" />
-    <Content Include="Global.asax" />
     <Content Include="img\background.jpg" />
     <Content Include="img\dribble_04_1x.jpg" />
     <Content Include="img\iindir.jpg" />
@@ -138,7 +138,7 @@
     <Content Include="MainCss.css" />
     <Content Include="MainPage.aspx" />
     <Content Include="MemberMain.aspx" />
-    <Content Include="ProcedurePage.aspx" />
+    <Content Include="ProcedurePage2.aspx" />
     <Content Include="SignUpPage.aspx" />
     <Content Include="UserAppointmentPage.aspx" />
     <Content Include="UserLogIn.aspx" />
@@ -190,6 +190,13 @@
     <Compile Include="AppointmentPage.aspx.designer.cs">
       <DependentUpon>AppointmentPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Breadcrumbs.ascx.cs">
+      <DependentUpon>Breadcrumbs.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Breadcrumbs.ascx.designer.cs">
+      <DependentUpon>Breadcrumbs.ascx</DependentUpon>
+    </Compile>
     <Compile Include="CantactPage.aspx.cs">
       <DependentUpon>CantactPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -203,9 +210,6 @@
     </Compile>
     <Compile Include="CommentPage.aspx.designer.cs">
       <DependentUpon>CommentPage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="infoPage.aspx.cs">
       <DependentUpon>infoPage.aspx</DependentUpon>
@@ -242,12 +246,12 @@
     <Compile Include="NonNavbar.Master.designer.cs">
       <DependentUpon>NonNavbar.Master</DependentUpon>
     </Compile>
-    <Compile Include="ProcedurePage.aspx.cs">
-      <DependentUpon>ProcedurePage.aspx</DependentUpon>
+    <Compile Include="ProcedurePage2.aspx.cs">
+      <DependentUpon>ProcedurePage2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ProcedurePage.aspx.designer.cs">
-      <DependentUpon>ProcedurePage.aspx</DependentUpon>
+    <Compile Include="ProcedurePage2.aspx.designer.cs">
+      <DependentUpon>ProcedurePage2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SignUpPage.aspx.cs">
@@ -310,18 +314,20 @@
     <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
     <Content Include="admin.Master" />
     <None Include="packages.config" />
-    <Content Include="UserNonFilter.Master" />
     <Content Include="User.Master" />
+    <Content Include="UserNonFilter.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="System\Windows\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CoiffeurAppointmentSystem.ORM\CoiffeurAppointmentSystem.ORM.csproj">
@@ -368,6 +374,13 @@
   <Target Name="BeforeBuild">
   </Target>
   <Target Name="AfterBuild">
+  </Target>
+  <Target Name="CopyRoslynFiles" AfterTargets="AfterBuild" Condition="!$(Disable_CopyWebApplication) And '$(OutDir)' != '$(OutputPath)'">
+      <ItemGroup>
+        <RoslynFiles Include="$(CscToolPath)\*" />
+      </ItemGroup>
+      <MakeDir Directories="$(WebProjectOutputDir)\bin\roslyn" />
+      <Copy SourceFiles="@(RoslynFiles)" DestinationFolder="$(WebProjectOutputDir)\bin\roslyn" SkipUnchangedFiles="true" Retries="$(CopyRetryCount)" RetryDelayMilliseconds="$(CopyRetryDelayMilliseconds)" />
   </Target>
   -->
 </Project>

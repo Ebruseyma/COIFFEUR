@@ -17,7 +17,7 @@
         .auto-style2 {
             text-align: right;
             height: 30px;
-            width: 433px;
+            width: 409px;
         }
         .auto-style3 {
             height: 30px;
@@ -25,7 +25,8 @@
         }
         .auto-style4 {
             height: 30px;
-            width: 276px;
+            width: 340px;
+            text-align: left;
         }
         .auto-style5 {
             width: 100%;
@@ -34,11 +35,7 @@
         .auto-style6 {
             text-align: center;
         }
-        .auto-style7 {
-            width: 250px;
-            height: 16px;
-        }
-    </style>
+        </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -50,11 +47,11 @@
             <div class="nav"><asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
                 <table class="auto-style1">
                     <tr>
-                        <td class="auto-style2">
-                            <asp:Label ID="Label1" runat="server" CssClass="navLabelSearch" Text="Search:" Font-Size="X-Large"></asp:Label>
+                        <td class="auto-style2">&nbsp;</td>
+                        <td class="auto-style4">&nbsp;<asp:TextBox ID="TextBox4" runat="server" Width="250px"></asp:TextBox>
+&nbsp;
+                            <asp:Button ID="Button2" runat="server" CssClass="filterButton" Height="27px" Text="Search" Width="70px" />
                         </td>
-                        <td class="auto-style4">
-                            <input id="Text1" class="auto-style7" type="text" placeholder="Search a coiffeur..." /> </td>
                         <td class="auto-style3"><a href="UserLogIn.aspx">
                             <asp:Label ID="Label2" runat="server" Text="Log In" CssClass="navLabel" Font-Size="X-Large"></asp:Label>
                             </a>&nbsp;
@@ -74,7 +71,7 @@
                 <table class="auto-style5">
                     <tr>
                         <td class="auto-style6">
-                            <asp:Label ID="Label4" runat="server" Font-Size="40px" Text="Filter" CssClass="filterLabel" Font-Bold="True"></asp:Label>
+                            <asp:Label ID="Label4" runat="server" Font-Size="40px" Text="Filter" Font-Bold="False"></asp:Label>
                         </td>
                     </tr>
                     <tr>
@@ -84,8 +81,9 @@
                     </tr>
                     <tr>
                         <td class="auto-style6">
-                            <asp:DropDownList ID="DropDownList1" runat="server" Height="22px" Width="130px">
+                            <asp:DropDownList ID="DropDownList1" runat="server" Height="22px" Width="130px" AutoPostBack="True" DataSourceID="DropListCity" DataTextField="city" DataValueField="city_id" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged1">
                             </asp:DropDownList>
+                            <asp:SqlDataSource ID="DropListCity" runat="server" ConnectionString="<%$ ConnectionStrings:CoiffeurAppointmentSystemConnectionString %>" SelectCommand="SELECT city_id, city FROM cas.city"></asp:SqlDataSource>
                         </td>
                     </tr>
                     <tr>
@@ -106,8 +104,9 @@
                     </tr>
                     <tr>
                         <td class="auto-style6">
-                            <asp:DropDownList ID="DropDownList3" runat="server" Height="22px" Width="130px">
+                            <asp:DropDownList ID="DropDownList3" runat="server" Height="22px" Width="130px" DataSourceID="Service" DataTextField="service_name" DataValueField="service_id">
                             </asp:DropDownList>
+                            <asp:SqlDataSource ID="Service" runat="server" ConnectionString="<%$ ConnectionStrings:CoiffeurAppointmentSystemConnectionString %>" SelectCommand="SELECT service_id, service_name FROM cas.service"></asp:SqlDataSource>
                         </td>
                     </tr>
                     <tr>
@@ -124,7 +123,7 @@
                     <tr>
                         <td class="auto-style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <asp:Button ID="Button1" runat="server" Text="List" Width="65px" CssClass="filterButton" Font-Bold="True" Font-Names="Garamond" Height="34px" />
-                            <asp:Label ID="Label10" runat="server" Text="Clear" CssClass="filterLabel"></asp:Label>
+                             <asp:Button ID="Button3" runat="server" Text="Clear" Width="65px" CssClass="filterButton" Font-Bold="True" Font-Names="Garamond" Height="34px" OnClick="Clear"/>
                         </td>
                     </tr>
                 </table>

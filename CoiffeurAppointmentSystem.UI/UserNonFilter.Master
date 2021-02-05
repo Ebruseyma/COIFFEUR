@@ -1,4 +1,5 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="User.master.cs" Inherits="CoiffeurAppointmentSystem.User" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserNonFilter.Master.cs" Inherits="CoiffeurAppointmentSystem.UserNonFilter" %>
+<%@ Register Src="~/Breadcrumbs.ascx" TagPrefix="uc1" TagName="Breadcrumbs" %>
 
 <!DOCTYPE html>
 
@@ -17,7 +18,7 @@
         .auto-style2 {
             text-align: right;
             height: 30px;
-            width: 433px;
+            width: 381px;
         }
         .auto-style3 {
             height: 30px;
@@ -25,7 +26,7 @@
         }
         .auto-style4 {
             height: 30px;
-            width: 276px;
+            width: 369px;
             text-align: left;
         }
         .auto-style5 {
@@ -33,33 +34,38 @@
             height: 32px;
             
         }
-        .auto-style6 {
-            width: 250px;
-            height: 16px;
-        }
-    </style>
+        </style>
 </head>
 <body>
     <form id="form1" runat="server">
         
         <div style="width:100%; height:10%">
-            <a href="MainPage.aspx">
+            <a href="MemberMain.aspx">
                 <div class="title">Coiffeur Appointment System</div></a>
             <div class="nav"><asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
                 <table class="auto-style1">
                     <tr>
-                        <td class="auto-style2">
-                            <asp:Label ID="Label1" runat="server" CssClass="navLabelSearch" Text="Search:" Font-Size="X-Large"></asp:Label>
+                        <td class="auto-style2">&nbsp;</td>
+                        <td class="auto-style4">&nbsp;
+                            <asp:TextBox ID="TextBox1" runat="server" Width="250px"></asp:TextBox>
+&nbsp;
+                            <asp:Button ID="Button1" runat="server" CssClass="filterButton" Height="27px" Text="Search" Width="70px" />
                         </td>
-                        <td class="auto-style4">
-                            <input id="Text1" class="auto-style6" placeholder="Search a coiffeur..." type="text" /></td>
-                        <td class="auto-style3"><a href="UserLogIn.aspx">
-                            <asp:Label ID="Label2" runat="server" Text="Log In" CssClass="navLabel" Font-Size="X-Large"></asp:Label>
-                            </a>&nbsp;
-                            <asp:Label ID="Label11" runat="server" CssClass="navLabelSearch" Font-Size="Larger" Text="|"></asp:Label>
-                            &nbsp; <a href="SignUpPage.aspx">
-                            <asp:Label ID="Label3" runat="server" Text="Sign Up" CssClass="navLabel" Font-Size="X-Large"></asp:Label>
-                            </a></td>
+                       <td class="auto-style3">
+                            <asp:Label ID="lblUserName" runat="server" Text="[User Name]" CssClass="navLabelSearch" Font-Size="X-Large"></asp:Label>
+                            &nbsp;<asp:Label ID="Label11" runat="server" CssClass="navLabelSearch" Font-Size="Larger" Text="|"></asp:Label>
+                            &nbsp;&nbsp;
+                            <div class="dropdown">
+                                <button class="dropbtn">
+                                    <asp:Label ID="Label12" runat="server" Text="Menu" Font-Size="X-Large"></asp:Label>
+                                </button>
+                                <div class="dropdown-content">
+                                    <a href="UserAppointmentPage.aspx">Appointments</a> 
+                                    <a href="UserSettings.aspx">Settings</a> 
+                                    <asp:LinkButton runat="server" ID="btnSignOut" OnClick="btnSignOut_Click" >Sign Out</asp:LinkButton>
+                                </div>
+                            </div>
+                            &nbsp; </td>
                     </tr>
                 </table>
             </asp:ContentPlaceHolder></div>
@@ -76,7 +82,7 @@
                     <table class="auto-style1">
                         <tr>
                             <td class="auto-style5"><a class="info1" href="infoPage.aspx">INFORMATION</a></td>
-                            <td class="auto-style5"><a class="info2" href="ProcedurePage.aspx">PROCEDURES</a></td>
+                            <td class="auto-style5"><a class="info2" href="ProcedurePage2.aspx">PROCEDURES</a></td>
                             <td class="auto-style5"><a class="info3" href="CommentPage.aspx">COMMENTS</a></td>
                             <td class="auto-style5"><a class="info4" href="CantactPage.aspx">CONTACT</a></td>
                         </tr>
@@ -84,10 +90,11 @@
 
                 
 
-            </asp:ContentPlaceHolder></div>
+             </asp:ContentPlaceHolder></div>
                 
-                
-                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+              <div class="breadcrumbs"> <uc1:Breadcrumbs runat="server" ID="Breadcrumbs" />            
+                &nbsp;            
+                </div>  <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder></div>
             
         </div>

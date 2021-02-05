@@ -18,6 +18,7 @@ namespace CoiffeurAppointmentSystem.ORM
         public Nullable<int> wp_id { get; set; }
         public Nullable<int> staff_id { get; set; }
         public string description { get; set; }
+        public Nullable<int> ws_id { get; set; }
     
         public virtual person person { get; set; }
         public virtual workplace workplace { get; set; }

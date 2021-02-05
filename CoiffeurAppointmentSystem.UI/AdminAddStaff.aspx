@@ -1,47 +1,27 @@
 ﻿<%@ Page Title="Admin Add Staff - C.A.S" Language="C#" MasterPageFile="~/admin.Master" AutoEventWireup="true" CodeBehind="AdminAddStaff.aspx.cs" Inherits="CoiffeurAppointmentSystem.UI.AdminAddStaff" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style6 {
             width: 100%;
             height: 278px;
         }
+
         .auto-style13 {
             width: 287px;
             text-align: center;
             height: 158px;
         }
+
         .auto-style14 {
-            width: 581px;
+            width: 247px;
             height: 158px;
         }
+
         .auto-style15 {
             height: 158px;
         }
-        .auto-style16 {
-            width: 247px;
-            height: 96px;
-        }
-        .auto-style17 {
-            height: 54px;
-        }
-        .auto-style18 {
-            height: 54px;
-            text-align: right;
-        }
-        .auto-style20 {
-            text-align: justify;
-            height: 108px;
-        }
-        .auto-style21 {
-            text-align: right;
-            height: 106px;
-        }
-        .auto-style22 {
-            height: 108px;
-        }
-        .auto-style24 {
-            height: 22px;
-        }
+
         .auto-style25 {
             background-color: #e3d6cf;
             border-radius: 10px;
@@ -55,9 +35,14 @@
             width: 102px;
             height: 34px;
         }
+        .auto-style26 {
+            width: 247px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="AdminStaffs.aspx">Staffs</a> : Add Staff
     <table class="auto-style6">
         <tr>
             <td class="auto-style13">
@@ -66,33 +51,122 @@
             <td class="auto-style14">
                 <br />
                 <br />
-&nbsp; <a href="AdminStaffs.aspx">
-            <asp:Label ID="Label14" runat="server" Font-Size="20px" Text="Staffs" CssClass="filterLabel"></asp:Label></a>
+                &nbsp; <a href="AdminStaffs.aspx">
+                    <asp:Label ID="Label14" runat="server" Font-Size="20px" Text="Staffs" CssClass="filterLabel"></asp:Label></a>
             </td>
             <td class="auto-style15"></td>
         </tr>
         <tr>
-            <td class="auto-style18">
-                <asp:Label ID="Label1" runat="server" Text="Staff ID: " CssClass="filterLabel" Font-Size="X-Large"></asp:Label>
+
+            <td class="auto-style9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label  runat="server" Text="Staff ID " CssClass="filterLabel" Font-Size="X-Large" Visible="false"></asp:Label>
             </td>
-            <td class="auto-style17">
-                <input id="Text1" type="text" maxlength:15 required="required" value:"int" maxlength="15" class="auto-style24"/>
+            <td class="auto-style26">&nbsp;<asp:Label ID="lblStaffId" runat="server" Visible="false"></asp:Label>
+            </td>
+            <td>
+                <br />
+                <br />
+            </td>
+
+        </tr>
+        <tr>
+
+            <td class="auto-style9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="lblFirstName" runat="server" Text="First Name: " CssClass="filterLabel" Font-Size="X-Large"></asp:Label>
+            </td>
+            <td class="auto-style26">&nbsp;<asp:TextBox ID="txtFirstName" runat="server" Height="22px" Width="185px"></asp:TextBox>
+            </td>
+            <td>
+                <br />
+                <br />
+                <br />
+            </td>
+
+        </tr>
+        <tr>
+            <td class="auto-style9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="lblLastName" runat="server" Text="Last Name: " CssClass="filterLabel" Font-Size="X-Large"></asp:Label>
+            </td>
+            <td class="auto-style26">&nbsp;<asp:TextBox ID="txtLastName" runat="server" Height="22px" Width="185px"></asp:TextBox>
+            </td>
+            <td>
+                <br />
+                <br />
+                <br />
             </td>
         </tr>
         <tr>
+            <td class="auto-style9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="lblEmail" runat="server" Text="E-mail: " CssClass="filterLabel" Font-Size="X-Large"></asp:Label>
+            </td>
+            <td class="auto-style26">&nbsp;<asp:TextBox ID="txtEmail" runat="server" Height="22px" Width="186px"></asp:TextBox>
+            </td>
+            <td>
+                <br />
+                <br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                <asp:Label ID="lblPassword" runat="server" Text="Password: " CssClass="filterLabel" Font-Size="X-Large"></asp:Label>
+            </td>
+            <td class="auto-style26">&nbsp;<asp:TextBox ID="txtPassword" runat="server" Height="22px" Width="185px" Style="margin-left: 0px"></asp:TextBox>
+            </td>
+            <td>
+                <br />
+                <br />
+                <br />
+            </td>
+
+
+        </tr>
+        <tr>
+            <td>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="lblgender" runat="server" Text="Gender:"  CssClass="filterLabel" Font-Size="X-Large"> </asp:Label>
+         </td>
+              <td class="auto-style21">
+               
+                <asp:RadioButtonList ID="rdpGender" runat="server">
+                    <asp:ListItem Text="Male" Value="1" />
+                    <asp:ListItem Text="Female" Value="2" />
+                    <asp:ListItem Text="Undefined" Value="5" Selected="True"  />
+                </asp:RadioButtonList>
+            </td>
+</tr>
+        <%-- <tr>
             <td class="auto-style22">
-                <p class="auto-style21"><asp:Label ID="Label2" runat="server" Text="About Staff: " CssClass="filterLabel" Font-Size="X-Large"></asp:Label></p>
+                <p class="auto-style21"><asp:Label ID="lblAbout" runat="server" Text="About Staff: " CssClass="filterLabel" Font-Size="X-Large"></asp:Label></p>
             </td>
             <td class="auto-style20">
-                <input id="Text2" type="text" maxlength:320 required="required" value:"char" maxlength="320" class="auto-style16"/>
+                &nbsp;<asp:TextBox ID="txtAbout" runat="server" Height="96px" Width="244px"></asp:TextBox>
             </td>
-        </tr>
+        </tr>--%>
+            <tr>
+             <td class="auto-style21">
+               
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+            </tr>
         <tr>
             <td></td>
-            <td>
-                <input id="Submit1" type="submit" value="Add Staff" class="auto-style25" /><br />
+            <td class="auto-style26">
+                <asp:Button ID="btnAddStaff" runat="server" Text="Add Staff" class="auto-style25" OnClick="btnAddStaff_Click" />&nbsp;
+                <asp:Button ID="btnClear" runat="server" Text="Clear" class="auto-style25" OnClick="btnClear_Click" /><br />
+                <br />
+                &nbsp;</td>
+             <td>
+                 <br />
                 <br />
                 &nbsp;</td>
         </tr>
-        </table>
+        <tr>
+            <td></td>
+            <td class="auto-style26">
+                <asp:Label runat="server" ID="lblErrorText" Visible="false"></asp:Label><br />
+                <br />
+                &nbsp;</td>
+        </tr>
+    </table>
 </asp:Content>

@@ -259,3 +259,9 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+CoiffeurAppointmentSystem.ORM/App.Config
+CoiffeurAppointmentSystem.ORM/CoiffeurAppointmentSystem.ORM.csproj
+*.config
+CoiffeurAppointmentSystem.UI/Web.config
+CoiffeurAppointmentSystem.UI/Web.config
+*.Config

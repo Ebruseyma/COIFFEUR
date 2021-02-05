@@ -36,5 +36,6 @@ namespace CoiffeurAppointmentSystem.ORM
         public virtual DbSet<service> services { get; set; }
         public virtual DbSet<work> works { get; set; }
         public virtual DbSet<workplace> workplaces { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
     }
 }
